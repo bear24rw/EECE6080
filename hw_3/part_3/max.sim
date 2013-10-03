@@ -1,0 +1,68 @@
+| units: 30 tech: scmos format: MIT
+p B VDD a_n58_33# 2 8 -53 49
+p C_IN a_n58_33# VDD 2 8 -37 49
+p C_IN VDD a_n26_33# 2 8 -21 49
+p a_n6_41# a_n26_33# VDD 2 8 -5 49
+p A a_n6_41# VDD 2 8 11 49
+p a_n6_41# VDD a_29_49# 2 8 27 49
+p B a_29_49# VDD 2 8 43 49
+n B a_n58_33# a_n51_33# 2 8 -53 33
+n C_IN a_n51_33# GND 2 8 -37 33
+n C_IN a_n26_33# a_n19_33# 2 8 -21 33
+n a_n6_41# a_n19_33# GND 2 8 -5 33
+n A a_n6_41# GND 2 8 11 33
+n a_n6_41# GND a_29_33# 2 8 27 33
+n a_n58_33# C_OUT a_n43_13# 2 8 -45 13
+n a_n26_33# a_n43_13# a_n11_13# 2 8 -13 13
+p a_n58_33# C_OUT VDD 2 8 -45 -3
+p a_n26_33# C_OUT VDD 2 8 -13 -3
+n B a_29_33# a_29_49# 2 8 43 33
+n a_29_49# a_n11_13# GND 2 8 35 13
+p a_29_49# C_OUT VDD 2 8 35 -3
+p B VDD a_n58_n45# 2 8 -53 -29
+p a_n38_n37# a_n58_n45# VDD 2 8 -37 -29
+p S a_n38_n37# VDD 2 8 -21 -29
+p S VDD a_n10_n45# 2 8 -5 -29
+p A a_n10_n45# VDD 2 8 11 -29
+p a_n10_n45# VDD F 2 8 27 -29
+p a_n58_n45# F VDD 2 8 43 -29
+n B a_n58_n45# a_n51_n45# 2 8 -53 -45
+n a_n38_n37# a_n51_n45# GND 2 8 -37 -45
+n S a_n38_n37# GND 2 8 -21 -45
+n S a_n10_n45# a_n3_n45# 2 8 -5 -45
+n A a_n3_n45# GND 2 8 11 -45
+n a_n10_n45# GND a_29_n45# 2 8 27 -45
+n a_n58_n45# a_29_n45# F 2 8 43 -45
+R a_29_n45# 288
+R a_n3_n45# 288
+R GND 2840
+R a_n51_n45# 288
+R F 728
+C VDD GND 22.7
+R VDD 7045
+C a_n58_n45# GND 8.7
+R a_n58_n45# 1114
+C a_n10_n45# GND 3.3
+R a_n10_n45# 990
+R a_n38_n37# 497
+C S GND 7.5
+R S 816
+C a_n11_13# GND 2.3
+R a_n11_13# 489
+R a_n43_13# 488
+R C_OUT 1163
+R a_29_33# 488
+R a_n19_33# 488
+R a_n51_33# 488
+C a_29_49# GND 3.0
+R a_29_49# 1277
+C a_n26_33# GND 3.0
+R a_n26_33# 1277
+C a_n58_33# GND 3.3
+R a_n58_33# 1277
+R A 1287
+C a_n6_41# GND 3.1
+R a_n6_41# 807
+R C_IN 815
+R B 1718
+C F GND 100f
