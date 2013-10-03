@@ -1,0 +1,92 @@
+| F=0 C_OUT=0 S=0 C_IN=0 B=0 A=0 
+| time = 50.000ns
+| critical path for last transition of C_OUT:
+|   B -> 0 @ 0.000ns , node was an input
+|   a_29_49# -> 1 @ 0.058ns   (0.058ns)
+|   C_OUT -> 0 @ 0.075ns   (0.017ns)
+| F=0 C_OUT=0 S=1 C_IN=0 B=0 A=0 
+| time = 100.000ns
+| critical path for last transition of C_OUT:
+|   B -> 0 @ 0.000ns , node was an input
+|   a_29_49# -> 1 @ 0.058ns   (0.058ns)
+|   C_OUT -> 0 @ 0.075ns   (0.017ns)
+| F=0 C_OUT=1 S=0 C_IN=1 B=0 A=0 
+| time = 150.000ns
+| critical path for last transition of C_OUT:
+|   C_IN -> 1 @ 100.000ns , node was an input
+|   a_n26_33# -> 0 @ 100.055ns   (0.055ns)
+|   C_OUT -> 1 @ 100.057ns   (0.002ns)
+| F=0 C_OUT=1 S=1 C_IN=1 B=0 A=0 
+| time = 200.000ns
+| critical path for last transition of C_OUT:
+|   C_IN -> 1 @ 100.000ns , node was an input
+|   a_n26_33# -> 0 @ 100.055ns   (0.055ns)
+|   C_OUT -> 1 @ 100.057ns   (0.002ns)
+| F=1 C_OUT=1 S=0 C_IN=0 B=1 A=0 
+| time = 250.000ns
+| critical path for last transition of C_OUT:
+|   transition of a_n26_33#, which has since changed again
+|   C_OUT -> 1 @ 100.057ns   (?)
+| F=0 C_OUT=1 S=1 C_IN=0 B=1 A=0 
+| time = 300.000ns
+| critical path for last transition of C_OUT:
+|   transition of a_n26_33#, which has since changed again
+|   C_OUT -> 1 @ 100.057ns   (?)
+| F=1 C_OUT=1 S=0 C_IN=1 B=1 A=0 
+| time = 350.000ns
+| critical path for last transition of C_OUT:
+|   transition of a_n26_33#, which has since changed again
+|   C_OUT -> 1 @ 100.057ns   (?)
+| F=0 C_OUT=1 S=1 C_IN=1 B=1 A=0 
+| time = 400.000ns
+| critical path for last transition of C_OUT:
+|   transition of a_n26_33#, which has since changed again
+|   C_OUT -> 1 @ 100.057ns   (?)
+| F=0 C_OUT=0 S=0 C_IN=0 B=0 A=1 
+| time = 450.000ns
+| critical path for last transition of C_OUT:
+|   B -> 0 @ 400.000ns , node was an input
+|   a_29_49# -> 1 @ 400.058ns   (0.058ns)
+|   C_OUT -> 0 @ 400.075ns   (0.017ns)
+| F=1 C_OUT=0 S=1 C_IN=0 B=0 A=1 
+| time = 500.000ns
+| critical path for last transition of C_OUT:
+|   B -> 0 @ 400.000ns , node was an input
+|   a_29_49# -> 1 @ 400.058ns   (0.058ns)
+|   C_OUT -> 0 @ 400.075ns   (0.017ns)
+| F=0 C_OUT=0 S=0 C_IN=1 B=0 A=1 
+| time = 550.000ns
+| critical path for last transition of C_OUT:
+|   B -> 0 @ 400.000ns , node was an input
+|   a_29_49# -> 1 @ 400.058ns   (0.058ns)
+|   C_OUT -> 0 @ 400.075ns   (0.017ns)
+| F=1 C_OUT=0 S=1 C_IN=1 B=0 A=1 
+| time = 600.000ns
+| critical path for last transition of C_OUT:
+|   B -> 0 @ 400.000ns , node was an input
+|   a_29_49# -> 1 @ 400.058ns   (0.058ns)
+|   C_OUT -> 0 @ 400.075ns   (0.017ns)
+| F=1 C_OUT=0 S=0 C_IN=0 B=1 A=1 
+| time = 650.000ns
+| critical path for last transition of C_OUT:
+|   transition of B, which has since changed again
+|   a_29_49# -> 1 @ 400.058ns   (?)
+|   C_OUT -> 0 @ 400.075ns   (0.017ns)
+| F=1 C_OUT=0 S=1 C_IN=0 B=1 A=1 
+| time = 700.000ns
+| critical path for last transition of C_OUT:
+|   transition of B, which has since changed again
+|   a_29_49# -> 1 @ 400.058ns   (?)
+|   C_OUT -> 0 @ 400.075ns   (0.017ns)
+| F=1 C_OUT=1 S=0 C_IN=1 B=1 A=1 
+| time = 750.000ns
+| critical path for last transition of C_OUT:
+|   C_IN -> 1 @ 700.000ns , node was an input
+|   a_n58_33# -> 0 @ 700.056ns   (0.056ns)
+|   C_OUT -> 1 @ 700.057ns   (0.001ns)
+| F=1 C_OUT=1 S=1 C_IN=1 B=1 A=1 
+| time = 800.000ns
+| critical path for last transition of C_OUT:
+|   C_IN -> 1 @ 700.000ns , node was an input
+|   a_n58_33# -> 0 @ 700.056ns   (0.056ns)
+|   C_OUT -> 1 @ 700.057ns   (0.001ns)

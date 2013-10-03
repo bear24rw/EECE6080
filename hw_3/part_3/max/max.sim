@@ -65,4 +65,4 @@ C a_n6_41# GND 3.1
 R a_n6_41# 807
 R C_IN 815
 R B 1718
-C F GND 100f
+|C F GND 100f
