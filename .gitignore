@@ -6,3 +6,5 @@ db/
 incremental_db/
 *.bak
 *.vwf
+output_files/
+qsim/
