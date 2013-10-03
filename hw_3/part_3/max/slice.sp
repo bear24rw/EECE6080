@@ -3,7 +3,7 @@
 *
 
 .include /home/thrunml/vlsi/models/model_t36s.sp
-.include max.spice
+.include slice.spice
 
 *
 * CIRCUIT
