@@ -1,0 +1,81 @@
+* SPICE3 file created from max.ext - technology: scmos
+
+.option scale=0.3u
+
+M1000 a_n58_33# B VDD Vdd pfet w=4 l=2
++ ad=40 pd=36 as=340 ps=306 
+M1001 VDD C_IN a_n58_33# Vdd pfet w=4 l=2
++ ad=0 pd=0 as=0 ps=0 
+M1002 a_n26_33# C_IN VDD Vdd pfet w=4 l=2
++ ad=40 pd=36 as=0 ps=0 
+M1003 VDD a_n6_41# a_n26_33# Vdd pfet w=4 l=2
++ ad=0 pd=0 as=0 ps=0 
+M1004 VDD A a_n6_41# Vdd pfet w=4 l=2
++ ad=0 pd=0 as=20 ps=18 
+M1005 a_29_49# a_n6_41# VDD Vdd pfet w=4 l=2
++ ad=40 pd=36 as=0 ps=0 
+M1006 VDD B a_29_49# Vdd pfet w=4 l=2
++ ad=0 pd=0 as=0 ps=0 
+M1007 a_n51_33# B a_n58_33# Gnd nfet w=4 l=2
++ ad=40 pd=36 as=20 ps=18 
+M1008 GND C_IN a_n51_33# Gnd nfet w=4 l=2
++ ad=180 pd=162 as=0 ps=0 
+M1009 a_n19_33# C_IN a_n26_33# Gnd nfet w=4 l=2
++ ad=40 pd=36 as=20 ps=18 
+M1010 GND a_n6_41# a_n19_33# Gnd nfet w=4 l=2
++ ad=0 pd=0 as=0 ps=0 
+M1011 GND A a_n6_41# Gnd nfet w=4 l=2
++ ad=0 pd=0 as=20 ps=18 
+M1012 a_29_33# a_n6_41# GND Gnd nfet w=4 l=2
++ ad=40 pd=36 as=0 ps=0 
+M1013 a_n43_13# a_n58_33# C_OUT Gnd nfet w=4 l=2
++ ad=40 pd=36 as=20 ps=18 
+M1014 a_n11_13# a_n26_33# a_n43_13# Gnd nfet w=4 l=2
++ ad=40 pd=36 as=0 ps=0 
+M1015 VDD a_n58_33# C_OUT Vdd pfet w=4 l=2
++ ad=0 pd=0 as=60 ps=54 
+M1016 VDD a_n26_33# C_OUT Vdd pfet w=4 l=2
++ ad=0 pd=0 as=0 ps=0 
+M1017 a_29_49# B a_29_33# Gnd nfet w=4 l=2
++ ad=20 pd=18 as=0 ps=0 
+M1018 GND a_29_49# a_n11_13# Gnd nfet w=4 l=2
++ ad=0 pd=0 as=0 ps=0 
+M1019 VDD a_29_49# C_OUT Vdd pfet w=4 l=2
++ ad=0 pd=0 as=0 ps=0 
+M1020 a_n58_n45# B VDD Vdd pfet w=4 l=2
++ ad=40 pd=36 as=0 ps=0 
+M1021 VDD a_n38_n37# a_n58_n45# Vdd pfet w=4 l=2
++ ad=0 pd=0 as=0 ps=0 
+M1022 VDD S a_n38_n37# Vdd pfet w=4 l=2
++ ad=0 pd=0 as=20 ps=18 
+M1023 a_n10_n45# S VDD Vdd pfet w=4 l=2
++ ad=40 pd=36 as=0 ps=0 
+M1024 VDD A a_n10_n45# Vdd pfet w=4 l=2
++ ad=0 pd=0 as=0 ps=0 
+M1025 F a_n10_n45# VDD Vdd pfet w=4 l=2
++ ad=40 pd=36 as=0 ps=0 
+M1026 VDD a_n58_n45# F Vdd pfet w=4 l=2
++ ad=0 pd=0 as=0 ps=0 
+M1027 a_n51_n45# B a_n58_n45# Gnd nfet w=4 l=2
++ ad=56 pd=36 as=20 ps=18 
+M1028 GND a_n38_n37# a_n51_n45# Gnd nfet w=4 l=2
++ ad=0 pd=0 as=0 ps=0 
+M1029 GND S a_n38_n37# Gnd nfet w=4 l=2
++ ad=0 pd=0 as=20 ps=18 
+M1030 a_n3_n45# S a_n10_n45# Gnd nfet w=4 l=2
++ ad=56 pd=36 as=20 ps=18 
+M1031 GND A a_n3_n45# Gnd nfet w=4 l=2
++ ad=0 pd=0 as=0 ps=0 
+M1032 a_29_n45# a_n10_n45# GND Gnd nfet w=4 l=2
++ ad=56 pd=36 as=0 ps=0 
+M1033 F a_n58_n45# a_29_n45# Gnd nfet w=4 l=2
++ ad=20 pd=18 as=0 ps=0 
+C0 VDD gnd! 22.7fF
+C1 a_n58_n45# gnd! 8.7fF
+C2 a_n10_n45# gnd! 3.3fF
+C3 S gnd! 7.5fF
+C4 a_n11_13# gnd! 2.3fF
+C5 a_29_49# gnd! 3.0fF
+C6 a_n26_33# gnd! 3.0fF
+C7 a_n58_33# gnd! 3.3fF
+C8 a_n6_41# gnd! 3.1fF
