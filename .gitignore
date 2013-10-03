@@ -4,3 +4,5 @@
 *.vcd
 db/
 incremental_db/
+*.bak
+*.vwf
