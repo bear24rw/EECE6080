@@ -35,8 +35,4 @@ vb7  B7     gnd PWL(0n 0V)
 
 .option post
 .tran 0.01n 25n
-.measure t_rise trig v(F) val=0.5 rise=1 targ v(F) val=4.5 rise=1
-.measure t_fall trig v(F) val=4.5 fall=1 targ v(F) val=0.5 fall=1
-.measure t_delay param='(t_rise + t_fall)/2'
-
 .end

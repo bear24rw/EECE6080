@@ -45,9 +45,9 @@ begin
                 b <= std_logic_vector(to_unsigned(bb, b'length));
                 wait for 10 ns;
                 if (a < b) then
-                    assert f = a report "C not less than A" severity error;
+                    assert f = a report "F not equal A" severity error;
                 else
-                    assert f = b report "A not less than C" severity error;
+                    assert f = b report "F not equal B" severity error;
                 end if;
 
             end loop;
