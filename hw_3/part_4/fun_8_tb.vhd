@@ -1,12 +1,12 @@
 library ieee;
 use ieee.std_logic_1164.all;
 
-entity fun_3_tb is
-end fun_3_tb;
+entity fun_8_tb is
+end fun_8_tb;
 
-architecture rtl of fun_3_tb is
+architecture rtl of fun_8_tb is
 
-    constant n : integer := 3;
+    constant n : integer := 8;
 
     signal a : std_logic_vector(n-1 downto 0);
     signal b : std_logic_vector(n-1 downto 0);
@@ -36,14 +36,14 @@ begin
     );
 
     process begin
-        a<="001";
-        b<="001";
+        a<="00000001";
+        b<="00000001";
         wait for 100 ns;
-        a<="000";
-        b<="001";
+        a<="00000000";
+        b<="00000001";
         wait for 100 ns;
-        a<="001";
-        b<="001";
+        a<="00000001";
+        b<="00000001";
         wait for 100 ns;
         wait;
     end process;

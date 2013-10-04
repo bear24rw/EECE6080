@@ -10,7 +10,6 @@ entity slice is
         c_i : in std_logic;
         c_o : out std_logic
     );
-);
 end slice;
 
 architecture rtl of slice is
