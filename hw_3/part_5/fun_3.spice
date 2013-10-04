@@ -1,0 +1,233 @@
+* SPICE3 file created from fun_3.ext - technology: scmos
+
+.option scale=0.3u
+
+M1000 slice_0[0]/a_n58_33# B0 VDD Vdd pfet w=4 l=2
++ ad=40 pd=36 as=980 ps=882 
+M1001 VDD GND slice_0[0]/a_n58_33# Vdd pfet w=4 l=2
++ ad=0 pd=0 as=0 ps=0 
+M1002 slice_0[0]/a_n26_33# GND VDD Vdd pfet w=4 l=2
++ ad=40 pd=36 as=0 ps=0 
+M1003 VDD slice_0[0]/a_n6_41# slice_0[0]/a_n26_33# Vdd pfet w=4 l=2
++ ad=0 pd=0 as=0 ps=0 
+M1004 VDD A0 slice_0[0]/a_n6_41# Vdd pfet w=4 l=2
++ ad=0 pd=0 as=20 ps=18 
+M1005 slice_0[0]/a_29_49# slice_0[0]/a_n6_41# VDD Vdd pfet w=4 l=2
++ ad=40 pd=36 as=0 ps=0 
+M1006 VDD B0 slice_0[0]/a_29_49# Vdd pfet w=4 l=2
++ ad=0 pd=0 as=0 ps=0 
+M1007 slice_0[0]/a_n51_33# B0 slice_0[0]/a_n58_33# Gnd nfet w=4 l=2
++ ad=40 pd=36 as=20 ps=18 
+M1008 GND GND slice_0[0]/a_n51_33# Gnd nfet w=4 l=2
++ ad=540 pd=486 as=0 ps=0 
+M1009 slice_0[0]/a_n19_33# GND slice_0[0]/a_n26_33# Gnd nfet w=4 l=2
++ ad=40 pd=36 as=20 ps=18 
+M1010 GND slice_0[0]/a_n6_41# slice_0[0]/a_n19_33# Gnd nfet w=4 l=2
++ ad=0 pd=0 as=0 ps=0 
+M1011 GND A0 slice_0[0]/a_n6_41# Gnd nfet w=4 l=2
++ ad=0 pd=0 as=20 ps=18 
+M1012 slice_0[0]/a_29_33# slice_0[0]/a_n6_41# GND Gnd nfet w=4 l=2
++ ad=40 pd=36 as=0 ps=0 
+M1013 slice_0[0]/a_n43_13# slice_0[0]/a_n58_33# slice_0[1]/C_IN Gnd nfet w=4 l=2
++ ad=40 pd=36 as=20 ps=18 
+M1014 slice_0[0]/a_n11_13# slice_0[0]/a_n26_33# slice_0[0]/a_n43_13# Gnd nfet w=4 l=2
++ ad=40 pd=36 as=0 ps=0 
+M1015 VDD slice_0[0]/a_n58_33# slice_0[1]/C_IN Vdd pfet w=4 l=2
++ ad=0 pd=0 as=60 ps=54 
+M1016 VDD slice_0[0]/a_n26_33# slice_0[1]/C_IN Vdd pfet w=4 l=2
++ ad=0 pd=0 as=0 ps=0 
+M1017 slice_0[0]/a_29_49# B0 slice_0[0]/a_29_33# Gnd nfet w=4 l=2
++ ad=20 pd=18 as=0 ps=0 
+M1018 GND slice_0[0]/a_29_49# slice_0[0]/a_n11_13# Gnd nfet w=4 l=2
++ ad=0 pd=0 as=0 ps=0 
+M1019 VDD slice_0[0]/a_29_49# slice_0[1]/C_IN Vdd pfet w=4 l=2
++ ad=0 pd=0 as=0 ps=0 
+M1020 slice_0[0]/a_n58_n45# B0 VDD Vdd pfet w=4 l=2
++ ad=40 pd=36 as=0 ps=0 
+M1021 VDD slice_0[0]/a_n38_n37# slice_0[0]/a_n58_n45# Vdd pfet w=4 l=2
++ ad=0 pd=0 as=0 ps=0 
+M1022 VDD slice_0[0]/S slice_0[0]/a_n38_n37# Vdd pfet w=4 l=2
++ ad=0 pd=0 as=20 ps=18 
+M1023 slice_0[0]/a_n10_n45# slice_0[0]/S VDD Vdd pfet w=4 l=2
++ ad=40 pd=36 as=0 ps=0 
+M1024 VDD A0 slice_0[0]/a_n10_n45# Vdd pfet w=4 l=2
++ ad=0 pd=0 as=0 ps=0 
+M1025 F0 slice_0[0]/a_n10_n45# VDD Vdd pfet w=4 l=2
++ ad=40 pd=36 as=0 ps=0 
+M1026 VDD slice_0[0]/a_n58_n45# F0 Vdd pfet w=4 l=2
++ ad=0 pd=0 as=0 ps=0 
+M1027 slice_0[0]/a_n51_n45# B0 slice_0[0]/a_n58_n45# Gnd nfet w=4 l=2
++ ad=56 pd=36 as=20 ps=18 
+M1028 GND slice_0[0]/a_n38_n37# slice_0[0]/a_n51_n45# Gnd nfet w=4 l=2
++ ad=0 pd=0 as=0 ps=0 
+M1029 GND slice_0[0]/S slice_0[0]/a_n38_n37# Gnd nfet w=4 l=2
++ ad=0 pd=0 as=20 ps=18 
+M1030 slice_0[0]/a_n3_n45# slice_0[0]/S slice_0[0]/a_n10_n45# Gnd nfet w=4 l=2
++ ad=56 pd=36 as=20 ps=18 
+M1031 GND A0 slice_0[0]/a_n3_n45# Gnd nfet w=4 l=2
++ ad=0 pd=0 as=0 ps=0 
+M1032 slice_0[0]/a_29_n45# slice_0[0]/a_n10_n45# GND Gnd nfet w=4 l=2
++ ad=56 pd=36 as=0 ps=0 
+M1033 F0 slice_0[0]/a_n58_n45# slice_0[0]/a_29_n45# Gnd nfet w=4 l=2
++ ad=20 pd=18 as=0 ps=0 
+M1034 slice_0[1]/a_n58_33# B1 VDD Vdd pfet w=4 l=2
++ ad=40 pd=36 as=0 ps=0 
+M1035 VDD slice_0[1]/C_IN slice_0[1]/a_n58_33# Vdd pfet w=4 l=2
++ ad=0 pd=0 as=0 ps=0 
+M1036 slice_0[1]/a_n26_33# slice_0[1]/C_IN VDD Vdd pfet w=4 l=2
++ ad=40 pd=36 as=0 ps=0 
+M1037 VDD slice_0[1]/a_n6_41# slice_0[1]/a_n26_33# Vdd pfet w=4 l=2
++ ad=0 pd=0 as=0 ps=0 
+M1038 VDD A1 slice_0[1]/a_n6_41# Vdd pfet w=4 l=2
++ ad=0 pd=0 as=20 ps=18 
+M1039 slice_0[1]/a_29_49# slice_0[1]/a_n6_41# VDD Vdd pfet w=4 l=2
++ ad=40 pd=36 as=0 ps=0 
+M1040 VDD B1 slice_0[1]/a_29_49# Vdd pfet w=4 l=2
++ ad=0 pd=0 as=0 ps=0 
+M1041 slice_0[1]/a_n51_33# B1 slice_0[1]/a_n58_33# Gnd nfet w=4 l=2
++ ad=40 pd=36 as=20 ps=18 
+M1042 GND slice_0[1]/C_IN slice_0[1]/a_n51_33# Gnd nfet w=4 l=2
++ ad=0 pd=0 as=0 ps=0 
+M1043 slice_0[1]/a_n19_33# slice_0[1]/C_IN slice_0[1]/a_n26_33# Gnd nfet w=4 l=2
++ ad=40 pd=36 as=20 ps=18 
+M1044 GND slice_0[1]/a_n6_41# slice_0[1]/a_n19_33# Gnd nfet w=4 l=2
++ ad=0 pd=0 as=0 ps=0 
+M1045 GND A1 slice_0[1]/a_n6_41# Gnd nfet w=4 l=2
++ ad=0 pd=0 as=20 ps=18 
+M1046 slice_0[1]/a_29_33# slice_0[1]/a_n6_41# GND Gnd nfet w=4 l=2
++ ad=40 pd=36 as=0 ps=0 
+M1047 slice_0[1]/a_n43_13# slice_0[1]/a_n58_33# slice_0[2]/C_IN Gnd nfet w=4 l=2
++ ad=40 pd=36 as=20 ps=18 
+M1048 slice_0[1]/a_n11_13# slice_0[1]/a_n26_33# slice_0[1]/a_n43_13# Gnd nfet w=4 l=2
++ ad=40 pd=36 as=0 ps=0 
+M1049 VDD slice_0[1]/a_n58_33# slice_0[2]/C_IN Vdd pfet w=4 l=2
++ ad=0 pd=0 as=60 ps=54 
+M1050 VDD slice_0[1]/a_n26_33# slice_0[2]/C_IN Vdd pfet w=4 l=2
++ ad=0 pd=0 as=0 ps=0 
+M1051 slice_0[1]/a_29_49# B1 slice_0[1]/a_29_33# Gnd nfet w=4 l=2
++ ad=20 pd=18 as=0 ps=0 
+M1052 GND slice_0[1]/a_29_49# slice_0[1]/a_n11_13# Gnd nfet w=4 l=2
++ ad=0 pd=0 as=0 ps=0 
+M1053 VDD slice_0[1]/a_29_49# slice_0[2]/C_IN Vdd pfet w=4 l=2
++ ad=0 pd=0 as=0 ps=0 
+M1054 slice_0[1]/a_n58_n45# B1 VDD Vdd pfet w=4 l=2
++ ad=40 pd=36 as=0 ps=0 
+M1055 VDD slice_0[1]/a_n38_n37# slice_0[1]/a_n58_n45# Vdd pfet w=4 l=2
++ ad=0 pd=0 as=0 ps=0 
+M1056 VDD slice_0[0]/S slice_0[1]/a_n38_n37# Vdd pfet w=4 l=2
++ ad=0 pd=0 as=20 ps=18 
+M1057 slice_0[1]/a_n10_n45# slice_0[0]/S VDD Vdd pfet w=4 l=2
++ ad=40 pd=36 as=0 ps=0 
+M1058 VDD A1 slice_0[1]/a_n10_n45# Vdd pfet w=4 l=2
++ ad=0 pd=0 as=0 ps=0 
+M1059 F1 slice_0[1]/a_n10_n45# VDD Vdd pfet w=4 l=2
++ ad=40 pd=36 as=0 ps=0 
+M1060 VDD slice_0[1]/a_n58_n45# F1 Vdd pfet w=4 l=2
++ ad=0 pd=0 as=0 ps=0 
+M1061 slice_0[1]/a_n51_n45# B1 slice_0[1]/a_n58_n45# Gnd nfet w=4 l=2
++ ad=56 pd=36 as=20 ps=18 
+M1062 GND slice_0[1]/a_n38_n37# slice_0[1]/a_n51_n45# Gnd nfet w=4 l=2
++ ad=0 pd=0 as=0 ps=0 
+M1063 GND slice_0[0]/S slice_0[1]/a_n38_n37# Gnd nfet w=4 l=2
++ ad=0 pd=0 as=20 ps=18 
+M1064 slice_0[1]/a_n3_n45# slice_0[0]/S slice_0[1]/a_n10_n45# Gnd nfet w=4 l=2
++ ad=56 pd=36 as=20 ps=18 
+M1065 GND A1 slice_0[1]/a_n3_n45# Gnd nfet w=4 l=2
++ ad=0 pd=0 as=0 ps=0 
+M1066 slice_0[1]/a_29_n45# slice_0[1]/a_n10_n45# GND Gnd nfet w=4 l=2
++ ad=56 pd=36 as=0 ps=0 
+M1067 F1 slice_0[1]/a_n58_n45# slice_0[1]/a_29_n45# Gnd nfet w=4 l=2
++ ad=20 pd=18 as=0 ps=0 
+M1068 slice_0[2]/a_n58_33# B2 VDD Vdd pfet w=4 l=2
++ ad=40 pd=36 as=0 ps=0 
+M1069 VDD slice_0[2]/C_IN slice_0[2]/a_n58_33# Vdd pfet w=4 l=2
++ ad=0 pd=0 as=0 ps=0 
+M1070 slice_0[2]/a_n26_33# slice_0[2]/C_IN VDD Vdd pfet w=4 l=2
++ ad=40 pd=36 as=0 ps=0 
+M1071 VDD slice_0[2]/a_n6_41# slice_0[2]/a_n26_33# Vdd pfet w=4 l=2
++ ad=0 pd=0 as=0 ps=0 
+M1072 VDD A2 slice_0[2]/a_n6_41# Vdd pfet w=4 l=2
++ ad=0 pd=0 as=20 ps=18 
+M1073 slice_0[2]/a_29_49# slice_0[2]/a_n6_41# VDD Vdd pfet w=4 l=2
++ ad=40 pd=36 as=0 ps=0 
+M1074 VDD B2 slice_0[2]/a_29_49# Vdd pfet w=4 l=2
++ ad=0 pd=0 as=0 ps=0 
+M1075 slice_0[2]/a_n51_33# B2 slice_0[2]/a_n58_33# Gnd nfet w=4 l=2
++ ad=40 pd=36 as=20 ps=18 
+M1076 GND slice_0[2]/C_IN slice_0[2]/a_n51_33# Gnd nfet w=4 l=2
++ ad=0 pd=0 as=0 ps=0 
+M1077 slice_0[2]/a_n19_33# slice_0[2]/C_IN slice_0[2]/a_n26_33# Gnd nfet w=4 l=2
++ ad=40 pd=36 as=20 ps=18 
+M1078 GND slice_0[2]/a_n6_41# slice_0[2]/a_n19_33# Gnd nfet w=4 l=2
++ ad=0 pd=0 as=0 ps=0 
+M1079 GND A2 slice_0[2]/a_n6_41# Gnd nfet w=4 l=2
++ ad=0 pd=0 as=20 ps=18 
+M1080 slice_0[2]/a_29_33# slice_0[2]/a_n6_41# GND Gnd nfet w=4 l=2
++ ad=40 pd=36 as=0 ps=0 
+M1081 slice_0[2]/a_n43_13# slice_0[2]/a_n58_33# slice_0[0]/S Gnd nfet w=4 l=2
++ ad=40 pd=36 as=20 ps=18 
+M1082 slice_0[2]/a_n11_13# slice_0[2]/a_n26_33# slice_0[2]/a_n43_13# Gnd nfet w=4 l=2
++ ad=40 pd=36 as=0 ps=0 
+M1083 VDD slice_0[2]/a_n58_33# slice_0[0]/S Vdd pfet w=4 l=2
++ ad=0 pd=0 as=60 ps=54 
+M1084 VDD slice_0[2]/a_n26_33# slice_0[0]/S Vdd pfet w=4 l=2
++ ad=0 pd=0 as=0 ps=0 
+M1085 slice_0[2]/a_29_49# B2 slice_0[2]/a_29_33# Gnd nfet w=4 l=2
++ ad=20 pd=18 as=0 ps=0 
+M1086 GND slice_0[2]/a_29_49# slice_0[2]/a_n11_13# Gnd nfet w=4 l=2
++ ad=0 pd=0 as=0 ps=0 
+M1087 VDD slice_0[2]/a_29_49# slice_0[0]/S Vdd pfet w=4 l=2
++ ad=0 pd=0 as=0 ps=0 
+M1088 slice_0[2]/a_n58_n45# B2 VDD Vdd pfet w=4 l=2
++ ad=40 pd=36 as=0 ps=0 
+M1089 VDD slice_0[2]/a_n38_n37# slice_0[2]/a_n58_n45# Vdd pfet w=4 l=2
++ ad=0 pd=0 as=0 ps=0 
+M1090 VDD slice_0[0]/S slice_0[2]/a_n38_n37# Vdd pfet w=4 l=2
++ ad=0 pd=0 as=20 ps=18 
+M1091 slice_0[2]/a_n10_n45# slice_0[0]/S VDD Vdd pfet w=4 l=2
++ ad=40 pd=36 as=0 ps=0 
+M1092 VDD A2 slice_0[2]/a_n10_n45# Vdd pfet w=4 l=2
++ ad=0 pd=0 as=0 ps=0 
+M1093 F2 slice_0[2]/a_n10_n45# VDD Vdd pfet w=4 l=2
++ ad=40 pd=36 as=0 ps=0 
+M1094 VDD slice_0[2]/a_n58_n45# F2 Vdd pfet w=4 l=2
++ ad=0 pd=0 as=0 ps=0 
+M1095 slice_0[2]/a_n51_n45# B2 slice_0[2]/a_n58_n45# Gnd nfet w=4 l=2
++ ad=56 pd=36 as=20 ps=18 
+M1096 GND slice_0[2]/a_n38_n37# slice_0[2]/a_n51_n45# Gnd nfet w=4 l=2
++ ad=0 pd=0 as=0 ps=0 
+M1097 GND slice_0[0]/S slice_0[2]/a_n38_n37# Gnd nfet w=4 l=2
++ ad=0 pd=0 as=20 ps=18 
+M1098 slice_0[2]/a_n3_n45# slice_0[0]/S slice_0[2]/a_n10_n45# Gnd nfet w=4 l=2
++ ad=56 pd=36 as=20 ps=18 
+M1099 GND A2 slice_0[2]/a_n3_n45# Gnd nfet w=4 l=2
++ ad=0 pd=0 as=0 ps=0 
+M1100 slice_0[2]/a_29_n45# slice_0[2]/a_n10_n45# GND Gnd nfet w=4 l=2
++ ad=56 pd=36 as=0 ps=0 
+M1101 F2 slice_0[2]/a_n58_n45# slice_0[2]/a_29_n45# Gnd nfet w=4 l=2
++ ad=20 pd=18 as=0 ps=0 
+C0 VDD gnd! 62.6fF
+C1 slice_0[2]/a_n58_n45# gnd! 8.7fF
+C2 slice_0[2]/a_n10_n45# gnd! 3.3fF
+C3 slice_0[0]/S gnd! 30.4fF
+C4 slice_0[2]/a_n11_13# gnd! 2.3fF
+C5 slice_0[2]/a_29_49# gnd! 2.8fF
+C6 slice_0[2]/a_n26_33# gnd! 2.6fF
+C7 slice_0[2]/a_n58_33# gnd! 2.8fF
+C8 slice_0[2]/a_n6_41# gnd! 3.1fF
+C9 slice_0[2]/C_IN gnd! 11.0fF
+C10 slice_0[1]/a_n58_n45# gnd! 8.7fF
+C11 slice_0[1]/a_n10_n45# gnd! 3.3fF
+C12 slice_0[1]/a_n11_13# gnd! 2.3fF
+C13 slice_0[1]/a_29_49# gnd! 2.8fF
+C14 slice_0[1]/a_n26_33# gnd! 2.6fF
+C15 slice_0[1]/a_n58_33# gnd! 2.8fF
+C16 slice_0[1]/a_n6_41# gnd! 3.1fF
+C17 slice_0[1]/C_IN gnd! 11.1fF
+C18 slice_0[0]/a_n58_n45# gnd! 8.7fF
+C19 slice_0[0]/a_n10_n45# gnd! 3.3fF
+C20 slice_0[0]/a_n11_13# gnd! 2.3fF
+C21 slice_0[0]/a_29_49# gnd! 2.8fF
+C22 slice_0[0]/a_n26_33# gnd! 2.8fF
+C23 slice_0[0]/a_n58_33# gnd! 3.0fF
+C24 slice_0[0]/a_n6_41# gnd! 3.1fF
