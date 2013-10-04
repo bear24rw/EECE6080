@@ -1,4 +1,4 @@
-stepsize 1000
+stepsize 100
 
 logfile fun_3.log
 

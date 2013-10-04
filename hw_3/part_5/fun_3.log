@@ -1,5 +1,5 @@
 | F=000 B=000 A=000 
-| time = 1000.000ns
+| time = 100.000ns
 | critical path for last transition of F2:
 |   B2 -> 0 @ 0.000ns , node was an input
 |   slice_0[2]/a_n58_n45# -> 1 @ 0.128ns   (0.128ns)
@@ -13,7 +13,7 @@
 |   slice_0[0]/a_n58_n45# -> 1 @ 0.128ns   (0.128ns)
 |   F0 -> 0 @ 0.130ns   (0.002ns)
 | F=000 B=001 A=000 
-| time = 2000.000ns
+| time = 200.000ns
 | critical path for last transition of F2:
 |   B2 -> 0 @ 0.000ns , node was an input
 |   slice_0[2]/a_n58_n45# -> 1 @ 0.128ns   (0.128ns)
@@ -23,1075 +23,1075 @@
 |   slice_0[1]/a_n58_n45# -> 1 @ 0.128ns   (0.128ns)
 |   F1 -> 0 @ 0.130ns   (0.002ns)
 | critical path for last transition of F0:
-|   B0 -> 1 @ 1000.000ns , node was an input
-|   slice_0[0]/a_29_49# -> 0 @ 1000.067ns   (0.067ns)
-|   slice_0[1]/C_IN -> 1 @ 1000.308ns   (0.241ns)
-|   slice_0[1]/a_n26_33# -> 0 @ 1000.422ns   (0.114ns)
-|   slice_0[2]/C_IN -> 1 @ 1000.661ns   (0.239ns)
-|   slice_0[2]/a_n26_33# -> 0 @ 1000.775ns   (0.114ns)
-|   slice_0[0]/S -> 1 @ 1001.378ns   (0.603ns)
-|   slice_0[0]/a_n38_n37# -> 0 @ 1001.503ns   (0.125ns)
-|   slice_0[0]/a_n58_n45# -> 1 @ 1001.642ns   (0.139ns)
-|   F0 -> 0 @ 1001.644ns   (0.002ns)
+|   B0 -> 1 @ 100.000ns , node was an input
+|   slice_0[0]/a_29_49# -> 0 @ 100.067ns   (0.067ns)
+|   slice_0[1]/C_IN -> 1 @ 100.308ns   (0.241ns)
+|   slice_0[1]/a_n26_33# -> 0 @ 100.422ns   (0.114ns)
+|   slice_0[2]/C_IN -> 1 @ 100.661ns   (0.239ns)
+|   slice_0[2]/a_n26_33# -> 0 @ 100.775ns   (0.114ns)
+|   slice_0[0]/S -> 1 @ 101.378ns   (0.603ns)
+|   slice_0[0]/a_n38_n37# -> 0 @ 101.503ns   (0.125ns)
+|   slice_0[0]/a_n58_n45# -> 1 @ 101.642ns   (0.139ns)
+|   F0 -> 0 @ 101.644ns   (0.002ns)
 | F=000 B=010 A=000 
+| time = 300.000ns
+| critical path for last transition of F2:
+|   B2 -> 0 @ 0.000ns , node was an input
+|   slice_0[2]/a_n58_n45# -> 1 @ 0.128ns   (0.128ns)
+|   F2 -> 0 @ 0.130ns   (0.002ns)
+| critical path for last transition of F1:
+|   transition of B1, which has since changed again
+|   slice_0[1]/a_n58_n45# -> 1 @ 0.128ns   (?)
+|   F1 -> 0 @ 0.130ns   (0.002ns)
+| critical path for last transition of F0:
+|   transition of slice_0[1]/a_n26_33#, which has since changed again
+|   slice_0[2]/C_IN -> 1 @ 100.661ns   (?)
+|   slice_0[2]/a_n26_33# -> 0 @ 100.775ns   (0.114ns)
+|   slice_0[0]/S -> 1 @ 101.378ns   (0.603ns)
+|   slice_0[0]/a_n38_n37# -> 0 @ 101.503ns   (0.125ns)
+|   slice_0[0]/a_n58_n45# -> 1 @ 101.642ns   (0.139ns)
+|   F0 -> 0 @ 101.644ns   (0.002ns)
+| F=000 B=011 A=000 
+| time = 400.000ns
+| critical path for last transition of F2:
+|   B2 -> 0 @ 0.000ns , node was an input
+|   slice_0[2]/a_n58_n45# -> 1 @ 0.128ns   (0.128ns)
+|   F2 -> 0 @ 0.130ns   (0.002ns)
+| critical path for last transition of F1:
+|   transition of B1, which has since changed again
+|   slice_0[1]/a_n58_n45# -> 1 @ 0.128ns   (?)
+|   F1 -> 0 @ 0.130ns   (0.002ns)
+| critical path for last transition of F0:
+|   transition of slice_0[1]/a_n26_33#, which has since changed again
+|   slice_0[2]/C_IN -> 1 @ 100.661ns   (?)
+|   slice_0[2]/a_n26_33# -> 0 @ 100.775ns   (0.114ns)
+|   slice_0[0]/S -> 1 @ 101.378ns   (0.603ns)
+|   slice_0[0]/a_n38_n37# -> 0 @ 101.503ns   (0.125ns)
+|   slice_0[0]/a_n58_n45# -> 1 @ 101.642ns   (0.139ns)
+|   F0 -> 0 @ 101.644ns   (0.002ns)
+| F=000 B=100 A=000 
+| time = 500.000ns
+| critical path for last transition of F2:
+|   transition of B2, which has since changed again
+|   slice_0[2]/a_n58_n45# -> 1 @ 0.128ns   (?)
+|   F2 -> 0 @ 0.130ns   (0.002ns)
+| critical path for last transition of F1:
+|   transition of B1, which has since changed again
+|   slice_0[1]/a_n58_n45# -> 1 @ 0.128ns   (?)
+|   F1 -> 0 @ 0.130ns   (0.002ns)
+| critical path for last transition of F0:
+|   transition of slice_0[2]/a_n26_33#, which has since changed again
+|   slice_0[0]/S -> 1 @ 101.378ns   (?)
+|   slice_0[0]/a_n38_n37# -> 0 @ 101.503ns   (0.125ns)
+|   slice_0[0]/a_n58_n45# -> 1 @ 101.642ns   (0.139ns)
+|   F0 -> 0 @ 101.644ns   (0.002ns)
+| F=000 B=101 A=000 
+| time = 600.000ns
+| critical path for last transition of F2:
+|   transition of B2, which has since changed again
+|   slice_0[2]/a_n58_n45# -> 1 @ 0.128ns   (?)
+|   F2 -> 0 @ 0.130ns   (0.002ns)
+| critical path for last transition of F1:
+|   transition of B1, which has since changed again
+|   slice_0[1]/a_n58_n45# -> 1 @ 0.128ns   (?)
+|   F1 -> 0 @ 0.130ns   (0.002ns)
+| critical path for last transition of F0:
+|   transition of slice_0[2]/a_n26_33#, which has since changed again
+|   slice_0[0]/S -> 1 @ 101.378ns   (?)
+|   slice_0[0]/a_n38_n37# -> 0 @ 101.503ns   (0.125ns)
+|   slice_0[0]/a_n58_n45# -> 1 @ 101.642ns   (0.139ns)
+|   F0 -> 0 @ 101.644ns   (0.002ns)
+| F=000 B=110 A=000 
+| time = 700.000ns
+| critical path for last transition of F2:
+|   transition of B2, which has since changed again
+|   slice_0[2]/a_n58_n45# -> 1 @ 0.128ns   (?)
+|   F2 -> 0 @ 0.130ns   (0.002ns)
+| critical path for last transition of F1:
+|   transition of B1, which has since changed again
+|   slice_0[1]/a_n58_n45# -> 1 @ 0.128ns   (?)
+|   F1 -> 0 @ 0.130ns   (0.002ns)
+| critical path for last transition of F0:
+|   transition of slice_0[2]/a_n26_33#, which has since changed again
+|   slice_0[0]/S -> 1 @ 101.378ns   (?)
+|   slice_0[0]/a_n38_n37# -> 0 @ 101.503ns   (0.125ns)
+|   slice_0[0]/a_n58_n45# -> 1 @ 101.642ns   (0.139ns)
+|   F0 -> 0 @ 101.644ns   (0.002ns)
+| F=000 B=111 A=000 
+| time = 800.000ns
+| critical path for last transition of F2:
+|   transition of B2, which has since changed again
+|   slice_0[2]/a_n58_n45# -> 1 @ 0.128ns   (?)
+|   F2 -> 0 @ 0.130ns   (0.002ns)
+| critical path for last transition of F1:
+|   transition of B1, which has since changed again
+|   slice_0[1]/a_n58_n45# -> 1 @ 0.128ns   (?)
+|   F1 -> 0 @ 0.130ns   (0.002ns)
+| critical path for last transition of F0:
+|   transition of slice_0[2]/a_n26_33#, which has since changed again
+|   slice_0[0]/S -> 1 @ 101.378ns   (?)
+|   slice_0[0]/a_n38_n37# -> 0 @ 101.503ns   (0.125ns)
+|   slice_0[0]/a_n58_n45# -> 1 @ 101.642ns   (0.139ns)
+|   F0 -> 0 @ 101.644ns   (0.002ns)
+| F=000 B=000 A=001 
+| time = 900.000ns
+| critical path for last transition of F2:
+|   transition of B2, which has since changed again
+|   slice_0[2]/a_n58_n45# -> 1 @ 0.128ns   (?)
+|   F2 -> 0 @ 0.130ns   (0.002ns)
+| critical path for last transition of F1:
+|   transition of B1, which has since changed again
+|   slice_0[1]/a_n58_n45# -> 1 @ 0.128ns   (?)
+|   F1 -> 0 @ 0.130ns   (0.002ns)
+| critical path for last transition of F0:
+|   B0 -> 0 @ 800.000ns , node was an input
+|   slice_0[0]/a_29_49# -> 1 @ 800.070ns   (0.070ns)
+|   slice_0[1]/C_IN -> 0 @ 800.378ns   (0.308ns)
+|   slice_0[1]/a_n26_33# -> 1 @ 800.543ns   (0.165ns)
+|   slice_0[2]/C_IN -> 0 @ 800.849ns   (0.306ns)
+|   slice_0[2]/a_n26_33# -> 1 @ 801.013ns   (0.164ns)
+|   slice_0[0]/S -> 0 @ 801.834ns   (0.821ns)
+|   slice_0[0]/a_n10_n45# -> 1 @ 802.105ns   (0.271ns)
+|   F0 -> 0 @ 802.107ns   (0.002ns)
+| F=001 B=001 A=001 
+| time = 1000.000ns
+| critical path for last transition of F2:
+|   transition of B2, which has since changed again
+|   slice_0[2]/a_n58_n45# -> 1 @ 0.128ns   (?)
+|   F2 -> 0 @ 0.130ns   (0.002ns)
+| critical path for last transition of F1:
+|   transition of B1, which has since changed again
+|   slice_0[1]/a_n58_n45# -> 1 @ 0.128ns   (?)
+|   F1 -> 0 @ 0.130ns   (0.002ns)
+| critical path for last transition of F0:
+|   B0 -> 1 @ 900.000ns , node was an input
+|   slice_0[0]/a_n58_n45# -> 0 @ 900.121ns   (0.121ns)
+|   F0 -> 1 @ 900.124ns   (0.003ns)
+| F=001 B=010 A=001 
+| time = 1100.000ns
+| critical path for last transition of F2:
+|   transition of B2, which has since changed again
+|   slice_0[2]/a_n58_n45# -> 1 @ 0.128ns   (?)
+|   F2 -> 0 @ 0.130ns   (0.002ns)
+| critical path for last transition of F1:
+|   B1 -> 1 @ 1000.000ns , node was an input
+|   slice_0[1]/a_29_49# -> 0 @ 1000.067ns   (0.067ns)
+|   slice_0[2]/C_IN -> 1 @ 1000.307ns   (0.240ns)
+|   slice_0[2]/a_n26_33# -> 0 @ 1000.421ns   (0.114ns)
+|   slice_0[0]/S -> 1 @ 1001.024ns   (0.603ns)
+|   slice_0[1]/a_n38_n37# -> 0 @ 1001.149ns   (0.125ns)
+|   slice_0[1]/a_n58_n45# -> 1 @ 1001.288ns   (0.139ns)
+|   F1 -> 0 @ 1001.290ns   (0.002ns)
+| critical path for last transition of F0:
+|   B1 -> 1 @ 1000.000ns , node was an input
+|   slice_0[1]/a_29_49# -> 0 @ 1000.067ns   (0.067ns)
+|   slice_0[2]/C_IN -> 1 @ 1000.307ns   (0.240ns)
+|   slice_0[2]/a_n26_33# -> 0 @ 1000.421ns   (0.114ns)
+|   slice_0[0]/S -> 1 @ 1001.024ns   (0.603ns)
+|   slice_0[0]/a_n10_n45# -> 0 @ 1001.202ns   (0.178ns)
+|   F0 -> 1 @ 1001.205ns   (0.003ns)
+| F=001 B=011 A=001 
+| time = 1200.000ns
+| critical path for last transition of F2:
+|   transition of B2, which has since changed again
+|   slice_0[2]/a_n58_n45# -> 1 @ 0.128ns   (?)
+|   F2 -> 0 @ 0.130ns   (0.002ns)
+| critical path for last transition of F1:
+|   B1 -> 1 @ 1000.000ns , node was an input
+|   slice_0[1]/a_29_49# -> 0 @ 1000.067ns   (0.067ns)
+|   slice_0[2]/C_IN -> 1 @ 1000.307ns   (0.240ns)
+|   slice_0[2]/a_n26_33# -> 0 @ 1000.421ns   (0.114ns)
+|   slice_0[0]/S -> 1 @ 1001.024ns   (0.603ns)
+|   slice_0[1]/a_n38_n37# -> 0 @ 1001.149ns   (0.125ns)
+|   slice_0[1]/a_n58_n45# -> 1 @ 1001.288ns   (0.139ns)
+|   F1 -> 0 @ 1001.290ns   (0.002ns)
+| critical path for last transition of F0:
+|   B1 -> 1 @ 1000.000ns , node was an input
+|   slice_0[1]/a_29_49# -> 0 @ 1000.067ns   (0.067ns)
+|   slice_0[2]/C_IN -> 1 @ 1000.307ns   (0.240ns)
+|   slice_0[2]/a_n26_33# -> 0 @ 1000.421ns   (0.114ns)
+|   slice_0[0]/S -> 1 @ 1001.024ns   (0.603ns)
+|   slice_0[0]/a_n10_n45# -> 0 @ 1001.202ns   (0.178ns)
+|   F0 -> 1 @ 1001.205ns   (0.003ns)
+| F=001 B=100 A=001 
+| time = 1300.000ns
+| critical path for last transition of F2:
+|   transition of B2, which has since changed again
+|   slice_0[2]/a_n58_n45# -> 1 @ 0.128ns   (?)
+|   F2 -> 0 @ 0.130ns   (0.002ns)
+| critical path for last transition of F1:
+|   transition of slice_0[2]/a_n26_33#, which has since changed again
+|   slice_0[0]/S -> 1 @ 1001.024ns   (?)
+|   slice_0[1]/a_n38_n37# -> 0 @ 1001.149ns   (0.125ns)
+|   slice_0[1]/a_n58_n45# -> 1 @ 1001.288ns   (0.139ns)
+|   F1 -> 0 @ 1001.290ns   (0.002ns)
+| critical path for last transition of F0:
+|   transition of slice_0[2]/a_n26_33#, which has since changed again
+|   slice_0[0]/S -> 1 @ 1001.024ns   (?)
+|   slice_0[0]/a_n10_n45# -> 0 @ 1001.202ns   (0.178ns)
+|   F0 -> 1 @ 1001.205ns   (0.003ns)
+| F=001 B=101 A=001 
+| time = 1400.000ns
+| critical path for last transition of F2:
+|   transition of B2, which has since changed again
+|   slice_0[2]/a_n58_n45# -> 1 @ 0.128ns   (?)
+|   F2 -> 0 @ 0.130ns   (0.002ns)
+| critical path for last transition of F1:
+|   transition of slice_0[2]/a_n26_33#, which has since changed again
+|   slice_0[0]/S -> 1 @ 1001.024ns   (?)
+|   slice_0[1]/a_n38_n37# -> 0 @ 1001.149ns   (0.125ns)
+|   slice_0[1]/a_n58_n45# -> 1 @ 1001.288ns   (0.139ns)
+|   F1 -> 0 @ 1001.290ns   (0.002ns)
+| critical path for last transition of F0:
+|   transition of slice_0[2]/a_n26_33#, which has since changed again
+|   slice_0[0]/S -> 1 @ 1001.024ns   (?)
+|   slice_0[0]/a_n10_n45# -> 0 @ 1001.202ns   (0.178ns)
+|   F0 -> 1 @ 1001.205ns   (0.003ns)
+| F=001 B=110 A=001 
+| time = 1500.000ns
+| critical path for last transition of F2:
+|   transition of B2, which has since changed again
+|   slice_0[2]/a_n58_n45# -> 1 @ 0.128ns   (?)
+|   F2 -> 0 @ 0.130ns   (0.002ns)
+| critical path for last transition of F1:
+|   transition of slice_0[2]/a_n26_33#, which has since changed again
+|   slice_0[0]/S -> 1 @ 1001.024ns   (?)
+|   slice_0[1]/a_n38_n37# -> 0 @ 1001.149ns   (0.125ns)
+|   slice_0[1]/a_n58_n45# -> 1 @ 1001.288ns   (0.139ns)
+|   F1 -> 0 @ 1001.290ns   (0.002ns)
+| critical path for last transition of F0:
+|   transition of slice_0[2]/a_n26_33#, which has since changed again
+|   slice_0[0]/S -> 1 @ 1001.024ns   (?)
+|   slice_0[0]/a_n10_n45# -> 0 @ 1001.202ns   (0.178ns)
+|   F0 -> 1 @ 1001.205ns   (0.003ns)
+| F=001 B=111 A=001 
+| time = 1600.000ns
+| critical path for last transition of F2:
+|   transition of B2, which has since changed again
+|   slice_0[2]/a_n58_n45# -> 1 @ 0.128ns   (?)
+|   F2 -> 0 @ 0.130ns   (0.002ns)
+| critical path for last transition of F1:
+|   transition of slice_0[2]/a_n26_33#, which has since changed again
+|   slice_0[0]/S -> 1 @ 1001.024ns   (?)
+|   slice_0[1]/a_n38_n37# -> 0 @ 1001.149ns   (0.125ns)
+|   slice_0[1]/a_n58_n45# -> 1 @ 1001.288ns   (0.139ns)
+|   F1 -> 0 @ 1001.290ns   (0.002ns)
+| critical path for last transition of F0:
+|   transition of slice_0[2]/a_n26_33#, which has since changed again
+|   slice_0[0]/S -> 1 @ 1001.024ns   (?)
+|   slice_0[0]/a_n10_n45# -> 0 @ 1001.202ns   (0.178ns)
+|   F0 -> 1 @ 1001.205ns   (0.003ns)
+| F=000 B=000 A=010 
+| time = 1700.000ns
+| critical path for last transition of F2:
+|   transition of B2, which has since changed again
+|   slice_0[2]/a_n58_n45# -> 1 @ 0.128ns   (?)
+|   F2 -> 0 @ 0.130ns   (0.002ns)
+| critical path for last transition of F1:
+|   B1 -> 0 @ 1600.000ns , node was an input
+|   slice_0[1]/a_29_49# -> 1 @ 1600.070ns   (0.070ns)
+|   slice_0[2]/C_IN -> 0 @ 1600.376ns   (0.306ns)
+|   slice_0[2]/a_n26_33# -> 1 @ 1600.540ns   (0.164ns)
+|   slice_0[0]/S -> 0 @ 1601.361ns   (0.821ns)
+|   slice_0[1]/a_n10_n45# -> 1 @ 1601.632ns   (0.271ns)
+|   F1 -> 0 @ 1601.634ns   (0.002ns)
+| critical path for last transition of F0:
+|   A0 -> 0 @ 1600.000ns , node was an input
+|   slice_0[0]/a_n10_n45# -> 1 @ 1600.075ns   (0.075ns)
+|   F0 -> 0 @ 1600.077ns   (0.002ns)
+| F=001 B=001 A=010 
+| time = 1800.000ns
+| critical path for last transition of F2:
+|   transition of B2, which has since changed again
+|   slice_0[2]/a_n58_n45# -> 1 @ 0.128ns   (?)
+|   F2 -> 0 @ 0.130ns   (0.002ns)
+| critical path for last transition of F1:
+|   B1 -> 0 @ 1600.000ns , node was an input
+|   slice_0[1]/a_29_49# -> 1 @ 1600.070ns   (0.070ns)
+|   slice_0[2]/C_IN -> 0 @ 1600.376ns   (0.306ns)
+|   slice_0[2]/a_n26_33# -> 1 @ 1600.540ns   (0.164ns)
+|   slice_0[0]/S -> 0 @ 1601.361ns   (0.821ns)
+|   slice_0[1]/a_n10_n45# -> 1 @ 1601.632ns   (0.271ns)
+|   F1 -> 0 @ 1601.634ns   (0.002ns)
+| critical path for last transition of F0:
+|   B0 -> 1 @ 1700.000ns , node was an input
+|   slice_0[0]/a_n58_n45# -> 0 @ 1700.121ns   (0.121ns)
+|   F0 -> 1 @ 1700.124ns   (0.003ns)
+| F=010 B=010 A=010 
+| time = 1900.000ns
+| critical path for last transition of F2:
+|   transition of B2, which has since changed again
+|   slice_0[2]/a_n58_n45# -> 1 @ 0.128ns   (?)
+|   F2 -> 0 @ 0.130ns   (0.002ns)
+| critical path for last transition of F1:
+|   B1 -> 1 @ 1800.000ns , node was an input
+|   slice_0[1]/a_n58_n45# -> 0 @ 1800.121ns   (0.121ns)
+|   F1 -> 1 @ 1800.124ns   (0.003ns)
+| critical path for last transition of F0:
+|   B0 -> 0 @ 1800.000ns , node was an input
+|   slice_0[0]/a_n58_n45# -> 1 @ 1800.128ns   (0.128ns)
+|   F0 -> 0 @ 1800.130ns   (0.002ns)
+| F=010 B=011 A=010 
+| time = 2000.000ns
+| critical path for last transition of F2:
+|   transition of B2, which has since changed again
+|   slice_0[2]/a_n58_n45# -> 1 @ 0.128ns   (?)
+|   F2 -> 0 @ 0.130ns   (0.002ns)
+| critical path for last transition of F1:
+|   transition of slice_0[1]/a_n58_n45#, which has since changed again
+|   F1 -> 1 @ 1800.124ns   (?)
+| critical path for last transition of F0:
+|   B0 -> 1 @ 1900.000ns , node was an input
+|   slice_0[0]/a_29_49# -> 0 @ 1900.067ns   (0.067ns)
+|   slice_0[1]/C_IN -> 1 @ 1900.308ns   (0.241ns)
+|   slice_0[1]/a_n58_33# -> 0 @ 1900.424ns   (0.116ns)
+|   slice_0[2]/C_IN -> 1 @ 1900.664ns   (0.240ns)
+|   slice_0[2]/a_n26_33# -> 0 @ 1900.778ns   (0.114ns)
+|   slice_0[0]/S -> 1 @ 1901.381ns   (0.603ns)
+|   slice_0[0]/a_n38_n37# -> 0 @ 1901.506ns   (0.125ns)
+|   slice_0[0]/a_n58_n45# -> 1 @ 1901.645ns   (0.139ns)
+|   F0 -> 0 @ 1901.647ns   (0.002ns)
+| F=010 B=100 A=010 
+| time = 2100.000ns
+| critical path for last transition of F2:
+|   transition of B2, which has since changed again
+|   slice_0[2]/a_n58_n45# -> 1 @ 0.128ns   (?)
+|   F2 -> 0 @ 0.130ns   (0.002ns)
+| critical path for last transition of F1:
+|   transition of slice_0[1]/a_n58_n45#, which has since changed again
+|   F1 -> 1 @ 1800.124ns   (?)
+| critical path for last transition of F0:
+|   transition of slice_0[2]/a_n26_33#, which has since changed again
+|   slice_0[0]/S -> 1 @ 1901.381ns   (?)
+|   slice_0[0]/a_n38_n37# -> 0 @ 1901.506ns   (0.125ns)
+|   slice_0[0]/a_n58_n45# -> 1 @ 1901.645ns   (0.139ns)
+|   F0 -> 0 @ 1901.647ns   (0.002ns)
+| F=010 B=101 A=010 
+| time = 2200.000ns
+| critical path for last transition of F2:
+|   transition of B2, which has since changed again
+|   slice_0[2]/a_n58_n45# -> 1 @ 0.128ns   (?)
+|   F2 -> 0 @ 0.130ns   (0.002ns)
+| critical path for last transition of F1:
+|   transition of slice_0[1]/a_n58_n45#, which has since changed again
+|   F1 -> 1 @ 1800.124ns   (?)
+| critical path for last transition of F0:
+|   transition of slice_0[2]/a_n26_33#, which has since changed again
+|   slice_0[0]/S -> 1 @ 1901.381ns   (?)
+|   slice_0[0]/a_n38_n37# -> 0 @ 1901.506ns   (0.125ns)
+|   slice_0[0]/a_n58_n45# -> 1 @ 1901.645ns   (0.139ns)
+|   F0 -> 0 @ 1901.647ns   (0.002ns)
+| F=010 B=110 A=010 
+| time = 2300.000ns
+| critical path for last transition of F2:
+|   transition of B2, which has since changed again
+|   slice_0[2]/a_n58_n45# -> 1 @ 0.128ns   (?)
+|   F2 -> 0 @ 0.130ns   (0.002ns)
+| critical path for last transition of F1:
+|   transition of slice_0[1]/a_n58_n45#, which has since changed again
+|   F1 -> 1 @ 1800.124ns   (?)
+| critical path for last transition of F0:
+|   transition of slice_0[2]/a_n26_33#, which has since changed again
+|   slice_0[0]/S -> 1 @ 1901.381ns   (?)
+|   slice_0[0]/a_n38_n37# -> 0 @ 1901.506ns   (0.125ns)
+|   slice_0[0]/a_n58_n45# -> 1 @ 1901.645ns   (0.139ns)
+|   F0 -> 0 @ 1901.647ns   (0.002ns)
+| F=010 B=111 A=010 
+| time = 2400.000ns
+| critical path for last transition of F2:
+|   transition of B2, which has since changed again
+|   slice_0[2]/a_n58_n45# -> 1 @ 0.128ns   (?)
+|   F2 -> 0 @ 0.130ns   (0.002ns)
+| critical path for last transition of F1:
+|   transition of slice_0[1]/a_n58_n45#, which has since changed again
+|   F1 -> 1 @ 1800.124ns   (?)
+| critical path for last transition of F0:
+|   transition of slice_0[2]/a_n26_33#, which has since changed again
+|   slice_0[0]/S -> 1 @ 1901.381ns   (?)
+|   slice_0[0]/a_n38_n37# -> 0 @ 1901.506ns   (0.125ns)
+|   slice_0[0]/a_n58_n45# -> 1 @ 1901.645ns   (0.139ns)
+|   F0 -> 0 @ 1901.647ns   (0.002ns)
+| F=000 B=000 A=011 
+| time = 2500.000ns
+| critical path for last transition of F2:
+|   transition of B2, which has since changed again
+|   slice_0[2]/a_n58_n45# -> 1 @ 0.128ns   (?)
+|   F2 -> 0 @ 0.130ns   (0.002ns)
+| critical path for last transition of F1:
+|   B1 -> 0 @ 2400.000ns , node was an input
+|   slice_0[1]/a_n58_33# -> 1 @ 2400.070ns   (0.070ns)
+|   slice_0[2]/C_IN -> 0 @ 2400.376ns   (0.306ns)
+|   slice_0[2]/a_n26_33# -> 1 @ 2400.540ns   (0.164ns)
+|   slice_0[0]/S -> 0 @ 2401.361ns   (0.821ns)
+|   slice_0[1]/a_n10_n45# -> 1 @ 2401.632ns   (0.271ns)
+|   F1 -> 0 @ 2401.634ns   (0.002ns)
+| critical path for last transition of F0:
+|   B1 -> 0 @ 2400.000ns , node was an input
+|   slice_0[1]/a_n58_33# -> 1 @ 2400.070ns   (0.070ns)
+|   slice_0[2]/C_IN -> 0 @ 2400.376ns   (0.306ns)
+|   slice_0[2]/a_n26_33# -> 1 @ 2400.540ns   (0.164ns)
+|   slice_0[0]/S -> 0 @ 2401.361ns   (0.821ns)
+|   slice_0[0]/a_n10_n45# -> 1 @ 2401.632ns   (0.271ns)
+|   F0 -> 0 @ 2401.634ns   (0.002ns)
+| F=001 B=001 A=011 
+| time = 2600.000ns
+| critical path for last transition of F2:
+|   transition of B2, which has since changed again
+|   slice_0[2]/a_n58_n45# -> 1 @ 0.128ns   (?)
+|   F2 -> 0 @ 0.130ns   (0.002ns)
+| critical path for last transition of F1:
+|   B1 -> 0 @ 2400.000ns , node was an input
+|   slice_0[1]/a_n58_33# -> 1 @ 2400.070ns   (0.070ns)
+|   slice_0[2]/C_IN -> 0 @ 2400.376ns   (0.306ns)
+|   slice_0[2]/a_n26_33# -> 1 @ 2400.540ns   (0.164ns)
+|   slice_0[0]/S -> 0 @ 2401.361ns   (0.821ns)
+|   slice_0[1]/a_n10_n45# -> 1 @ 2401.632ns   (0.271ns)
+|   F1 -> 0 @ 2401.634ns   (0.002ns)
+| critical path for last transition of F0:
+|   B0 -> 1 @ 2500.000ns , node was an input
+|   slice_0[0]/a_n58_n45# -> 0 @ 2500.121ns   (0.121ns)
+|   F0 -> 1 @ 2500.124ns   (0.003ns)
+| F=010 B=010 A=011 
+| time = 2700.000ns
+| critical path for last transition of F2:
+|   transition of B2, which has since changed again
+|   slice_0[2]/a_n58_n45# -> 1 @ 0.128ns   (?)
+|   F2 -> 0 @ 0.130ns   (0.002ns)
+| critical path for last transition of F1:
+|   B1 -> 1 @ 2600.000ns , node was an input
+|   slice_0[1]/a_n58_n45# -> 0 @ 2600.121ns   (0.121ns)
+|   F1 -> 1 @ 2600.124ns   (0.003ns)
+| critical path for last transition of F0:
+|   B0 -> 0 @ 2600.000ns , node was an input
+|   slice_0[0]/a_n58_n45# -> 1 @ 2600.128ns   (0.128ns)
+|   F0 -> 0 @ 2600.130ns   (0.002ns)
+| F=011 B=011 A=011 
+| time = 2800.000ns
+| critical path for last transition of F2:
+|   transition of B2, which has since changed again
+|   slice_0[2]/a_n58_n45# -> 1 @ 0.128ns   (?)
+|   F2 -> 0 @ 0.130ns   (0.002ns)
+| critical path for last transition of F1:
+|   B1 -> 1 @ 2600.000ns , node was an input
+|   slice_0[1]/a_n58_n45# -> 0 @ 2600.121ns   (0.121ns)
+|   F1 -> 1 @ 2600.124ns   (0.003ns)
+| critical path for last transition of F0:
+|   B0 -> 1 @ 2700.000ns , node was an input
+|   slice_0[0]/a_n58_n45# -> 0 @ 2700.121ns   (0.121ns)
+|   F0 -> 1 @ 2700.124ns   (0.003ns)
+| F=011 B=100 A=011 
+| time = 2900.000ns
+| critical path for last transition of F2:
+|   B2 -> 1 @ 2800.000ns , node was an input
+|   slice_0[2]/a_29_49# -> 0 @ 2800.067ns   (0.067ns)
+|   slice_0[0]/S -> 1 @ 2800.671ns   (0.604ns)
+|   slice_0[2]/a_n38_n37# -> 0 @ 2800.796ns   (0.125ns)
+|   slice_0[2]/a_n58_n45# -> 1 @ 2800.935ns   (0.139ns)
+|   F2 -> 0 @ 2800.937ns   (0.002ns)
+| critical path for last transition of F1:
+|   B2 -> 1 @ 2800.000ns , node was an input
+|   slice_0[2]/a_29_49# -> 0 @ 2800.067ns   (0.067ns)
+|   slice_0[0]/S -> 1 @ 2800.671ns   (0.604ns)
+|   slice_0[1]/a_n10_n45# -> 0 @ 2800.849ns   (0.178ns)
+|   F1 -> 1 @ 2800.852ns   (0.003ns)
+| critical path for last transition of F0:
+|   B2 -> 1 @ 2800.000ns , node was an input
+|   slice_0[2]/a_29_49# -> 0 @ 2800.067ns   (0.067ns)
+|   slice_0[0]/S -> 1 @ 2800.671ns   (0.604ns)
+|   slice_0[0]/a_n10_n45# -> 0 @ 2800.849ns   (0.178ns)
+|   F0 -> 1 @ 2800.852ns   (0.003ns)
+| F=011 B=101 A=011 
 | time = 3000.000ns
 | critical path for last transition of F2:
-|   B2 -> 0 @ 0.000ns , node was an input
-|   slice_0[2]/a_n58_n45# -> 1 @ 0.128ns   (0.128ns)
-|   F2 -> 0 @ 0.130ns   (0.002ns)
+|   B2 -> 1 @ 2800.000ns , node was an input
+|   slice_0[2]/a_29_49# -> 0 @ 2800.067ns   (0.067ns)
+|   slice_0[0]/S -> 1 @ 2800.671ns   (0.604ns)
+|   slice_0[2]/a_n38_n37# -> 0 @ 2800.796ns   (0.125ns)
+|   slice_0[2]/a_n58_n45# -> 1 @ 2800.935ns   (0.139ns)
+|   F2 -> 0 @ 2800.937ns   (0.002ns)
+| critical path for last transition of F1:
+|   B2 -> 1 @ 2800.000ns , node was an input
+|   slice_0[2]/a_29_49# -> 0 @ 2800.067ns   (0.067ns)
+|   slice_0[0]/S -> 1 @ 2800.671ns   (0.604ns)
+|   slice_0[1]/a_n10_n45# -> 0 @ 2800.849ns   (0.178ns)
+|   F1 -> 1 @ 2800.852ns   (0.003ns)
+| critical path for last transition of F0:
+|   B2 -> 1 @ 2800.000ns , node was an input
+|   slice_0[2]/a_29_49# -> 0 @ 2800.067ns   (0.067ns)
+|   slice_0[0]/S -> 1 @ 2800.671ns   (0.604ns)
+|   slice_0[0]/a_n10_n45# -> 0 @ 2800.849ns   (0.178ns)
+|   F0 -> 1 @ 2800.852ns   (0.003ns)
+| F=011 B=110 A=011 
+| time = 3100.000ns
+| critical path for last transition of F2:
+|   B2 -> 1 @ 2800.000ns , node was an input
+|   slice_0[2]/a_29_49# -> 0 @ 2800.067ns   (0.067ns)
+|   slice_0[0]/S -> 1 @ 2800.671ns   (0.604ns)
+|   slice_0[2]/a_n38_n37# -> 0 @ 2800.796ns   (0.125ns)
+|   slice_0[2]/a_n58_n45# -> 1 @ 2800.935ns   (0.139ns)
+|   F2 -> 0 @ 2800.937ns   (0.002ns)
+| critical path for last transition of F1:
+|   B2 -> 1 @ 2800.000ns , node was an input
+|   slice_0[2]/a_29_49# -> 0 @ 2800.067ns   (0.067ns)
+|   slice_0[0]/S -> 1 @ 2800.671ns   (0.604ns)
+|   slice_0[1]/a_n10_n45# -> 0 @ 2800.849ns   (0.178ns)
+|   F1 -> 1 @ 2800.852ns   (0.003ns)
+| critical path for last transition of F0:
+|   B2 -> 1 @ 2800.000ns , node was an input
+|   slice_0[2]/a_29_49# -> 0 @ 2800.067ns   (0.067ns)
+|   slice_0[0]/S -> 1 @ 2800.671ns   (0.604ns)
+|   slice_0[0]/a_n10_n45# -> 0 @ 2800.849ns   (0.178ns)
+|   F0 -> 1 @ 2800.852ns   (0.003ns)
+| F=011 B=111 A=011 
+| time = 3200.000ns
+| critical path for last transition of F2:
+|   B2 -> 1 @ 2800.000ns , node was an input
+|   slice_0[2]/a_29_49# -> 0 @ 2800.067ns   (0.067ns)
+|   slice_0[0]/S -> 1 @ 2800.671ns   (0.604ns)
+|   slice_0[2]/a_n38_n37# -> 0 @ 2800.796ns   (0.125ns)
+|   slice_0[2]/a_n58_n45# -> 1 @ 2800.935ns   (0.139ns)
+|   F2 -> 0 @ 2800.937ns   (0.002ns)
+| critical path for last transition of F1:
+|   B2 -> 1 @ 2800.000ns , node was an input
+|   slice_0[2]/a_29_49# -> 0 @ 2800.067ns   (0.067ns)
+|   slice_0[0]/S -> 1 @ 2800.671ns   (0.604ns)
+|   slice_0[1]/a_n10_n45# -> 0 @ 2800.849ns   (0.178ns)
+|   F1 -> 1 @ 2800.852ns   (0.003ns)
+| critical path for last transition of F0:
+|   B2 -> 1 @ 2800.000ns , node was an input
+|   slice_0[2]/a_29_49# -> 0 @ 2800.067ns   (0.067ns)
+|   slice_0[0]/S -> 1 @ 2800.671ns   (0.604ns)
+|   slice_0[0]/a_n10_n45# -> 0 @ 2800.849ns   (0.178ns)
+|   F0 -> 1 @ 2800.852ns   (0.003ns)
+| F=000 B=000 A=100 
+| time = 3300.000ns
+| critical path for last transition of F2:
+|   B2 -> 0 @ 3200.000ns , node was an input
+|   slice_0[2]/a_29_49# -> 1 @ 3200.070ns   (0.070ns)
+|   slice_0[0]/S -> 0 @ 3200.891ns   (0.821ns)
+|   slice_0[2]/a_n10_n45# -> 1 @ 3201.162ns   (0.271ns)
+|   F2 -> 0 @ 3201.164ns   (0.002ns)
+| critical path for last transition of F1:
+|   A1 -> 0 @ 3200.000ns , node was an input
+|   slice_0[1]/a_n10_n45# -> 1 @ 3200.075ns   (0.075ns)
+|   F1 -> 0 @ 3200.077ns   (0.002ns)
+| critical path for last transition of F0:
+|   A0 -> 0 @ 3200.000ns , node was an input
+|   slice_0[0]/a_n10_n45# -> 1 @ 3200.075ns   (0.075ns)
+|   F0 -> 0 @ 3200.077ns   (0.002ns)
+| F=001 B=001 A=100 
+| time = 3400.000ns
+| critical path for last transition of F2:
+|   B2 -> 0 @ 3200.000ns , node was an input
+|   slice_0[2]/a_29_49# -> 1 @ 3200.070ns   (0.070ns)
+|   slice_0[0]/S -> 0 @ 3200.891ns   (0.821ns)
+|   slice_0[2]/a_n10_n45# -> 1 @ 3201.162ns   (0.271ns)
+|   F2 -> 0 @ 3201.164ns   (0.002ns)
+| critical path for last transition of F1:
+|   A1 -> 0 @ 3200.000ns , node was an input
+|   slice_0[1]/a_n10_n45# -> 1 @ 3200.075ns   (0.075ns)
+|   F1 -> 0 @ 3200.077ns   (0.002ns)
+| critical path for last transition of F0:
+|   B0 -> 1 @ 3300.000ns , node was an input
+|   slice_0[0]/a_n58_n45# -> 0 @ 3300.121ns   (0.121ns)
+|   F0 -> 1 @ 3300.124ns   (0.003ns)
+| F=010 B=010 A=100 
+| time = 3500.000ns
+| critical path for last transition of F2:
+|   B2 -> 0 @ 3200.000ns , node was an input
+|   slice_0[2]/a_29_49# -> 1 @ 3200.070ns   (0.070ns)
+|   slice_0[0]/S -> 0 @ 3200.891ns   (0.821ns)
+|   slice_0[2]/a_n10_n45# -> 1 @ 3201.162ns   (0.271ns)
+|   F2 -> 0 @ 3201.164ns   (0.002ns)
+| critical path for last transition of F1:
+|   B1 -> 1 @ 3400.000ns , node was an input
+|   slice_0[1]/a_n58_n45# -> 0 @ 3400.121ns   (0.121ns)
+|   F1 -> 1 @ 3400.124ns   (0.003ns)
+| critical path for last transition of F0:
+|   B0 -> 0 @ 3400.000ns , node was an input
+|   slice_0[0]/a_n58_n45# -> 1 @ 3400.128ns   (0.128ns)
+|   F0 -> 0 @ 3400.130ns   (0.002ns)
+| F=011 B=011 A=100 
+| time = 3600.000ns
+| critical path for last transition of F2:
+|   B2 -> 0 @ 3200.000ns , node was an input
+|   slice_0[2]/a_29_49# -> 1 @ 3200.070ns   (0.070ns)
+|   slice_0[0]/S -> 0 @ 3200.891ns   (0.821ns)
+|   slice_0[2]/a_n10_n45# -> 1 @ 3201.162ns   (0.271ns)
+|   F2 -> 0 @ 3201.164ns   (0.002ns)
+| critical path for last transition of F1:
+|   B1 -> 1 @ 3400.000ns , node was an input
+|   slice_0[1]/a_n58_n45# -> 0 @ 3400.121ns   (0.121ns)
+|   F1 -> 1 @ 3400.124ns   (0.003ns)
+| critical path for last transition of F0:
+|   B0 -> 1 @ 3500.000ns , node was an input
+|   slice_0[0]/a_n58_n45# -> 0 @ 3500.121ns   (0.121ns)
+|   F0 -> 1 @ 3500.124ns   (0.003ns)
+| F=100 B=100 A=100 
+| time = 3700.000ns
+| critical path for last transition of F2:
+|   B0 -> 0 @ 3600.000ns , node was an input
+|   slice_0[0]/a_29_49# -> 1 @ 3600.070ns   (0.070ns)
+|   slice_0[1]/C_IN -> 0 @ 3600.378ns   (0.308ns)
+|   slice_0[1]/a_n26_33# -> 1 @ 3600.543ns   (0.165ns)
+|   slice_0[2]/C_IN -> 0 @ 3600.849ns   (0.306ns)
+|   slice_0[2]/a_n58_33# -> 1 @ 3601.016ns   (0.167ns)
+|   slice_0[0]/S -> 0 @ 3601.837ns   (0.821ns)
+|   slice_0[2]/a_n38_n37# -> 1 @ 3602.039ns   (0.202ns)
+|   slice_0[2]/a_n58_n45# -> 0 @ 3602.173ns   (0.134ns)
+|   F2 -> 1 @ 3602.176ns   (0.003ns)
+| critical path for last transition of F1:
+|   B1 -> 0 @ 3600.000ns , node was an input
+|   slice_0[1]/a_n58_n45# -> 1 @ 3600.128ns   (0.128ns)
+|   F1 -> 0 @ 3600.130ns   (0.002ns)
+| critical path for last transition of F0:
+|   B0 -> 0 @ 3600.000ns , node was an input
+|   slice_0[0]/a_n58_n45# -> 1 @ 3600.128ns   (0.128ns)
+|   F0 -> 0 @ 3600.130ns   (0.002ns)
+| F=100 B=101 A=100 
+| time = 3800.000ns
+| critical path for last transition of F2:
+|   transition of slice_0[2]/a_n58_n45#, which has since changed again
+|   F2 -> 1 @ 3602.176ns   (?)
+| critical path for last transition of F1:
+|   B1 -> 0 @ 3600.000ns , node was an input
+|   slice_0[1]/a_n58_n45# -> 1 @ 3600.128ns   (0.128ns)
+|   F1 -> 0 @ 3600.130ns   (0.002ns)
+| critical path for last transition of F0:
+|   B0 -> 1 @ 3700.000ns , node was an input
+|   slice_0[0]/a_29_49# -> 0 @ 3700.067ns   (0.067ns)
+|   slice_0[1]/C_IN -> 1 @ 3700.308ns   (0.241ns)
+|   slice_0[1]/a_n26_33# -> 0 @ 3700.422ns   (0.114ns)
+|   slice_0[2]/C_IN -> 1 @ 3700.661ns   (0.239ns)
+|   slice_0[2]/a_n58_33# -> 0 @ 3700.777ns   (0.116ns)
+|   slice_0[0]/S -> 1 @ 3701.381ns   (0.604ns)
+|   slice_0[0]/a_n38_n37# -> 0 @ 3701.506ns   (0.125ns)
+|   slice_0[0]/a_n58_n45# -> 1 @ 3701.645ns   (0.139ns)
+|   F0 -> 0 @ 3701.647ns   (0.002ns)
+| F=100 B=110 A=100 
+| time = 3900.000ns
+| critical path for last transition of F2:
+|   transition of slice_0[2]/a_n58_n45#, which has since changed again
+|   F2 -> 1 @ 3602.176ns   (?)
 | critical path for last transition of F1:
 |   transition of B1, which has since changed again
-|   slice_0[1]/a_n58_n45# -> 1 @ 0.128ns   (?)
-|   F1 -> 0 @ 0.130ns   (0.002ns)
+|   slice_0[1]/a_n58_n45# -> 1 @ 3600.128ns   (?)
+|   F1 -> 0 @ 3600.130ns   (0.002ns)
 | critical path for last transition of F0:
 |   transition of slice_0[1]/a_n26_33#, which has since changed again
-|   slice_0[2]/C_IN -> 1 @ 1000.661ns   (?)
-|   slice_0[2]/a_n26_33# -> 0 @ 1000.775ns   (0.114ns)
-|   slice_0[0]/S -> 1 @ 1001.378ns   (0.603ns)
-|   slice_0[0]/a_n38_n37# -> 0 @ 1001.503ns   (0.125ns)
-|   slice_0[0]/a_n58_n45# -> 1 @ 1001.642ns   (0.139ns)
-|   F0 -> 0 @ 1001.644ns   (0.002ns)
-| F=000 B=011 A=000 
+|   slice_0[2]/C_IN -> 1 @ 3700.661ns   (?)
+|   slice_0[2]/a_n58_33# -> 0 @ 3700.777ns   (0.116ns)
+|   slice_0[0]/S -> 1 @ 3701.381ns   (0.604ns)
+|   slice_0[0]/a_n38_n37# -> 0 @ 3701.506ns   (0.125ns)
+|   slice_0[0]/a_n58_n45# -> 1 @ 3701.645ns   (0.139ns)
+|   F0 -> 0 @ 3701.647ns   (0.002ns)
+| F=100 B=111 A=100 
 | time = 4000.000ns
 | critical path for last transition of F2:
-|   B2 -> 0 @ 0.000ns , node was an input
-|   slice_0[2]/a_n58_n45# -> 1 @ 0.128ns   (0.128ns)
-|   F2 -> 0 @ 0.130ns   (0.002ns)
+|   transition of slice_0[2]/a_n58_n45#, which has since changed again
+|   F2 -> 1 @ 3602.176ns   (?)
 | critical path for last transition of F1:
 |   transition of B1, which has since changed again
-|   slice_0[1]/a_n58_n45# -> 1 @ 0.128ns   (?)
-|   F1 -> 0 @ 0.130ns   (0.002ns)
+|   slice_0[1]/a_n58_n45# -> 1 @ 3600.128ns   (?)
+|   F1 -> 0 @ 3600.130ns   (0.002ns)
 | critical path for last transition of F0:
 |   transition of slice_0[1]/a_n26_33#, which has since changed again
-|   slice_0[2]/C_IN -> 1 @ 1000.661ns   (?)
-|   slice_0[2]/a_n26_33# -> 0 @ 1000.775ns   (0.114ns)
-|   slice_0[0]/S -> 1 @ 1001.378ns   (0.603ns)
-|   slice_0[0]/a_n38_n37# -> 0 @ 1001.503ns   (0.125ns)
-|   slice_0[0]/a_n58_n45# -> 1 @ 1001.642ns   (0.139ns)
-|   F0 -> 0 @ 1001.644ns   (0.002ns)
-| F=000 B=100 A=000 
+|   slice_0[2]/C_IN -> 1 @ 3700.661ns   (?)
+|   slice_0[2]/a_n58_33# -> 0 @ 3700.777ns   (0.116ns)
+|   slice_0[0]/S -> 1 @ 3701.381ns   (0.604ns)
+|   slice_0[0]/a_n38_n37# -> 0 @ 3701.506ns   (0.125ns)
+|   slice_0[0]/a_n58_n45# -> 1 @ 3701.645ns   (0.139ns)
+|   F0 -> 0 @ 3701.647ns   (0.002ns)
+| F=000 B=000 A=101 
+| time = 4100.000ns
+| critical path for last transition of F2:
+|   B2 -> 0 @ 4000.000ns , node was an input
+|   slice_0[2]/a_n58_33# -> 1 @ 4000.070ns   (0.070ns)
+|   slice_0[0]/S -> 0 @ 4000.891ns   (0.821ns)
+|   slice_0[2]/a_n10_n45# -> 1 @ 4001.162ns   (0.271ns)
+|   F2 -> 0 @ 4001.164ns   (0.002ns)
+| critical path for last transition of F1:
+|   transition of B1, which has since changed again
+|   slice_0[1]/a_n58_n45# -> 1 @ 3600.128ns   (?)
+|   F1 -> 0 @ 3600.130ns   (0.002ns)
+| critical path for last transition of F0:
+|   B2 -> 0 @ 4000.000ns , node was an input
+|   slice_0[2]/a_n58_33# -> 1 @ 4000.070ns   (0.070ns)
+|   slice_0[0]/S -> 0 @ 4000.891ns   (0.821ns)
+|   slice_0[0]/a_n10_n45# -> 1 @ 4001.162ns   (0.271ns)
+|   F0 -> 0 @ 4001.164ns   (0.002ns)
+| F=001 B=001 A=101 
+| time = 4200.000ns
+| critical path for last transition of F2:
+|   B2 -> 0 @ 4000.000ns , node was an input
+|   slice_0[2]/a_n58_33# -> 1 @ 4000.070ns   (0.070ns)
+|   slice_0[0]/S -> 0 @ 4000.891ns   (0.821ns)
+|   slice_0[2]/a_n10_n45# -> 1 @ 4001.162ns   (0.271ns)
+|   F2 -> 0 @ 4001.164ns   (0.002ns)
+| critical path for last transition of F1:
+|   transition of B1, which has since changed again
+|   slice_0[1]/a_n58_n45# -> 1 @ 3600.128ns   (?)
+|   F1 -> 0 @ 3600.130ns   (0.002ns)
+| critical path for last transition of F0:
+|   B0 -> 1 @ 4100.000ns , node was an input
+|   slice_0[0]/a_n58_n45# -> 0 @ 4100.121ns   (0.121ns)
+|   F0 -> 1 @ 4100.124ns   (0.003ns)
+| F=010 B=010 A=101 
+| time = 4300.000ns
+| critical path for last transition of F2:
+|   B2 -> 0 @ 4000.000ns , node was an input
+|   slice_0[2]/a_n58_33# -> 1 @ 4000.070ns   (0.070ns)
+|   slice_0[0]/S -> 0 @ 4000.891ns   (0.821ns)
+|   slice_0[2]/a_n10_n45# -> 1 @ 4001.162ns   (0.271ns)
+|   F2 -> 0 @ 4001.164ns   (0.002ns)
+| critical path for last transition of F1:
+|   B1 -> 1 @ 4200.000ns , node was an input
+|   slice_0[1]/a_n58_n45# -> 0 @ 4200.121ns   (0.121ns)
+|   F1 -> 1 @ 4200.124ns   (0.003ns)
+| critical path for last transition of F0:
+|   B0 -> 0 @ 4200.000ns , node was an input
+|   slice_0[0]/a_n58_n45# -> 1 @ 4200.128ns   (0.128ns)
+|   F0 -> 0 @ 4200.130ns   (0.002ns)
+| F=011 B=011 A=101 
+| time = 4400.000ns
+| critical path for last transition of F2:
+|   B2 -> 0 @ 4000.000ns , node was an input
+|   slice_0[2]/a_n58_33# -> 1 @ 4000.070ns   (0.070ns)
+|   slice_0[0]/S -> 0 @ 4000.891ns   (0.821ns)
+|   slice_0[2]/a_n10_n45# -> 1 @ 4001.162ns   (0.271ns)
+|   F2 -> 0 @ 4001.164ns   (0.002ns)
+| critical path for last transition of F1:
+|   B1 -> 1 @ 4200.000ns , node was an input
+|   slice_0[1]/a_n58_n45# -> 0 @ 4200.121ns   (0.121ns)
+|   F1 -> 1 @ 4200.124ns   (0.003ns)
+| critical path for last transition of F0:
+|   B0 -> 1 @ 4300.000ns , node was an input
+|   slice_0[0]/a_n58_n45# -> 0 @ 4300.121ns   (0.121ns)
+|   F0 -> 1 @ 4300.124ns   (0.003ns)
+| F=100 B=100 A=101 
+| time = 4500.000ns
+| critical path for last transition of F2:
+|   B2 -> 1 @ 4400.000ns , node was an input
+|   slice_0[2]/a_n58_n45# -> 0 @ 4400.121ns   (0.121ns)
+|   F2 -> 1 @ 4400.124ns   (0.003ns)
+| critical path for last transition of F1:
+|   B1 -> 0 @ 4400.000ns , node was an input
+|   slice_0[1]/a_n58_n45# -> 1 @ 4400.128ns   (0.128ns)
+|   F1 -> 0 @ 4400.130ns   (0.002ns)
+| critical path for last transition of F0:
+|   B0 -> 0 @ 4400.000ns , node was an input
+|   slice_0[0]/a_n58_n45# -> 1 @ 4400.128ns   (0.128ns)
+|   F0 -> 0 @ 4400.130ns   (0.002ns)
+| F=101 B=101 A=101 
+| time = 4600.000ns
+| critical path for last transition of F2:
+|   B2 -> 1 @ 4400.000ns , node was an input
+|   slice_0[2]/a_n58_n45# -> 0 @ 4400.121ns   (0.121ns)
+|   F2 -> 1 @ 4400.124ns   (0.003ns)
+| critical path for last transition of F1:
+|   B1 -> 0 @ 4400.000ns , node was an input
+|   slice_0[1]/a_n58_n45# -> 1 @ 4400.128ns   (0.128ns)
+|   F1 -> 0 @ 4400.130ns   (0.002ns)
+| critical path for last transition of F0:
+|   B0 -> 1 @ 4500.000ns , node was an input
+|   slice_0[0]/a_n58_n45# -> 0 @ 4500.121ns   (0.121ns)
+|   F0 -> 1 @ 4500.124ns   (0.003ns)
+| F=101 B=110 A=101 
+| time = 4700.000ns
+| critical path for last transition of F2:
+|   transition of slice_0[2]/a_n58_n45#, which has since changed again
+|   F2 -> 1 @ 4400.124ns   (?)
+| critical path for last transition of F1:
+|   B1 -> 1 @ 4600.000ns , node was an input
+|   slice_0[1]/a_29_49# -> 0 @ 4600.067ns   (0.067ns)
+|   slice_0[2]/C_IN -> 1 @ 4600.307ns   (0.240ns)
+|   slice_0[2]/a_n58_33# -> 0 @ 4600.423ns   (0.116ns)
+|   slice_0[0]/S -> 1 @ 4601.027ns   (0.604ns)
+|   slice_0[1]/a_n38_n37# -> 0 @ 4601.152ns   (0.125ns)
+|   slice_0[1]/a_n58_n45# -> 1 @ 4601.291ns   (0.139ns)
+|   F1 -> 0 @ 4601.293ns   (0.002ns)
+| critical path for last transition of F0:
+|   B1 -> 1 @ 4600.000ns , node was an input
+|   slice_0[1]/a_29_49# -> 0 @ 4600.067ns   (0.067ns)
+|   slice_0[2]/C_IN -> 1 @ 4600.307ns   (0.240ns)
+|   slice_0[2]/a_n58_33# -> 0 @ 4600.423ns   (0.116ns)
+|   slice_0[0]/S -> 1 @ 4601.027ns   (0.604ns)
+|   slice_0[0]/a_n10_n45# -> 0 @ 4601.205ns   (0.178ns)
+|   F0 -> 1 @ 4601.208ns   (0.003ns)
+| F=101 B=111 A=101 
+| time = 4800.000ns
+| critical path for last transition of F2:
+|   transition of slice_0[2]/a_n58_n45#, which has since changed again
+|   F2 -> 1 @ 4400.124ns   (?)
+| critical path for last transition of F1:
+|   B1 -> 1 @ 4600.000ns , node was an input
+|   slice_0[1]/a_29_49# -> 0 @ 4600.067ns   (0.067ns)
+|   slice_0[2]/C_IN -> 1 @ 4600.307ns   (0.240ns)
+|   slice_0[2]/a_n58_33# -> 0 @ 4600.423ns   (0.116ns)
+|   slice_0[0]/S -> 1 @ 4601.027ns   (0.604ns)
+|   slice_0[1]/a_n38_n37# -> 0 @ 4601.152ns   (0.125ns)
+|   slice_0[1]/a_n58_n45# -> 1 @ 4601.291ns   (0.139ns)
+|   F1 -> 0 @ 4601.293ns   (0.002ns)
+| critical path for last transition of F0:
+|   B1 -> 1 @ 4600.000ns , node was an input
+|   slice_0[1]/a_29_49# -> 0 @ 4600.067ns   (0.067ns)
+|   slice_0[2]/C_IN -> 1 @ 4600.307ns   (0.240ns)
+|   slice_0[2]/a_n58_33# -> 0 @ 4600.423ns   (0.116ns)
+|   slice_0[0]/S -> 1 @ 4601.027ns   (0.604ns)
+|   slice_0[0]/a_n10_n45# -> 0 @ 4601.205ns   (0.178ns)
+|   F0 -> 1 @ 4601.208ns   (0.003ns)
+| F=000 B=000 A=110 
+| time = 4900.000ns
+| critical path for last transition of F2:
+|   B2 -> 0 @ 4800.000ns , node was an input
+|   slice_0[2]/a_n58_33# -> 1 @ 4800.070ns   (0.070ns)
+|   slice_0[0]/S -> 0 @ 4800.891ns   (0.821ns)
+|   slice_0[2]/a_n10_n45# -> 1 @ 4801.162ns   (0.271ns)
+|   F2 -> 0 @ 4801.164ns   (0.002ns)
+| critical path for last transition of F1:
+|   B2 -> 0 @ 4800.000ns , node was an input
+|   slice_0[2]/a_n58_33# -> 1 @ 4800.070ns   (0.070ns)
+|   slice_0[0]/S -> 0 @ 4800.891ns   (0.821ns)
+|   slice_0[1]/a_n10_n45# -> 1 @ 4801.162ns   (0.271ns)
+|   F1 -> 0 @ 4801.164ns   (0.002ns)
+| critical path for last transition of F0:
+|   A0 -> 0 @ 4800.000ns , node was an input
+|   slice_0[0]/a_n10_n45# -> 1 @ 4800.075ns   (0.075ns)
+|   F0 -> 0 @ 4800.077ns   (0.002ns)
+| F=001 B=001 A=110 
 | time = 5000.000ns
 | critical path for last transition of F2:
-|   transition of B2, which has since changed again
-|   slice_0[2]/a_n58_n45# -> 1 @ 0.128ns   (?)
-|   F2 -> 0 @ 0.130ns   (0.002ns)
+|   B2 -> 0 @ 4800.000ns , node was an input
+|   slice_0[2]/a_n58_33# -> 1 @ 4800.070ns   (0.070ns)
+|   slice_0[0]/S -> 0 @ 4800.891ns   (0.821ns)
+|   slice_0[2]/a_n10_n45# -> 1 @ 4801.162ns   (0.271ns)
+|   F2 -> 0 @ 4801.164ns   (0.002ns)
 | critical path for last transition of F1:
-|   transition of B1, which has since changed again
-|   slice_0[1]/a_n58_n45# -> 1 @ 0.128ns   (?)
-|   F1 -> 0 @ 0.130ns   (0.002ns)
+|   B2 -> 0 @ 4800.000ns , node was an input
+|   slice_0[2]/a_n58_33# -> 1 @ 4800.070ns   (0.070ns)
+|   slice_0[0]/S -> 0 @ 4800.891ns   (0.821ns)
+|   slice_0[1]/a_n10_n45# -> 1 @ 4801.162ns   (0.271ns)
+|   F1 -> 0 @ 4801.164ns   (0.002ns)
 | critical path for last transition of F0:
-|   transition of slice_0[2]/a_n26_33#, which has since changed again
-|   slice_0[0]/S -> 1 @ 1001.378ns   (?)
-|   slice_0[0]/a_n38_n37# -> 0 @ 1001.503ns   (0.125ns)
-|   slice_0[0]/a_n58_n45# -> 1 @ 1001.642ns   (0.139ns)
-|   F0 -> 0 @ 1001.644ns   (0.002ns)
-| F=000 B=101 A=000 
+|   B0 -> 1 @ 4900.000ns , node was an input
+|   slice_0[0]/a_n58_n45# -> 0 @ 4900.121ns   (0.121ns)
+|   F0 -> 1 @ 4900.124ns   (0.003ns)
+| F=010 B=010 A=110 
+| time = 5100.000ns
+| critical path for last transition of F2:
+|   B2 -> 0 @ 4800.000ns , node was an input
+|   slice_0[2]/a_n58_33# -> 1 @ 4800.070ns   (0.070ns)
+|   slice_0[0]/S -> 0 @ 4800.891ns   (0.821ns)
+|   slice_0[2]/a_n10_n45# -> 1 @ 4801.162ns   (0.271ns)
+|   F2 -> 0 @ 4801.164ns   (0.002ns)
+| critical path for last transition of F1:
+|   B1 -> 1 @ 5000.000ns , node was an input
+|   slice_0[1]/a_n58_n45# -> 0 @ 5000.121ns   (0.121ns)
+|   F1 -> 1 @ 5000.124ns   (0.003ns)
+| critical path for last transition of F0:
+|   B0 -> 0 @ 5000.000ns , node was an input
+|   slice_0[0]/a_n58_n45# -> 1 @ 5000.128ns   (0.128ns)
+|   F0 -> 0 @ 5000.130ns   (0.002ns)
+| F=011 B=011 A=110 
+| time = 5200.000ns
+| critical path for last transition of F2:
+|   B2 -> 0 @ 4800.000ns , node was an input
+|   slice_0[2]/a_n58_33# -> 1 @ 4800.070ns   (0.070ns)
+|   slice_0[0]/S -> 0 @ 4800.891ns   (0.821ns)
+|   slice_0[2]/a_n10_n45# -> 1 @ 4801.162ns   (0.271ns)
+|   F2 -> 0 @ 4801.164ns   (0.002ns)
+| critical path for last transition of F1:
+|   B1 -> 1 @ 5000.000ns , node was an input
+|   slice_0[1]/a_n58_n45# -> 0 @ 5000.121ns   (0.121ns)
+|   F1 -> 1 @ 5000.124ns   (0.003ns)
+| critical path for last transition of F0:
+|   B0 -> 1 @ 5100.000ns , node was an input
+|   slice_0[0]/a_n58_n45# -> 0 @ 5100.121ns   (0.121ns)
+|   F0 -> 1 @ 5100.124ns   (0.003ns)
+| F=100 B=100 A=110 
+| time = 5300.000ns
+| critical path for last transition of F2:
+|   B2 -> 1 @ 5200.000ns , node was an input
+|   slice_0[2]/a_n58_n45# -> 0 @ 5200.121ns   (0.121ns)
+|   F2 -> 1 @ 5200.124ns   (0.003ns)
+| critical path for last transition of F1:
+|   B1 -> 0 @ 5200.000ns , node was an input
+|   slice_0[1]/a_n58_n45# -> 1 @ 5200.128ns   (0.128ns)
+|   F1 -> 0 @ 5200.130ns   (0.002ns)
+| critical path for last transition of F0:
+|   B0 -> 0 @ 5200.000ns , node was an input
+|   slice_0[0]/a_n58_n45# -> 1 @ 5200.128ns   (0.128ns)
+|   F0 -> 0 @ 5200.130ns   (0.002ns)
+| F=101 B=101 A=110 
+| time = 5400.000ns
+| critical path for last transition of F2:
+|   B2 -> 1 @ 5200.000ns , node was an input
+|   slice_0[2]/a_n58_n45# -> 0 @ 5200.121ns   (0.121ns)
+|   F2 -> 1 @ 5200.124ns   (0.003ns)
+| critical path for last transition of F1:
+|   B1 -> 0 @ 5200.000ns , node was an input
+|   slice_0[1]/a_n58_n45# -> 1 @ 5200.128ns   (0.128ns)
+|   F1 -> 0 @ 5200.130ns   (0.002ns)
+| critical path for last transition of F0:
+|   B0 -> 1 @ 5300.000ns , node was an input
+|   slice_0[0]/a_n58_n45# -> 0 @ 5300.121ns   (0.121ns)
+|   F0 -> 1 @ 5300.124ns   (0.003ns)
+| F=110 B=110 A=110 
+| time = 5500.000ns
+| critical path for last transition of F2:
+|   B2 -> 1 @ 5200.000ns , node was an input
+|   slice_0[2]/a_n58_n45# -> 0 @ 5200.121ns   (0.121ns)
+|   F2 -> 1 @ 5200.124ns   (0.003ns)
+| critical path for last transition of F1:
+|   B1 -> 1 @ 5400.000ns , node was an input
+|   slice_0[1]/a_n58_n45# -> 0 @ 5400.121ns   (0.121ns)
+|   F1 -> 1 @ 5400.124ns   (0.003ns)
+| critical path for last transition of F0:
+|   B0 -> 0 @ 5400.000ns , node was an input
+|   slice_0[0]/a_n58_n45# -> 1 @ 5400.128ns   (0.128ns)
+|   F0 -> 0 @ 5400.130ns   (0.002ns)
+| F=110 B=111 A=110 
+| time = 5600.000ns
+| critical path for last transition of F2:
+|   transition of slice_0[2]/a_n58_n45#, which has since changed again
+|   F2 -> 1 @ 5200.124ns   (?)
+| critical path for last transition of F1:
+|   transition of slice_0[1]/a_n58_n45#, which has since changed again
+|   F1 -> 1 @ 5400.124ns   (?)
+| critical path for last transition of F0:
+|   B0 -> 1 @ 5500.000ns , node was an input
+|   slice_0[0]/a_29_49# -> 0 @ 5500.067ns   (0.067ns)
+|   slice_0[1]/C_IN -> 1 @ 5500.308ns   (0.241ns)
+|   slice_0[1]/a_n58_33# -> 0 @ 5500.424ns   (0.116ns)
+|   slice_0[2]/C_IN -> 1 @ 5500.664ns   (0.240ns)
+|   slice_0[2]/a_n58_33# -> 0 @ 5500.780ns   (0.116ns)
+|   slice_0[0]/S -> 1 @ 5501.384ns   (0.604ns)
+|   slice_0[0]/a_n38_n37# -> 0 @ 5501.509ns   (0.125ns)
+|   slice_0[0]/a_n58_n45# -> 1 @ 5501.648ns   (0.139ns)
+|   F0 -> 0 @ 5501.650ns   (0.002ns)
+| F=000 B=000 A=111 
+| time = 5700.000ns
+| critical path for last transition of F2:
+|   B2 -> 0 @ 5600.000ns , node was an input
+|   slice_0[2]/a_n58_33# -> 1 @ 5600.070ns   (0.070ns)
+|   slice_0[0]/S -> 0 @ 5600.891ns   (0.821ns)
+|   slice_0[2]/a_n10_n45# -> 1 @ 5601.162ns   (0.271ns)
+|   F2 -> 0 @ 5601.164ns   (0.002ns)
+| critical path for last transition of F1:
+|   B2 -> 0 @ 5600.000ns , node was an input
+|   slice_0[2]/a_n58_33# -> 1 @ 5600.070ns   (0.070ns)
+|   slice_0[0]/S -> 0 @ 5600.891ns   (0.821ns)
+|   slice_0[1]/a_n10_n45# -> 1 @ 5601.162ns   (0.271ns)
+|   F1 -> 0 @ 5601.164ns   (0.002ns)
+| critical path for last transition of F0:
+|   B2 -> 0 @ 5600.000ns , node was an input
+|   slice_0[2]/a_n58_33# -> 1 @ 5600.070ns   (0.070ns)
+|   slice_0[0]/S -> 0 @ 5600.891ns   (0.821ns)
+|   slice_0[0]/a_n10_n45# -> 1 @ 5601.162ns   (0.271ns)
+|   F0 -> 0 @ 5601.164ns   (0.002ns)
+| F=001 B=001 A=111 
+| time = 5800.000ns
+| critical path for last transition of F2:
+|   B2 -> 0 @ 5600.000ns , node was an input
+|   slice_0[2]/a_n58_33# -> 1 @ 5600.070ns   (0.070ns)
+|   slice_0[0]/S -> 0 @ 5600.891ns   (0.821ns)
+|   slice_0[2]/a_n10_n45# -> 1 @ 5601.162ns   (0.271ns)
+|   F2 -> 0 @ 5601.164ns   (0.002ns)
+| critical path for last transition of F1:
+|   B2 -> 0 @ 5600.000ns , node was an input
+|   slice_0[2]/a_n58_33# -> 1 @ 5600.070ns   (0.070ns)
+|   slice_0[0]/S -> 0 @ 5600.891ns   (0.821ns)
+|   slice_0[1]/a_n10_n45# -> 1 @ 5601.162ns   (0.271ns)
+|   F1 -> 0 @ 5601.164ns   (0.002ns)
+| critical path for last transition of F0:
+|   B0 -> 1 @ 5700.000ns , node was an input
+|   slice_0[0]/a_n58_n45# -> 0 @ 5700.121ns   (0.121ns)
+|   F0 -> 1 @ 5700.124ns   (0.003ns)
+| F=010 B=010 A=111 
+| time = 5900.000ns
+| critical path for last transition of F2:
+|   B2 -> 0 @ 5600.000ns , node was an input
+|   slice_0[2]/a_n58_33# -> 1 @ 5600.070ns   (0.070ns)
+|   slice_0[0]/S -> 0 @ 5600.891ns   (0.821ns)
+|   slice_0[2]/a_n10_n45# -> 1 @ 5601.162ns   (0.271ns)
+|   F2 -> 0 @ 5601.164ns   (0.002ns)
+| critical path for last transition of F1:
+|   B1 -> 1 @ 5800.000ns , node was an input
+|   slice_0[1]/a_n58_n45# -> 0 @ 5800.121ns   (0.121ns)
+|   F1 -> 1 @ 5800.124ns   (0.003ns)
+| critical path for last transition of F0:
+|   B0 -> 0 @ 5800.000ns , node was an input
+|   slice_0[0]/a_n58_n45# -> 1 @ 5800.128ns   (0.128ns)
+|   F0 -> 0 @ 5800.130ns   (0.002ns)
+| F=011 B=011 A=111 
 | time = 6000.000ns
 | critical path for last transition of F2:
-|   transition of B2, which has since changed again
-|   slice_0[2]/a_n58_n45# -> 1 @ 0.128ns   (?)
-|   F2 -> 0 @ 0.130ns   (0.002ns)
+|   B2 -> 0 @ 5600.000ns , node was an input
+|   slice_0[2]/a_n58_33# -> 1 @ 5600.070ns   (0.070ns)
+|   slice_0[0]/S -> 0 @ 5600.891ns   (0.821ns)
+|   slice_0[2]/a_n10_n45# -> 1 @ 5601.162ns   (0.271ns)
+|   F2 -> 0 @ 5601.164ns   (0.002ns)
 | critical path for last transition of F1:
-|   transition of B1, which has since changed again
-|   slice_0[1]/a_n58_n45# -> 1 @ 0.128ns   (?)
-|   F1 -> 0 @ 0.130ns   (0.002ns)
+|   B1 -> 1 @ 5800.000ns , node was an input
+|   slice_0[1]/a_n58_n45# -> 0 @ 5800.121ns   (0.121ns)
+|   F1 -> 1 @ 5800.124ns   (0.003ns)
 | critical path for last transition of F0:
-|   transition of slice_0[2]/a_n26_33#, which has since changed again
-|   slice_0[0]/S -> 1 @ 1001.378ns   (?)
-|   slice_0[0]/a_n38_n37# -> 0 @ 1001.503ns   (0.125ns)
-|   slice_0[0]/a_n58_n45# -> 1 @ 1001.642ns   (0.139ns)
-|   F0 -> 0 @ 1001.644ns   (0.002ns)
-| F=000 B=110 A=000 
-| time = 7000.000ns
-| critical path for last transition of F2:
-|   transition of B2, which has since changed again
-|   slice_0[2]/a_n58_n45# -> 1 @ 0.128ns   (?)
-|   F2 -> 0 @ 0.130ns   (0.002ns)
-| critical path for last transition of F1:
-|   transition of B1, which has since changed again
-|   slice_0[1]/a_n58_n45# -> 1 @ 0.128ns   (?)
-|   F1 -> 0 @ 0.130ns   (0.002ns)
-| critical path for last transition of F0:
-|   transition of slice_0[2]/a_n26_33#, which has since changed again
-|   slice_0[0]/S -> 1 @ 1001.378ns   (?)
-|   slice_0[0]/a_n38_n37# -> 0 @ 1001.503ns   (0.125ns)
-|   slice_0[0]/a_n58_n45# -> 1 @ 1001.642ns   (0.139ns)
-|   F0 -> 0 @ 1001.644ns   (0.002ns)
-| F=000 B=111 A=000 
-| time = 8000.000ns
-| critical path for last transition of F2:
-|   transition of B2, which has since changed again
-|   slice_0[2]/a_n58_n45# -> 1 @ 0.128ns   (?)
-|   F2 -> 0 @ 0.130ns   (0.002ns)
-| critical path for last transition of F1:
-|   transition of B1, which has since changed again
-|   slice_0[1]/a_n58_n45# -> 1 @ 0.128ns   (?)
-|   F1 -> 0 @ 0.130ns   (0.002ns)
-| critical path for last transition of F0:
-|   transition of slice_0[2]/a_n26_33#, which has since changed again
-|   slice_0[0]/S -> 1 @ 1001.378ns   (?)
-|   slice_0[0]/a_n38_n37# -> 0 @ 1001.503ns   (0.125ns)
-|   slice_0[0]/a_n58_n45# -> 1 @ 1001.642ns   (0.139ns)
-|   F0 -> 0 @ 1001.644ns   (0.002ns)
-| F=000 B=000 A=001 
-| time = 9000.000ns
-| critical path for last transition of F2:
-|   transition of B2, which has since changed again
-|   slice_0[2]/a_n58_n45# -> 1 @ 0.128ns   (?)
-|   F2 -> 0 @ 0.130ns   (0.002ns)
-| critical path for last transition of F1:
-|   transition of B1, which has since changed again
-|   slice_0[1]/a_n58_n45# -> 1 @ 0.128ns   (?)
-|   F1 -> 0 @ 0.130ns   (0.002ns)
-| critical path for last transition of F0:
-|   B0 -> 0 @ 8000.000ns , node was an input
-|   slice_0[0]/a_29_49# -> 1 @ 8000.070ns   (0.070ns)
-|   slice_0[1]/C_IN -> 0 @ 8000.378ns   (0.308ns)
-|   slice_0[1]/a_n26_33# -> 1 @ 8000.543ns   (0.165ns)
-|   slice_0[2]/C_IN -> 0 @ 8000.849ns   (0.306ns)
-|   slice_0[2]/a_n26_33# -> 1 @ 8001.013ns   (0.164ns)
-|   slice_0[0]/S -> 0 @ 8001.834ns   (0.821ns)
-|   slice_0[0]/a_n10_n45# -> 1 @ 8002.105ns   (0.271ns)
-|   F0 -> 0 @ 8002.107ns   (0.002ns)
-| F=001 B=001 A=001 
-| time = 10000.000ns
-| critical path for last transition of F2:
-|   transition of B2, which has since changed again
-|   slice_0[2]/a_n58_n45# -> 1 @ 0.128ns   (?)
-|   F2 -> 0 @ 0.130ns   (0.002ns)
-| critical path for last transition of F1:
-|   transition of B1, which has since changed again
-|   slice_0[1]/a_n58_n45# -> 1 @ 0.128ns   (?)
-|   F1 -> 0 @ 0.130ns   (0.002ns)
-| critical path for last transition of F0:
-|   B0 -> 1 @ 9000.000ns , node was an input
-|   slice_0[0]/a_n58_n45# -> 0 @ 9000.121ns   (0.121ns)
-|   F0 -> 1 @ 9000.124ns   (0.003ns)
-| F=001 B=010 A=001 
-| time = 11000.000ns
-| critical path for last transition of F2:
-|   transition of B2, which has since changed again
-|   slice_0[2]/a_n58_n45# -> 1 @ 0.128ns   (?)
-|   F2 -> 0 @ 0.130ns   (0.002ns)
-| critical path for last transition of F1:
-|   B1 -> 1 @ 10000.000ns , node was an input
-|   slice_0[1]/a_29_49# -> 0 @ 10000.067ns   (0.067ns)
-|   slice_0[2]/C_IN -> 1 @ 10000.307ns   (0.240ns)
-|   slice_0[2]/a_n26_33# -> 0 @ 10000.421ns   (0.114ns)
-|   slice_0[0]/S -> 1 @ 10001.024ns   (0.603ns)
-|   slice_0[1]/a_n38_n37# -> 0 @ 10001.149ns   (0.125ns)
-|   slice_0[1]/a_n58_n45# -> 1 @ 10001.288ns   (0.139ns)
-|   F1 -> 0 @ 10001.290ns   (0.002ns)
-| critical path for last transition of F0:
-|   B1 -> 1 @ 10000.000ns , node was an input
-|   slice_0[1]/a_29_49# -> 0 @ 10000.067ns   (0.067ns)
-|   slice_0[2]/C_IN -> 1 @ 10000.307ns   (0.240ns)
-|   slice_0[2]/a_n26_33# -> 0 @ 10000.421ns   (0.114ns)
-|   slice_0[0]/S -> 1 @ 10001.024ns   (0.603ns)
-|   slice_0[0]/a_n10_n45# -> 0 @ 10001.202ns   (0.178ns)
-|   F0 -> 1 @ 10001.205ns   (0.003ns)
-| F=001 B=011 A=001 
-| time = 12000.000ns
-| critical path for last transition of F2:
-|   transition of B2, which has since changed again
-|   slice_0[2]/a_n58_n45# -> 1 @ 0.128ns   (?)
-|   F2 -> 0 @ 0.130ns   (0.002ns)
-| critical path for last transition of F1:
-|   B1 -> 1 @ 10000.000ns , node was an input
-|   slice_0[1]/a_29_49# -> 0 @ 10000.067ns   (0.067ns)
-|   slice_0[2]/C_IN -> 1 @ 10000.307ns   (0.240ns)
-|   slice_0[2]/a_n26_33# -> 0 @ 10000.421ns   (0.114ns)
-|   slice_0[0]/S -> 1 @ 10001.024ns   (0.603ns)
-|   slice_0[1]/a_n38_n37# -> 0 @ 10001.149ns   (0.125ns)
-|   slice_0[1]/a_n58_n45# -> 1 @ 10001.288ns   (0.139ns)
-|   F1 -> 0 @ 10001.290ns   (0.002ns)
-| critical path for last transition of F0:
-|   B1 -> 1 @ 10000.000ns , node was an input
-|   slice_0[1]/a_29_49# -> 0 @ 10000.067ns   (0.067ns)
-|   slice_0[2]/C_IN -> 1 @ 10000.307ns   (0.240ns)
-|   slice_0[2]/a_n26_33# -> 0 @ 10000.421ns   (0.114ns)
-|   slice_0[0]/S -> 1 @ 10001.024ns   (0.603ns)
-|   slice_0[0]/a_n10_n45# -> 0 @ 10001.202ns   (0.178ns)
-|   F0 -> 1 @ 10001.205ns   (0.003ns)
-| F=001 B=100 A=001 
-| time = 13000.000ns
-| critical path for last transition of F2:
-|   transition of B2, which has since changed again
-|   slice_0[2]/a_n58_n45# -> 1 @ 0.128ns   (?)
-|   F2 -> 0 @ 0.130ns   (0.002ns)
-| critical path for last transition of F1:
-|   transition of slice_0[2]/a_n26_33#, which has since changed again
-|   slice_0[0]/S -> 1 @ 10001.024ns   (?)
-|   slice_0[1]/a_n38_n37# -> 0 @ 10001.149ns   (0.125ns)
-|   slice_0[1]/a_n58_n45# -> 1 @ 10001.288ns   (0.139ns)
-|   F1 -> 0 @ 10001.290ns   (0.002ns)
-| critical path for last transition of F0:
-|   transition of slice_0[2]/a_n26_33#, which has since changed again
-|   slice_0[0]/S -> 1 @ 10001.024ns   (?)
-|   slice_0[0]/a_n10_n45# -> 0 @ 10001.202ns   (0.178ns)
-|   F0 -> 1 @ 10001.205ns   (0.003ns)
-| F=001 B=101 A=001 
-| time = 14000.000ns
-| critical path for last transition of F2:
-|   transition of B2, which has since changed again
-|   slice_0[2]/a_n58_n45# -> 1 @ 0.128ns   (?)
-|   F2 -> 0 @ 0.130ns   (0.002ns)
-| critical path for last transition of F1:
-|   transition of slice_0[2]/a_n26_33#, which has since changed again
-|   slice_0[0]/S -> 1 @ 10001.024ns   (?)
-|   slice_0[1]/a_n38_n37# -> 0 @ 10001.149ns   (0.125ns)
-|   slice_0[1]/a_n58_n45# -> 1 @ 10001.288ns   (0.139ns)
-|   F1 -> 0 @ 10001.290ns   (0.002ns)
-| critical path for last transition of F0:
-|   transition of slice_0[2]/a_n26_33#, which has since changed again
-|   slice_0[0]/S -> 1 @ 10001.024ns   (?)
-|   slice_0[0]/a_n10_n45# -> 0 @ 10001.202ns   (0.178ns)
-|   F0 -> 1 @ 10001.205ns   (0.003ns)
-| F=001 B=110 A=001 
-| time = 15000.000ns
-| critical path for last transition of F2:
-|   transition of B2, which has since changed again
-|   slice_0[2]/a_n58_n45# -> 1 @ 0.128ns   (?)
-|   F2 -> 0 @ 0.130ns   (0.002ns)
-| critical path for last transition of F1:
-|   transition of slice_0[2]/a_n26_33#, which has since changed again
-|   slice_0[0]/S -> 1 @ 10001.024ns   (?)
-|   slice_0[1]/a_n38_n37# -> 0 @ 10001.149ns   (0.125ns)
-|   slice_0[1]/a_n58_n45# -> 1 @ 10001.288ns   (0.139ns)
-|   F1 -> 0 @ 10001.290ns   (0.002ns)
-| critical path for last transition of F0:
-|   transition of slice_0[2]/a_n26_33#, which has since changed again
-|   slice_0[0]/S -> 1 @ 10001.024ns   (?)
-|   slice_0[0]/a_n10_n45# -> 0 @ 10001.202ns   (0.178ns)
-|   F0 -> 1 @ 10001.205ns   (0.003ns)
-| F=001 B=111 A=001 
-| time = 16000.000ns
-| critical path for last transition of F2:
-|   transition of B2, which has since changed again
-|   slice_0[2]/a_n58_n45# -> 1 @ 0.128ns   (?)
-|   F2 -> 0 @ 0.130ns   (0.002ns)
-| critical path for last transition of F1:
-|   transition of slice_0[2]/a_n26_33#, which has since changed again
-|   slice_0[0]/S -> 1 @ 10001.024ns   (?)
-|   slice_0[1]/a_n38_n37# -> 0 @ 10001.149ns   (0.125ns)
-|   slice_0[1]/a_n58_n45# -> 1 @ 10001.288ns   (0.139ns)
-|   F1 -> 0 @ 10001.290ns   (0.002ns)
-| critical path for last transition of F0:
-|   transition of slice_0[2]/a_n26_33#, which has since changed again
-|   slice_0[0]/S -> 1 @ 10001.024ns   (?)
-|   slice_0[0]/a_n10_n45# -> 0 @ 10001.202ns   (0.178ns)
-|   F0 -> 1 @ 10001.205ns   (0.003ns)
-| F=000 B=000 A=010 
-| time = 17000.000ns
-| critical path for last transition of F2:
-|   transition of B2, which has since changed again
-|   slice_0[2]/a_n58_n45# -> 1 @ 0.128ns   (?)
-|   F2 -> 0 @ 0.130ns   (0.002ns)
-| critical path for last transition of F1:
-|   B1 -> 0 @ 16000.000ns , node was an input
-|   slice_0[1]/a_29_49# -> 1 @ 16000.070ns   (0.070ns)
-|   slice_0[2]/C_IN -> 0 @ 16000.376ns   (0.306ns)
-|   slice_0[2]/a_n26_33# -> 1 @ 16000.540ns   (0.164ns)
-|   slice_0[0]/S -> 0 @ 16001.361ns   (0.821ns)
-|   slice_0[1]/a_n10_n45# -> 1 @ 16001.632ns   (0.271ns)
-|   F1 -> 0 @ 16001.634ns   (0.002ns)
-| critical path for last transition of F0:
-|   A0 -> 0 @ 16000.000ns , node was an input
-|   slice_0[0]/a_n10_n45# -> 1 @ 16000.075ns   (0.075ns)
-|   F0 -> 0 @ 16000.077ns   (0.002ns)
-| F=001 B=001 A=010 
-| time = 18000.000ns
-| critical path for last transition of F2:
-|   transition of B2, which has since changed again
-|   slice_0[2]/a_n58_n45# -> 1 @ 0.128ns   (?)
-|   F2 -> 0 @ 0.130ns   (0.002ns)
-| critical path for last transition of F1:
-|   B1 -> 0 @ 16000.000ns , node was an input
-|   slice_0[1]/a_29_49# -> 1 @ 16000.070ns   (0.070ns)
-|   slice_0[2]/C_IN -> 0 @ 16000.376ns   (0.306ns)
-|   slice_0[2]/a_n26_33# -> 1 @ 16000.540ns   (0.164ns)
-|   slice_0[0]/S -> 0 @ 16001.361ns   (0.821ns)
-|   slice_0[1]/a_n10_n45# -> 1 @ 16001.632ns   (0.271ns)
-|   F1 -> 0 @ 16001.634ns   (0.002ns)
-| critical path for last transition of F0:
-|   B0 -> 1 @ 17000.000ns , node was an input
-|   slice_0[0]/a_n58_n45# -> 0 @ 17000.121ns   (0.121ns)
-|   F0 -> 1 @ 17000.124ns   (0.003ns)
-| F=010 B=010 A=010 
-| time = 19000.000ns
-| critical path for last transition of F2:
-|   transition of B2, which has since changed again
-|   slice_0[2]/a_n58_n45# -> 1 @ 0.128ns   (?)
-|   F2 -> 0 @ 0.130ns   (0.002ns)
-| critical path for last transition of F1:
-|   B1 -> 1 @ 18000.000ns , node was an input
-|   slice_0[1]/a_n58_n45# -> 0 @ 18000.121ns   (0.121ns)
-|   F1 -> 1 @ 18000.124ns   (0.003ns)
-| critical path for last transition of F0:
-|   B0 -> 0 @ 18000.000ns , node was an input
-|   slice_0[0]/a_n58_n45# -> 1 @ 18000.128ns   (0.128ns)
-|   F0 -> 0 @ 18000.130ns   (0.002ns)
-| F=010 B=011 A=010 
-| time = 20000.000ns
-| critical path for last transition of F2:
-|   transition of B2, which has since changed again
-|   slice_0[2]/a_n58_n45# -> 1 @ 0.128ns   (?)
-|   F2 -> 0 @ 0.130ns   (0.002ns)
-| critical path for last transition of F1:
-|   transition of slice_0[1]/a_n58_n45#, which has since changed again
-|   F1 -> 1 @ 18000.124ns   (?)
-| critical path for last transition of F0:
-|   B0 -> 1 @ 19000.000ns , node was an input
-|   slice_0[0]/a_29_49# -> 0 @ 19000.067ns   (0.067ns)
-|   slice_0[1]/C_IN -> 1 @ 19000.308ns   (0.241ns)
-|   slice_0[1]/a_n58_33# -> 0 @ 19000.424ns   (0.116ns)
-|   slice_0[2]/C_IN -> 1 @ 19000.664ns   (0.240ns)
-|   slice_0[2]/a_n26_33# -> 0 @ 19000.778ns   (0.114ns)
-|   slice_0[0]/S -> 1 @ 19001.381ns   (0.603ns)
-|   slice_0[0]/a_n38_n37# -> 0 @ 19001.506ns   (0.125ns)
-|   slice_0[0]/a_n58_n45# -> 1 @ 19001.645ns   (0.139ns)
-|   F0 -> 0 @ 19001.647ns   (0.002ns)
-| F=010 B=100 A=010 
-| time = 21000.000ns
-| critical path for last transition of F2:
-|   transition of B2, which has since changed again
-|   slice_0[2]/a_n58_n45# -> 1 @ 0.128ns   (?)
-|   F2 -> 0 @ 0.130ns   (0.002ns)
-| critical path for last transition of F1:
-|   transition of slice_0[1]/a_n58_n45#, which has since changed again
-|   F1 -> 1 @ 18000.124ns   (?)
-| critical path for last transition of F0:
-|   transition of slice_0[2]/a_n26_33#, which has since changed again
-|   slice_0[0]/S -> 1 @ 19001.381ns   (?)
-|   slice_0[0]/a_n38_n37# -> 0 @ 19001.506ns   (0.125ns)
-|   slice_0[0]/a_n58_n45# -> 1 @ 19001.645ns   (0.139ns)
-|   F0 -> 0 @ 19001.647ns   (0.002ns)
-| F=010 B=101 A=010 
-| time = 22000.000ns
-| critical path for last transition of F2:
-|   transition of B2, which has since changed again
-|   slice_0[2]/a_n58_n45# -> 1 @ 0.128ns   (?)
-|   F2 -> 0 @ 0.130ns   (0.002ns)
-| critical path for last transition of F1:
-|   transition of slice_0[1]/a_n58_n45#, which has since changed again
-|   F1 -> 1 @ 18000.124ns   (?)
-| critical path for last transition of F0:
-|   transition of slice_0[2]/a_n26_33#, which has since changed again
-|   slice_0[0]/S -> 1 @ 19001.381ns   (?)
-|   slice_0[0]/a_n38_n37# -> 0 @ 19001.506ns   (0.125ns)
-|   slice_0[0]/a_n58_n45# -> 1 @ 19001.645ns   (0.139ns)
-|   F0 -> 0 @ 19001.647ns   (0.002ns)
-| F=010 B=110 A=010 
-| time = 23000.000ns
-| critical path for last transition of F2:
-|   transition of B2, which has since changed again
-|   slice_0[2]/a_n58_n45# -> 1 @ 0.128ns   (?)
-|   F2 -> 0 @ 0.130ns   (0.002ns)
-| critical path for last transition of F1:
-|   transition of slice_0[1]/a_n58_n45#, which has since changed again
-|   F1 -> 1 @ 18000.124ns   (?)
-| critical path for last transition of F0:
-|   transition of slice_0[2]/a_n26_33#, which has since changed again
-|   slice_0[0]/S -> 1 @ 19001.381ns   (?)
-|   slice_0[0]/a_n38_n37# -> 0 @ 19001.506ns   (0.125ns)
-|   slice_0[0]/a_n58_n45# -> 1 @ 19001.645ns   (0.139ns)
-|   F0 -> 0 @ 19001.647ns   (0.002ns)
-| F=010 B=111 A=010 
-| time = 24000.000ns
-| critical path for last transition of F2:
-|   transition of B2, which has since changed again
-|   slice_0[2]/a_n58_n45# -> 1 @ 0.128ns   (?)
-|   F2 -> 0 @ 0.130ns   (0.002ns)
-| critical path for last transition of F1:
-|   transition of slice_0[1]/a_n58_n45#, which has since changed again
-|   F1 -> 1 @ 18000.124ns   (?)
-| critical path for last transition of F0:
-|   transition of slice_0[2]/a_n26_33#, which has since changed again
-|   slice_0[0]/S -> 1 @ 19001.381ns   (?)
-|   slice_0[0]/a_n38_n37# -> 0 @ 19001.506ns   (0.125ns)
-|   slice_0[0]/a_n58_n45# -> 1 @ 19001.645ns   (0.139ns)
-|   F0 -> 0 @ 19001.647ns   (0.002ns)
-| F=000 B=000 A=011 
-| time = 25000.000ns
-| critical path for last transition of F2:
-|   transition of B2, which has since changed again
-|   slice_0[2]/a_n58_n45# -> 1 @ 0.128ns   (?)
-|   F2 -> 0 @ 0.130ns   (0.002ns)
-| critical path for last transition of F1:
-|   B1 -> 0 @ 24000.000ns , node was an input
-|   slice_0[1]/a_n58_33# -> 1 @ 24000.070ns   (0.070ns)
-|   slice_0[2]/C_IN -> 0 @ 24000.376ns   (0.306ns)
-|   slice_0[2]/a_n26_33# -> 1 @ 24000.540ns   (0.164ns)
-|   slice_0[0]/S -> 0 @ 24001.361ns   (0.821ns)
-|   slice_0[1]/a_n10_n45# -> 1 @ 24001.632ns   (0.271ns)
-|   F1 -> 0 @ 24001.634ns   (0.002ns)
-| critical path for last transition of F0:
-|   B1 -> 0 @ 24000.000ns , node was an input
-|   slice_0[1]/a_n58_33# -> 1 @ 24000.070ns   (0.070ns)
-|   slice_0[2]/C_IN -> 0 @ 24000.376ns   (0.306ns)
-|   slice_0[2]/a_n26_33# -> 1 @ 24000.540ns   (0.164ns)
-|   slice_0[0]/S -> 0 @ 24001.361ns   (0.821ns)
-|   slice_0[0]/a_n10_n45# -> 1 @ 24001.632ns   (0.271ns)
-|   F0 -> 0 @ 24001.634ns   (0.002ns)
-| F=001 B=001 A=011 
-| time = 26000.000ns
-| critical path for last transition of F2:
-|   transition of B2, which has since changed again
-|   slice_0[2]/a_n58_n45# -> 1 @ 0.128ns   (?)
-|   F2 -> 0 @ 0.130ns   (0.002ns)
-| critical path for last transition of F1:
-|   B1 -> 0 @ 24000.000ns , node was an input
-|   slice_0[1]/a_n58_33# -> 1 @ 24000.070ns   (0.070ns)
-|   slice_0[2]/C_IN -> 0 @ 24000.376ns   (0.306ns)
-|   slice_0[2]/a_n26_33# -> 1 @ 24000.540ns   (0.164ns)
-|   slice_0[0]/S -> 0 @ 24001.361ns   (0.821ns)
-|   slice_0[1]/a_n10_n45# -> 1 @ 24001.632ns   (0.271ns)
-|   F1 -> 0 @ 24001.634ns   (0.002ns)
-| critical path for last transition of F0:
-|   B0 -> 1 @ 25000.000ns , node was an input
-|   slice_0[0]/a_n58_n45# -> 0 @ 25000.121ns   (0.121ns)
-|   F0 -> 1 @ 25000.124ns   (0.003ns)
-| F=010 B=010 A=011 
-| time = 27000.000ns
-| critical path for last transition of F2:
-|   transition of B2, which has since changed again
-|   slice_0[2]/a_n58_n45# -> 1 @ 0.128ns   (?)
-|   F2 -> 0 @ 0.130ns   (0.002ns)
-| critical path for last transition of F1:
-|   B1 -> 1 @ 26000.000ns , node was an input
-|   slice_0[1]/a_n58_n45# -> 0 @ 26000.121ns   (0.121ns)
-|   F1 -> 1 @ 26000.124ns   (0.003ns)
-| critical path for last transition of F0:
-|   B0 -> 0 @ 26000.000ns , node was an input
-|   slice_0[0]/a_n58_n45# -> 1 @ 26000.128ns   (0.128ns)
-|   F0 -> 0 @ 26000.130ns   (0.002ns)
-| F=011 B=011 A=011 
-| time = 28000.000ns
-| critical path for last transition of F2:
-|   transition of B2, which has since changed again
-|   slice_0[2]/a_n58_n45# -> 1 @ 0.128ns   (?)
-|   F2 -> 0 @ 0.130ns   (0.002ns)
-| critical path for last transition of F1:
-|   B1 -> 1 @ 26000.000ns , node was an input
-|   slice_0[1]/a_n58_n45# -> 0 @ 26000.121ns   (0.121ns)
-|   F1 -> 1 @ 26000.124ns   (0.003ns)
-| critical path for last transition of F0:
-|   B0 -> 1 @ 27000.000ns , node was an input
-|   slice_0[0]/a_n58_n45# -> 0 @ 27000.121ns   (0.121ns)
-|   F0 -> 1 @ 27000.124ns   (0.003ns)
-| F=011 B=100 A=011 
-| time = 29000.000ns
-| critical path for last transition of F2:
-|   B2 -> 1 @ 28000.000ns , node was an input
-|   slice_0[2]/a_29_49# -> 0 @ 28000.067ns   (0.067ns)
-|   slice_0[0]/S -> 1 @ 28000.671ns   (0.604ns)
-|   slice_0[2]/a_n38_n37# -> 0 @ 28000.796ns   (0.125ns)
-|   slice_0[2]/a_n58_n45# -> 1 @ 28000.935ns   (0.139ns)
-|   F2 -> 0 @ 28000.937ns   (0.002ns)
-| critical path for last transition of F1:
-|   B2 -> 1 @ 28000.000ns , node was an input
-|   slice_0[2]/a_29_49# -> 0 @ 28000.067ns   (0.067ns)
-|   slice_0[0]/S -> 1 @ 28000.671ns   (0.604ns)
-|   slice_0[1]/a_n10_n45# -> 0 @ 28000.849ns   (0.178ns)
-|   F1 -> 1 @ 28000.852ns   (0.003ns)
-| critical path for last transition of F0:
-|   B2 -> 1 @ 28000.000ns , node was an input
-|   slice_0[2]/a_29_49# -> 0 @ 28000.067ns   (0.067ns)
-|   slice_0[0]/S -> 1 @ 28000.671ns   (0.604ns)
-|   slice_0[0]/a_n10_n45# -> 0 @ 28000.849ns   (0.178ns)
-|   F0 -> 1 @ 28000.852ns   (0.003ns)
-| F=011 B=101 A=011 
-| time = 30000.000ns
-| critical path for last transition of F2:
-|   B2 -> 1 @ 28000.000ns , node was an input
-|   slice_0[2]/a_29_49# -> 0 @ 28000.067ns   (0.067ns)
-|   slice_0[0]/S -> 1 @ 28000.671ns   (0.604ns)
-|   slice_0[2]/a_n38_n37# -> 0 @ 28000.796ns   (0.125ns)
-|   slice_0[2]/a_n58_n45# -> 1 @ 28000.935ns   (0.139ns)
-|   F2 -> 0 @ 28000.937ns   (0.002ns)
-| critical path for last transition of F1:
-|   B2 -> 1 @ 28000.000ns , node was an input
-|   slice_0[2]/a_29_49# -> 0 @ 28000.067ns   (0.067ns)
-|   slice_0[0]/S -> 1 @ 28000.671ns   (0.604ns)
-|   slice_0[1]/a_n10_n45# -> 0 @ 28000.849ns   (0.178ns)
-|   F1 -> 1 @ 28000.852ns   (0.003ns)
-| critical path for last transition of F0:
-|   B2 -> 1 @ 28000.000ns , node was an input
-|   slice_0[2]/a_29_49# -> 0 @ 28000.067ns   (0.067ns)
-|   slice_0[0]/S -> 1 @ 28000.671ns   (0.604ns)
-|   slice_0[0]/a_n10_n45# -> 0 @ 28000.849ns   (0.178ns)
-|   F0 -> 1 @ 28000.852ns   (0.003ns)
-| F=011 B=110 A=011 
-| time = 31000.000ns
-| critical path for last transition of F2:
-|   B2 -> 1 @ 28000.000ns , node was an input
-|   slice_0[2]/a_29_49# -> 0 @ 28000.067ns   (0.067ns)
-|   slice_0[0]/S -> 1 @ 28000.671ns   (0.604ns)
-|   slice_0[2]/a_n38_n37# -> 0 @ 28000.796ns   (0.125ns)
-|   slice_0[2]/a_n58_n45# -> 1 @ 28000.935ns   (0.139ns)
-|   F2 -> 0 @ 28000.937ns   (0.002ns)
-| critical path for last transition of F1:
-|   B2 -> 1 @ 28000.000ns , node was an input
-|   slice_0[2]/a_29_49# -> 0 @ 28000.067ns   (0.067ns)
-|   slice_0[0]/S -> 1 @ 28000.671ns   (0.604ns)
-|   slice_0[1]/a_n10_n45# -> 0 @ 28000.849ns   (0.178ns)
-|   F1 -> 1 @ 28000.852ns   (0.003ns)
-| critical path for last transition of F0:
-|   B2 -> 1 @ 28000.000ns , node was an input
-|   slice_0[2]/a_29_49# -> 0 @ 28000.067ns   (0.067ns)
-|   slice_0[0]/S -> 1 @ 28000.671ns   (0.604ns)
-|   slice_0[0]/a_n10_n45# -> 0 @ 28000.849ns   (0.178ns)
-|   F0 -> 1 @ 28000.852ns   (0.003ns)
-| F=011 B=111 A=011 
-| time = 32000.000ns
-| critical path for last transition of F2:
-|   B2 -> 1 @ 28000.000ns , node was an input
-|   slice_0[2]/a_29_49# -> 0 @ 28000.067ns   (0.067ns)
-|   slice_0[0]/S -> 1 @ 28000.671ns   (0.604ns)
-|   slice_0[2]/a_n38_n37# -> 0 @ 28000.796ns   (0.125ns)
-|   slice_0[2]/a_n58_n45# -> 1 @ 28000.935ns   (0.139ns)
-|   F2 -> 0 @ 28000.937ns   (0.002ns)
-| critical path for last transition of F1:
-|   B2 -> 1 @ 28000.000ns , node was an input
-|   slice_0[2]/a_29_49# -> 0 @ 28000.067ns   (0.067ns)
-|   slice_0[0]/S -> 1 @ 28000.671ns   (0.604ns)
-|   slice_0[1]/a_n10_n45# -> 0 @ 28000.849ns   (0.178ns)
-|   F1 -> 1 @ 28000.852ns   (0.003ns)
-| critical path for last transition of F0:
-|   B2 -> 1 @ 28000.000ns , node was an input
-|   slice_0[2]/a_29_49# -> 0 @ 28000.067ns   (0.067ns)
-|   slice_0[0]/S -> 1 @ 28000.671ns   (0.604ns)
-|   slice_0[0]/a_n10_n45# -> 0 @ 28000.849ns   (0.178ns)
-|   F0 -> 1 @ 28000.852ns   (0.003ns)
-| F=000 B=000 A=100 
-| time = 33000.000ns
-| critical path for last transition of F2:
-|   B2 -> 0 @ 32000.000ns , node was an input
-|   slice_0[2]/a_29_49# -> 1 @ 32000.070ns   (0.070ns)
-|   slice_0[0]/S -> 0 @ 32000.891ns   (0.821ns)
-|   slice_0[2]/a_n10_n45# -> 1 @ 32001.162ns   (0.271ns)
-|   F2 -> 0 @ 32001.164ns   (0.002ns)
-| critical path for last transition of F1:
-|   A1 -> 0 @ 32000.000ns , node was an input
-|   slice_0[1]/a_n10_n45# -> 1 @ 32000.075ns   (0.075ns)
-|   F1 -> 0 @ 32000.077ns   (0.002ns)
-| critical path for last transition of F0:
-|   A0 -> 0 @ 32000.000ns , node was an input
-|   slice_0[0]/a_n10_n45# -> 1 @ 32000.075ns   (0.075ns)
-|   F0 -> 0 @ 32000.077ns   (0.002ns)
-| F=001 B=001 A=100 
-| time = 34000.000ns
-| critical path for last transition of F2:
-|   B2 -> 0 @ 32000.000ns , node was an input
-|   slice_0[2]/a_29_49# -> 1 @ 32000.070ns   (0.070ns)
-|   slice_0[0]/S -> 0 @ 32000.891ns   (0.821ns)
-|   slice_0[2]/a_n10_n45# -> 1 @ 32001.162ns   (0.271ns)
-|   F2 -> 0 @ 32001.164ns   (0.002ns)
-| critical path for last transition of F1:
-|   A1 -> 0 @ 32000.000ns , node was an input
-|   slice_0[1]/a_n10_n45# -> 1 @ 32000.075ns   (0.075ns)
-|   F1 -> 0 @ 32000.077ns   (0.002ns)
-| critical path for last transition of F0:
-|   B0 -> 1 @ 33000.000ns , node was an input
-|   slice_0[0]/a_n58_n45# -> 0 @ 33000.121ns   (0.121ns)
-|   F0 -> 1 @ 33000.124ns   (0.003ns)
-| F=010 B=010 A=100 
-| time = 35000.000ns
-| critical path for last transition of F2:
-|   B2 -> 0 @ 32000.000ns , node was an input
-|   slice_0[2]/a_29_49# -> 1 @ 32000.070ns   (0.070ns)
-|   slice_0[0]/S -> 0 @ 32000.891ns   (0.821ns)
-|   slice_0[2]/a_n10_n45# -> 1 @ 32001.162ns   (0.271ns)
-|   F2 -> 0 @ 32001.164ns   (0.002ns)
-| critical path for last transition of F1:
-|   B1 -> 1 @ 34000.000ns , node was an input
-|   slice_0[1]/a_n58_n45# -> 0 @ 34000.121ns   (0.121ns)
-|   F1 -> 1 @ 34000.124ns   (0.003ns)
-| critical path for last transition of F0:
-|   B0 -> 0 @ 34000.000ns , node was an input
-|   slice_0[0]/a_n58_n45# -> 1 @ 34000.128ns   (0.128ns)
-|   F0 -> 0 @ 34000.130ns   (0.002ns)
-| F=011 B=011 A=100 
-| time = 36000.000ns
-| critical path for last transition of F2:
-|   B2 -> 0 @ 32000.000ns , node was an input
-|   slice_0[2]/a_29_49# -> 1 @ 32000.070ns   (0.070ns)
-|   slice_0[0]/S -> 0 @ 32000.891ns   (0.821ns)
-|   slice_0[2]/a_n10_n45# -> 1 @ 32001.162ns   (0.271ns)
-|   F2 -> 0 @ 32001.164ns   (0.002ns)
-| critical path for last transition of F1:
-|   B1 -> 1 @ 34000.000ns , node was an input
-|   slice_0[1]/a_n58_n45# -> 0 @ 34000.121ns   (0.121ns)
-|   F1 -> 1 @ 34000.124ns   (0.003ns)
-| critical path for last transition of F0:
-|   B0 -> 1 @ 35000.000ns , node was an input
-|   slice_0[0]/a_n58_n45# -> 0 @ 35000.121ns   (0.121ns)
-|   F0 -> 1 @ 35000.124ns   (0.003ns)
-| F=100 B=100 A=100 
-| time = 37000.000ns
-| critical path for last transition of F2:
-|   B0 -> 0 @ 36000.000ns , node was an input
-|   slice_0[0]/a_29_49# -> 1 @ 36000.070ns   (0.070ns)
-|   slice_0[1]/C_IN -> 0 @ 36000.378ns   (0.308ns)
-|   slice_0[1]/a_n26_33# -> 1 @ 36000.543ns   (0.165ns)
-|   slice_0[2]/C_IN -> 0 @ 36000.849ns   (0.306ns)
-|   slice_0[2]/a_n58_33# -> 1 @ 36001.016ns   (0.167ns)
-|   slice_0[0]/S -> 0 @ 36001.837ns   (0.821ns)
-|   slice_0[2]/a_n38_n37# -> 1 @ 36002.039ns   (0.202ns)
-|   slice_0[2]/a_n58_n45# -> 0 @ 36002.173ns   (0.134ns)
-|   F2 -> 1 @ 36002.176ns   (0.003ns)
-| critical path for last transition of F1:
-|   B1 -> 0 @ 36000.000ns , node was an input
-|   slice_0[1]/a_n58_n45# -> 1 @ 36000.128ns   (0.128ns)
-|   F1 -> 0 @ 36000.130ns   (0.002ns)
-| critical path for last transition of F0:
-|   B0 -> 0 @ 36000.000ns , node was an input
-|   slice_0[0]/a_n58_n45# -> 1 @ 36000.128ns   (0.128ns)
-|   F0 -> 0 @ 36000.130ns   (0.002ns)
-| F=100 B=101 A=100 
-| time = 38000.000ns
-| critical path for last transition of F2:
-|   transition of slice_0[2]/a_n58_n45#, which has since changed again
-|   F2 -> 1 @ 36002.176ns   (?)
-| critical path for last transition of F1:
-|   B1 -> 0 @ 36000.000ns , node was an input
-|   slice_0[1]/a_n58_n45# -> 1 @ 36000.128ns   (0.128ns)
-|   F1 -> 0 @ 36000.130ns   (0.002ns)
-| critical path for last transition of F0:
-|   B0 -> 1 @ 37000.000ns , node was an input
-|   slice_0[0]/a_29_49# -> 0 @ 37000.067ns   (0.067ns)
-|   slice_0[1]/C_IN -> 1 @ 37000.308ns   (0.241ns)
-|   slice_0[1]/a_n26_33# -> 0 @ 37000.422ns   (0.114ns)
-|   slice_0[2]/C_IN -> 1 @ 37000.661ns   (0.239ns)
-|   slice_0[2]/a_n58_33# -> 0 @ 37000.777ns   (0.116ns)
-|   slice_0[0]/S -> 1 @ 37001.381ns   (0.604ns)
-|   slice_0[0]/a_n38_n37# -> 0 @ 37001.506ns   (0.125ns)
-|   slice_0[0]/a_n58_n45# -> 1 @ 37001.645ns   (0.139ns)
-|   F0 -> 0 @ 37001.647ns   (0.002ns)
-| F=100 B=110 A=100 
-| time = 39000.000ns
-| critical path for last transition of F2:
-|   transition of slice_0[2]/a_n58_n45#, which has since changed again
-|   F2 -> 1 @ 36002.176ns   (?)
-| critical path for last transition of F1:
-|   transition of B1, which has since changed again
-|   slice_0[1]/a_n58_n45# -> 1 @ 36000.128ns   (?)
-|   F1 -> 0 @ 36000.130ns   (0.002ns)
-| critical path for last transition of F0:
-|   transition of slice_0[1]/a_n26_33#, which has since changed again
-|   slice_0[2]/C_IN -> 1 @ 37000.661ns   (?)
-|   slice_0[2]/a_n58_33# -> 0 @ 37000.777ns   (0.116ns)
-|   slice_0[0]/S -> 1 @ 37001.381ns   (0.604ns)
-|   slice_0[0]/a_n38_n37# -> 0 @ 37001.506ns   (0.125ns)
-|   slice_0[0]/a_n58_n45# -> 1 @ 37001.645ns   (0.139ns)
-|   F0 -> 0 @ 37001.647ns   (0.002ns)
-| F=100 B=111 A=100 
-| time = 40000.000ns
-| critical path for last transition of F2:
-|   transition of slice_0[2]/a_n58_n45#, which has since changed again
-|   F2 -> 1 @ 36002.176ns   (?)
-| critical path for last transition of F1:
-|   transition of B1, which has since changed again
-|   slice_0[1]/a_n58_n45# -> 1 @ 36000.128ns   (?)
-|   F1 -> 0 @ 36000.130ns   (0.002ns)
-| critical path for last transition of F0:
-|   transition of slice_0[1]/a_n26_33#, which has since changed again
-|   slice_0[2]/C_IN -> 1 @ 37000.661ns   (?)
-|   slice_0[2]/a_n58_33# -> 0 @ 37000.777ns   (0.116ns)
-|   slice_0[0]/S -> 1 @ 37001.381ns   (0.604ns)
-|   slice_0[0]/a_n38_n37# -> 0 @ 37001.506ns   (0.125ns)
-|   slice_0[0]/a_n58_n45# -> 1 @ 37001.645ns   (0.139ns)
-|   F0 -> 0 @ 37001.647ns   (0.002ns)
-| F=000 B=000 A=101 
-| time = 41000.000ns
-| critical path for last transition of F2:
-|   B2 -> 0 @ 40000.000ns , node was an input
-|   slice_0[2]/a_n58_33# -> 1 @ 40000.070ns   (0.070ns)
-|   slice_0[0]/S -> 0 @ 40000.891ns   (0.821ns)
-|   slice_0[2]/a_n10_n45# -> 1 @ 40001.162ns   (0.271ns)
-|   F2 -> 0 @ 40001.164ns   (0.002ns)
-| critical path for last transition of F1:
-|   transition of B1, which has since changed again
-|   slice_0[1]/a_n58_n45# -> 1 @ 36000.128ns   (?)
-|   F1 -> 0 @ 36000.130ns   (0.002ns)
-| critical path for last transition of F0:
-|   B2 -> 0 @ 40000.000ns , node was an input
-|   slice_0[2]/a_n58_33# -> 1 @ 40000.070ns   (0.070ns)
-|   slice_0[0]/S -> 0 @ 40000.891ns   (0.821ns)
-|   slice_0[0]/a_n10_n45# -> 1 @ 40001.162ns   (0.271ns)
-|   F0 -> 0 @ 40001.164ns   (0.002ns)
-| F=001 B=001 A=101 
-| time = 42000.000ns
-| critical path for last transition of F2:
-|   B2 -> 0 @ 40000.000ns , node was an input
-|   slice_0[2]/a_n58_33# -> 1 @ 40000.070ns   (0.070ns)
-|   slice_0[0]/S -> 0 @ 40000.891ns   (0.821ns)
-|   slice_0[2]/a_n10_n45# -> 1 @ 40001.162ns   (0.271ns)
-|   F2 -> 0 @ 40001.164ns   (0.002ns)
-| critical path for last transition of F1:
-|   transition of B1, which has since changed again
-|   slice_0[1]/a_n58_n45# -> 1 @ 36000.128ns   (?)
-|   F1 -> 0 @ 36000.130ns   (0.002ns)
-| critical path for last transition of F0:
-|   B0 -> 1 @ 41000.000ns , node was an input
-|   slice_0[0]/a_n58_n45# -> 0 @ 41000.121ns   (0.121ns)
-|   F0 -> 1 @ 41000.124ns   (0.003ns)
-| F=010 B=010 A=101 
-| time = 43000.000ns
-| critical path for last transition of F2:
-|   B2 -> 0 @ 40000.000ns , node was an input
-|   slice_0[2]/a_n58_33# -> 1 @ 40000.070ns   (0.070ns)
-|   slice_0[0]/S -> 0 @ 40000.891ns   (0.821ns)
-|   slice_0[2]/a_n10_n45# -> 1 @ 40001.162ns   (0.271ns)
-|   F2 -> 0 @ 40001.164ns   (0.002ns)
-| critical path for last transition of F1:
-|   B1 -> 1 @ 42000.000ns , node was an input
-|   slice_0[1]/a_n58_n45# -> 0 @ 42000.121ns   (0.121ns)
-|   F1 -> 1 @ 42000.124ns   (0.003ns)
-| critical path for last transition of F0:
-|   B0 -> 0 @ 42000.000ns , node was an input
-|   slice_0[0]/a_n58_n45# -> 1 @ 42000.128ns   (0.128ns)
-|   F0 -> 0 @ 42000.130ns   (0.002ns)
-| F=011 B=011 A=101 
-| time = 44000.000ns
-| critical path for last transition of F2:
-|   B2 -> 0 @ 40000.000ns , node was an input
-|   slice_0[2]/a_n58_33# -> 1 @ 40000.070ns   (0.070ns)
-|   slice_0[0]/S -> 0 @ 40000.891ns   (0.821ns)
-|   slice_0[2]/a_n10_n45# -> 1 @ 40001.162ns   (0.271ns)
-|   F2 -> 0 @ 40001.164ns   (0.002ns)
-| critical path for last transition of F1:
-|   B1 -> 1 @ 42000.000ns , node was an input
-|   slice_0[1]/a_n58_n45# -> 0 @ 42000.121ns   (0.121ns)
-|   F1 -> 1 @ 42000.124ns   (0.003ns)
-| critical path for last transition of F0:
-|   B0 -> 1 @ 43000.000ns , node was an input
-|   slice_0[0]/a_n58_n45# -> 0 @ 43000.121ns   (0.121ns)
-|   F0 -> 1 @ 43000.124ns   (0.003ns)
-| F=100 B=100 A=101 
-| time = 45000.000ns
-| critical path for last transition of F2:
-|   B2 -> 1 @ 44000.000ns , node was an input
-|   slice_0[2]/a_n58_n45# -> 0 @ 44000.121ns   (0.121ns)
-|   F2 -> 1 @ 44000.124ns   (0.003ns)
-| critical path for last transition of F1:
-|   B1 -> 0 @ 44000.000ns , node was an input
-|   slice_0[1]/a_n58_n45# -> 1 @ 44000.128ns   (0.128ns)
-|   F1 -> 0 @ 44000.130ns   (0.002ns)
-| critical path for last transition of F0:
-|   B0 -> 0 @ 44000.000ns , node was an input
-|   slice_0[0]/a_n58_n45# -> 1 @ 44000.128ns   (0.128ns)
-|   F0 -> 0 @ 44000.130ns   (0.002ns)
-| F=101 B=101 A=101 
-| time = 46000.000ns
-| critical path for last transition of F2:
-|   B2 -> 1 @ 44000.000ns , node was an input
-|   slice_0[2]/a_n58_n45# -> 0 @ 44000.121ns   (0.121ns)
-|   F2 -> 1 @ 44000.124ns   (0.003ns)
-| critical path for last transition of F1:
-|   B1 -> 0 @ 44000.000ns , node was an input
-|   slice_0[1]/a_n58_n45# -> 1 @ 44000.128ns   (0.128ns)
-|   F1 -> 0 @ 44000.130ns   (0.002ns)
-| critical path for last transition of F0:
-|   B0 -> 1 @ 45000.000ns , node was an input
-|   slice_0[0]/a_n58_n45# -> 0 @ 45000.121ns   (0.121ns)
-|   F0 -> 1 @ 45000.124ns   (0.003ns)
-| F=101 B=110 A=101 
-| time = 47000.000ns
-| critical path for last transition of F2:
-|   transition of slice_0[2]/a_n58_n45#, which has since changed again
-|   F2 -> 1 @ 44000.124ns   (?)
-| critical path for last transition of F1:
-|   B1 -> 1 @ 46000.000ns , node was an input
-|   slice_0[1]/a_29_49# -> 0 @ 46000.067ns   (0.067ns)
-|   slice_0[2]/C_IN -> 1 @ 46000.307ns   (0.240ns)
-|   slice_0[2]/a_n58_33# -> 0 @ 46000.423ns   (0.116ns)
-|   slice_0[0]/S -> 1 @ 46001.027ns   (0.604ns)
-|   slice_0[1]/a_n38_n37# -> 0 @ 46001.152ns   (0.125ns)
-|   slice_0[1]/a_n58_n45# -> 1 @ 46001.291ns   (0.139ns)
-|   F1 -> 0 @ 46001.293ns   (0.002ns)
-| critical path for last transition of F0:
-|   B1 -> 1 @ 46000.000ns , node was an input
-|   slice_0[1]/a_29_49# -> 0 @ 46000.067ns   (0.067ns)
-|   slice_0[2]/C_IN -> 1 @ 46000.307ns   (0.240ns)
-|   slice_0[2]/a_n58_33# -> 0 @ 46000.423ns   (0.116ns)
-|   slice_0[0]/S -> 1 @ 46001.027ns   (0.604ns)
-|   slice_0[0]/a_n10_n45# -> 0 @ 46001.205ns   (0.178ns)
-|   F0 -> 1 @ 46001.208ns   (0.003ns)
-| F=101 B=111 A=101 
-| time = 48000.000ns
-| critical path for last transition of F2:
-|   transition of slice_0[2]/a_n58_n45#, which has since changed again
-|   F2 -> 1 @ 44000.124ns   (?)
-| critical path for last transition of F1:
-|   B1 -> 1 @ 46000.000ns , node was an input
-|   slice_0[1]/a_29_49# -> 0 @ 46000.067ns   (0.067ns)
-|   slice_0[2]/C_IN -> 1 @ 46000.307ns   (0.240ns)
-|   slice_0[2]/a_n58_33# -> 0 @ 46000.423ns   (0.116ns)
-|   slice_0[0]/S -> 1 @ 46001.027ns   (0.604ns)
-|   slice_0[1]/a_n38_n37# -> 0 @ 46001.152ns   (0.125ns)
-|   slice_0[1]/a_n58_n45# -> 1 @ 46001.291ns   (0.139ns)
-|   F1 -> 0 @ 46001.293ns   (0.002ns)
-| critical path for last transition of F0:
-|   B1 -> 1 @ 46000.000ns , node was an input
-|   slice_0[1]/a_29_49# -> 0 @ 46000.067ns   (0.067ns)
-|   slice_0[2]/C_IN -> 1 @ 46000.307ns   (0.240ns)
-|   slice_0[2]/a_n58_33# -> 0 @ 46000.423ns   (0.116ns)
-|   slice_0[0]/S -> 1 @ 46001.027ns   (0.604ns)
-|   slice_0[0]/a_n10_n45# -> 0 @ 46001.205ns   (0.178ns)
-|   F0 -> 1 @ 46001.208ns   (0.003ns)
-| F=000 B=000 A=110 
-| time = 49000.000ns
-| critical path for last transition of F2:
-|   B2 -> 0 @ 48000.000ns , node was an input
-|   slice_0[2]/a_n58_33# -> 1 @ 48000.070ns   (0.070ns)
-|   slice_0[0]/S -> 0 @ 48000.891ns   (0.821ns)
-|   slice_0[2]/a_n10_n45# -> 1 @ 48001.162ns   (0.271ns)
-|   F2 -> 0 @ 48001.164ns   (0.002ns)
-| critical path for last transition of F1:
-|   B2 -> 0 @ 48000.000ns , node was an input
-|   slice_0[2]/a_n58_33# -> 1 @ 48000.070ns   (0.070ns)
-|   slice_0[0]/S -> 0 @ 48000.891ns   (0.821ns)
-|   slice_0[1]/a_n10_n45# -> 1 @ 48001.162ns   (0.271ns)
-|   F1 -> 0 @ 48001.164ns   (0.002ns)
-| critical path for last transition of F0:
-|   A0 -> 0 @ 48000.000ns , node was an input
-|   slice_0[0]/a_n10_n45# -> 1 @ 48000.075ns   (0.075ns)
-|   F0 -> 0 @ 48000.077ns   (0.002ns)
-| F=001 B=001 A=110 
-| time = 50000.000ns
-| critical path for last transition of F2:
-|   B2 -> 0 @ 48000.000ns , node was an input
-|   slice_0[2]/a_n58_33# -> 1 @ 48000.070ns   (0.070ns)
-|   slice_0[0]/S -> 0 @ 48000.891ns   (0.821ns)
-|   slice_0[2]/a_n10_n45# -> 1 @ 48001.162ns   (0.271ns)
-|   F2 -> 0 @ 48001.164ns   (0.002ns)
-| critical path for last transition of F1:
-|   B2 -> 0 @ 48000.000ns , node was an input
-|   slice_0[2]/a_n58_33# -> 1 @ 48000.070ns   (0.070ns)
-|   slice_0[0]/S -> 0 @ 48000.891ns   (0.821ns)
-|   slice_0[1]/a_n10_n45# -> 1 @ 48001.162ns   (0.271ns)
-|   F1 -> 0 @ 48001.164ns   (0.002ns)
-| critical path for last transition of F0:
-|   B0 -> 1 @ 49000.000ns , node was an input
-|   slice_0[0]/a_n58_n45# -> 0 @ 49000.121ns   (0.121ns)
-|   F0 -> 1 @ 49000.124ns   (0.003ns)
-| F=010 B=010 A=110 
-| time = 51000.000ns
-| critical path for last transition of F2:
-|   B2 -> 0 @ 48000.000ns , node was an input
-|   slice_0[2]/a_n58_33# -> 1 @ 48000.070ns   (0.070ns)
-|   slice_0[0]/S -> 0 @ 48000.891ns   (0.821ns)
-|   slice_0[2]/a_n10_n45# -> 1 @ 48001.162ns   (0.271ns)
-|   F2 -> 0 @ 48001.164ns   (0.002ns)
-| critical path for last transition of F1:
-|   B1 -> 1 @ 50000.000ns , node was an input
-|   slice_0[1]/a_n58_n45# -> 0 @ 50000.121ns   (0.121ns)
-|   F1 -> 1 @ 50000.124ns   (0.003ns)
-| critical path for last transition of F0:
-|   B0 -> 0 @ 50000.000ns , node was an input
-|   slice_0[0]/a_n58_n45# -> 1 @ 50000.128ns   (0.128ns)
-|   F0 -> 0 @ 50000.130ns   (0.002ns)
-| F=011 B=011 A=110 
-| time = 52000.000ns
-| critical path for last transition of F2:
-|   B2 -> 0 @ 48000.000ns , node was an input
-|   slice_0[2]/a_n58_33# -> 1 @ 48000.070ns   (0.070ns)
-|   slice_0[0]/S -> 0 @ 48000.891ns   (0.821ns)
-|   slice_0[2]/a_n10_n45# -> 1 @ 48001.162ns   (0.271ns)
-|   F2 -> 0 @ 48001.164ns   (0.002ns)
-| critical path for last transition of F1:
-|   B1 -> 1 @ 50000.000ns , node was an input
-|   slice_0[1]/a_n58_n45# -> 0 @ 50000.121ns   (0.121ns)
-|   F1 -> 1 @ 50000.124ns   (0.003ns)
-| critical path for last transition of F0:
-|   B0 -> 1 @ 51000.000ns , node was an input
-|   slice_0[0]/a_n58_n45# -> 0 @ 51000.121ns   (0.121ns)
-|   F0 -> 1 @ 51000.124ns   (0.003ns)
-| F=100 B=100 A=110 
-| time = 53000.000ns
-| critical path for last transition of F2:
-|   B2 -> 1 @ 52000.000ns , node was an input
-|   slice_0[2]/a_n58_n45# -> 0 @ 52000.121ns   (0.121ns)
-|   F2 -> 1 @ 52000.124ns   (0.003ns)
-| critical path for last transition of F1:
-|   B1 -> 0 @ 52000.000ns , node was an input
-|   slice_0[1]/a_n58_n45# -> 1 @ 52000.128ns   (0.128ns)
-|   F1 -> 0 @ 52000.130ns   (0.002ns)
-| critical path for last transition of F0:
-|   B0 -> 0 @ 52000.000ns , node was an input
-|   slice_0[0]/a_n58_n45# -> 1 @ 52000.128ns   (0.128ns)
-|   F0 -> 0 @ 52000.130ns   (0.002ns)
-| F=101 B=101 A=110 
-| time = 54000.000ns
-| critical path for last transition of F2:
-|   B2 -> 1 @ 52000.000ns , node was an input
-|   slice_0[2]/a_n58_n45# -> 0 @ 52000.121ns   (0.121ns)
-|   F2 -> 1 @ 52000.124ns   (0.003ns)
-| critical path for last transition of F1:
-|   B1 -> 0 @ 52000.000ns , node was an input
-|   slice_0[1]/a_n58_n45# -> 1 @ 52000.128ns   (0.128ns)
-|   F1 -> 0 @ 52000.130ns   (0.002ns)
-| critical path for last transition of F0:
-|   B0 -> 1 @ 53000.000ns , node was an input
-|   slice_0[0]/a_n58_n45# -> 0 @ 53000.121ns   (0.121ns)
-|   F0 -> 1 @ 53000.124ns   (0.003ns)
-| F=110 B=110 A=110 
-| time = 55000.000ns
-| critical path for last transition of F2:
-|   B2 -> 1 @ 52000.000ns , node was an input
-|   slice_0[2]/a_n58_n45# -> 0 @ 52000.121ns   (0.121ns)
-|   F2 -> 1 @ 52000.124ns   (0.003ns)
-| critical path for last transition of F1:
-|   B1 -> 1 @ 54000.000ns , node was an input
-|   slice_0[1]/a_n58_n45# -> 0 @ 54000.121ns   (0.121ns)
-|   F1 -> 1 @ 54000.124ns   (0.003ns)
-| critical path for last transition of F0:
-|   B0 -> 0 @ 54000.000ns , node was an input
-|   slice_0[0]/a_n58_n45# -> 1 @ 54000.128ns   (0.128ns)
-|   F0 -> 0 @ 54000.130ns   (0.002ns)
-| F=110 B=111 A=110 
-| time = 56000.000ns
-| critical path for last transition of F2:
-|   transition of slice_0[2]/a_n58_n45#, which has since changed again
-|   F2 -> 1 @ 52000.124ns   (?)
-| critical path for last transition of F1:
-|   transition of slice_0[1]/a_n58_n45#, which has since changed again
-|   F1 -> 1 @ 54000.124ns   (?)
-| critical path for last transition of F0:
-|   B0 -> 1 @ 55000.000ns , node was an input
-|   slice_0[0]/a_29_49# -> 0 @ 55000.067ns   (0.067ns)
-|   slice_0[1]/C_IN -> 1 @ 55000.308ns   (0.241ns)
-|   slice_0[1]/a_n58_33# -> 0 @ 55000.424ns   (0.116ns)
-|   slice_0[2]/C_IN -> 1 @ 55000.664ns   (0.240ns)
-|   slice_0[2]/a_n58_33# -> 0 @ 55000.780ns   (0.116ns)
-|   slice_0[0]/S -> 1 @ 55001.384ns   (0.604ns)
-|   slice_0[0]/a_n38_n37# -> 0 @ 55001.509ns   (0.125ns)
-|   slice_0[0]/a_n58_n45# -> 1 @ 55001.648ns   (0.139ns)
-|   F0 -> 0 @ 55001.650ns   (0.002ns)
-| F=000 B=000 A=111 
-| time = 57000.000ns
-| critical path for last transition of F2:
-|   B2 -> 0 @ 56000.000ns , node was an input
-|   slice_0[2]/a_n58_33# -> 1 @ 56000.070ns   (0.070ns)
-|   slice_0[0]/S -> 0 @ 56000.891ns   (0.821ns)
-|   slice_0[2]/a_n10_n45# -> 1 @ 56001.162ns   (0.271ns)
-|   F2 -> 0 @ 56001.164ns   (0.002ns)
-| critical path for last transition of F1:
-|   B2 -> 0 @ 56000.000ns , node was an input
-|   slice_0[2]/a_n58_33# -> 1 @ 56000.070ns   (0.070ns)
-|   slice_0[0]/S -> 0 @ 56000.891ns   (0.821ns)
-|   slice_0[1]/a_n10_n45# -> 1 @ 56001.162ns   (0.271ns)
-|   F1 -> 0 @ 56001.164ns   (0.002ns)
-| critical path for last transition of F0:
-|   B2 -> 0 @ 56000.000ns , node was an input
-|   slice_0[2]/a_n58_33# -> 1 @ 56000.070ns   (0.070ns)
-|   slice_0[0]/S -> 0 @ 56000.891ns   (0.821ns)
-|   slice_0[0]/a_n10_n45# -> 1 @ 56001.162ns   (0.271ns)
-|   F0 -> 0 @ 56001.164ns   (0.002ns)
-| F=001 B=001 A=111 
-| time = 58000.000ns
-| critical path for last transition of F2:
-|   B2 -> 0 @ 56000.000ns , node was an input
-|   slice_0[2]/a_n58_33# -> 1 @ 56000.070ns   (0.070ns)
-|   slice_0[0]/S -> 0 @ 56000.891ns   (0.821ns)
-|   slice_0[2]/a_n10_n45# -> 1 @ 56001.162ns   (0.271ns)
-|   F2 -> 0 @ 56001.164ns   (0.002ns)
-| critical path for last transition of F1:
-|   B2 -> 0 @ 56000.000ns , node was an input
-|   slice_0[2]/a_n58_33# -> 1 @ 56000.070ns   (0.070ns)
-|   slice_0[0]/S -> 0 @ 56000.891ns   (0.821ns)
-|   slice_0[1]/a_n10_n45# -> 1 @ 56001.162ns   (0.271ns)
-|   F1 -> 0 @ 56001.164ns   (0.002ns)
-| critical path for last transition of F0:
-|   B0 -> 1 @ 57000.000ns , node was an input
-|   slice_0[0]/a_n58_n45# -> 0 @ 57000.121ns   (0.121ns)
-|   F0 -> 1 @ 57000.124ns   (0.003ns)
-| F=010 B=010 A=111 
-| time = 59000.000ns
-| critical path for last transition of F2:
-|   B2 -> 0 @ 56000.000ns , node was an input
-|   slice_0[2]/a_n58_33# -> 1 @ 56000.070ns   (0.070ns)
-|   slice_0[0]/S -> 0 @ 56000.891ns   (0.821ns)
-|   slice_0[2]/a_n10_n45# -> 1 @ 56001.162ns   (0.271ns)
-|   F2 -> 0 @ 56001.164ns   (0.002ns)
-| critical path for last transition of F1:
-|   B1 -> 1 @ 58000.000ns , node was an input
-|   slice_0[1]/a_n58_n45# -> 0 @ 58000.121ns   (0.121ns)
-|   F1 -> 1 @ 58000.124ns   (0.003ns)
-| critical path for last transition of F0:
-|   B0 -> 0 @ 58000.000ns , node was an input
-|   slice_0[0]/a_n58_n45# -> 1 @ 58000.128ns   (0.128ns)
-|   F0 -> 0 @ 58000.130ns   (0.002ns)
-| F=011 B=011 A=111 
-| time = 60000.000ns
-| critical path for last transition of F2:
-|   B2 -> 0 @ 56000.000ns , node was an input
-|   slice_0[2]/a_n58_33# -> 1 @ 56000.070ns   (0.070ns)
-|   slice_0[0]/S -> 0 @ 56000.891ns   (0.821ns)
-|   slice_0[2]/a_n10_n45# -> 1 @ 56001.162ns   (0.271ns)
-|   F2 -> 0 @ 56001.164ns   (0.002ns)
-| critical path for last transition of F1:
-|   B1 -> 1 @ 58000.000ns , node was an input
-|   slice_0[1]/a_n58_n45# -> 0 @ 58000.121ns   (0.121ns)
-|   F1 -> 1 @ 58000.124ns   (0.003ns)
-| critical path for last transition of F0:
-|   B0 -> 1 @ 59000.000ns , node was an input
-|   slice_0[0]/a_n58_n45# -> 0 @ 59000.121ns   (0.121ns)
-|   F0 -> 1 @ 59000.124ns   (0.003ns)
+|   B0 -> 1 @ 5900.000ns , node was an input
+|   slice_0[0]/a_n58_n45# -> 0 @ 5900.121ns   (0.121ns)
+|   F0 -> 1 @ 5900.124ns   (0.003ns)
 | F=100 B=100 A=111 
-| time = 61000.000ns
+| time = 6100.000ns
 | critical path for last transition of F2:
-|   B2 -> 1 @ 60000.000ns , node was an input
-|   slice_0[2]/a_n58_n45# -> 0 @ 60000.121ns   (0.121ns)
-|   F2 -> 1 @ 60000.124ns   (0.003ns)
+|   B2 -> 1 @ 6000.000ns , node was an input
+|   slice_0[2]/a_n58_n45# -> 0 @ 6000.121ns   (0.121ns)
+|   F2 -> 1 @ 6000.124ns   (0.003ns)
 | critical path for last transition of F1:
-|   B1 -> 0 @ 60000.000ns , node was an input
-|   slice_0[1]/a_n58_n45# -> 1 @ 60000.128ns   (0.128ns)
-|   F1 -> 0 @ 60000.130ns   (0.002ns)
+|   B1 -> 0 @ 6000.000ns , node was an input
+|   slice_0[1]/a_n58_n45# -> 1 @ 6000.128ns   (0.128ns)
+|   F1 -> 0 @ 6000.130ns   (0.002ns)
 | critical path for last transition of F0:
-|   B0 -> 0 @ 60000.000ns , node was an input
-|   slice_0[0]/a_n58_n45# -> 1 @ 60000.128ns   (0.128ns)
-|   F0 -> 0 @ 60000.130ns   (0.002ns)
+|   B0 -> 0 @ 6000.000ns , node was an input
+|   slice_0[0]/a_n58_n45# -> 1 @ 6000.128ns   (0.128ns)
+|   F0 -> 0 @ 6000.130ns   (0.002ns)
 | F=101 B=101 A=111 
-| time = 62000.000ns
+| time = 6200.000ns
 | critical path for last transition of F2:
-|   B2 -> 1 @ 60000.000ns , node was an input
-|   slice_0[2]/a_n58_n45# -> 0 @ 60000.121ns   (0.121ns)
-|   F2 -> 1 @ 60000.124ns   (0.003ns)
+|   B2 -> 1 @ 6000.000ns , node was an input
+|   slice_0[2]/a_n58_n45# -> 0 @ 6000.121ns   (0.121ns)
+|   F2 -> 1 @ 6000.124ns   (0.003ns)
 | critical path for last transition of F1:
-|   B1 -> 0 @ 60000.000ns , node was an input
-|   slice_0[1]/a_n58_n45# -> 1 @ 60000.128ns   (0.128ns)
-|   F1 -> 0 @ 60000.130ns   (0.002ns)
+|   B1 -> 0 @ 6000.000ns , node was an input
+|   slice_0[1]/a_n58_n45# -> 1 @ 6000.128ns   (0.128ns)
+|   F1 -> 0 @ 6000.130ns   (0.002ns)
 | critical path for last transition of F0:
-|   B0 -> 1 @ 61000.000ns , node was an input
-|   slice_0[0]/a_n58_n45# -> 0 @ 61000.121ns   (0.121ns)
-|   F0 -> 1 @ 61000.124ns   (0.003ns)
+|   B0 -> 1 @ 6100.000ns , node was an input
+|   slice_0[0]/a_n58_n45# -> 0 @ 6100.121ns   (0.121ns)
+|   F0 -> 1 @ 6100.124ns   (0.003ns)
 | F=110 B=110 A=111 
-| time = 63000.000ns
+| time = 6300.000ns
 | critical path for last transition of F2:
-|   B2 -> 1 @ 60000.000ns , node was an input
-|   slice_0[2]/a_n58_n45# -> 0 @ 60000.121ns   (0.121ns)
-|   F2 -> 1 @ 60000.124ns   (0.003ns)
+|   B2 -> 1 @ 6000.000ns , node was an input
+|   slice_0[2]/a_n58_n45# -> 0 @ 6000.121ns   (0.121ns)
+|   F2 -> 1 @ 6000.124ns   (0.003ns)
 | critical path for last transition of F1:
-|   B1 -> 1 @ 62000.000ns , node was an input
-|   slice_0[1]/a_n58_n45# -> 0 @ 62000.121ns   (0.121ns)
-|   F1 -> 1 @ 62000.124ns   (0.003ns)
+|   B1 -> 1 @ 6200.000ns , node was an input
+|   slice_0[1]/a_n58_n45# -> 0 @ 6200.121ns   (0.121ns)
+|   F1 -> 1 @ 6200.124ns   (0.003ns)
 | critical path for last transition of F0:
-|   B0 -> 0 @ 62000.000ns , node was an input
-|   slice_0[0]/a_n58_n45# -> 1 @ 62000.128ns   (0.128ns)
-|   F0 -> 0 @ 62000.130ns   (0.002ns)
+|   B0 -> 0 @ 6200.000ns , node was an input
+|   slice_0[0]/a_n58_n45# -> 1 @ 6200.128ns   (0.128ns)
+|   F0 -> 0 @ 6200.130ns   (0.002ns)
 | F=111 B=111 A=111 
-| time = 64000.000ns
+| time = 6400.000ns
 | critical path for last transition of F2:
-|   B2 -> 1 @ 60000.000ns , node was an input
-|   slice_0[2]/a_n58_n45# -> 0 @ 60000.121ns   (0.121ns)
-|   F2 -> 1 @ 60000.124ns   (0.003ns)
+|   B2 -> 1 @ 6000.000ns , node was an input
+|   slice_0[2]/a_n58_n45# -> 0 @ 6000.121ns   (0.121ns)
+|   F2 -> 1 @ 6000.124ns   (0.003ns)
 | critical path for last transition of F1:
-|   B1 -> 1 @ 62000.000ns , node was an input
-|   slice_0[1]/a_n58_n45# -> 0 @ 62000.121ns   (0.121ns)
-|   F1 -> 1 @ 62000.124ns   (0.003ns)
+|   B1 -> 1 @ 6200.000ns , node was an input
+|   slice_0[1]/a_n58_n45# -> 0 @ 6200.121ns   (0.121ns)
+|   F1 -> 1 @ 6200.124ns   (0.003ns)
 | critical path for last transition of F0:
-|   B0 -> 1 @ 63000.000ns , node was an input
-|   slice_0[0]/a_n58_n45# -> 0 @ 63000.121ns   (0.121ns)
-|   F0 -> 1 @ 63000.124ns   (0.003ns)
+|   B0 -> 1 @ 6300.000ns , node was an input
+|   slice_0[0]/a_n58_n45# -> 0 @ 6300.121ns   (0.121ns)
+|   F0 -> 1 @ 6300.124ns   (0.003ns)
