@@ -2,7 +2,7 @@
 * MODELS
 *
 
-.include /home/thrunml/vlsi/models/model_t36s.sp
+.include ../../../models/model_t36s.sp
 .include slice.spice
 
 *
