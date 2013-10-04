@@ -1,6 +1,6 @@
 stepsize 100
 
-logfile fun_3.log
+logfile fun_8.log
 
 h VDD
 l GND
