@@ -2,7 +2,6 @@
 .*
 *.o
 *.swp
-*.vcd
 db/
 incremental_db/
 *.bak
