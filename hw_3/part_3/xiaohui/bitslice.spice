@@ -1,0 +1,99 @@
+* HSPICE file created from bitslice.ext - technology: scmos
+
+.option scale=0.3u
+
+m1000 vdd B a_n12_n62 Vdd pfet w=4 l=2
++ ad=808 pd=532 as=36 ps=26 
+m1001 gnd B a_n12_n62 Gnd nfet w=4 l=2
++ ad=382 pd=334 as=36 ps=34 
+m1002 a_11_n7 a_n12_n62 a_2_n7 Gnd nfet w=4 l=2
++ ad=80 pd=48 as=28 ps=30 
+m1003 gnd cin a_11_n7 Gnd nfet w=4 l=2
++ ad=0 pd=0 as=0 ps=0 
+m1004 a_2_n7 a_n12_n62 vdd Vdd pfet w=4 l=2
++ ad=80 pd=48 as=0 ps=0 
+m1005 vdd cin a_2_n7 Vdd pfet w=4 l=2
++ ad=0 pd=0 as=0 ps=0 
+m1006 cout a_n4_n140 vdd Vdd pfet w=4 l=2
++ ad=128 pd=80 as=0 ps=0 
+m1007 vdd a_14_n70 cout Vdd pfet w=4 l=2
++ ad=0 pd=0 as=0 ps=0 
+m1008 cout a_2_n7 vdd Vdd pfet w=4 l=2
++ ad=0 pd=0 as=0 ps=0 
+m1009 a_14_n70 a_n12_n62 vdd Vdd pfet w=4 l=2
++ ad=88 pd=52 as=0 ps=0 
+m1010 vdd A a_14_n70 Vdd pfet w=4 l=2
++ ad=0 pd=0 as=0 ps=0 
+m1011 a_114_n77 a_n4_n140 gnd Gnd nfet w=4 l=2
++ ad=88 pd=52 as=0 ps=0 
+m1012 a_138_n77 a_14_n70 a_114_n77 Gnd nfet w=4 l=2
++ ad=100 pd=58 as=0 ps=0 
+m1013 cout a_2_n7 a_138_n77 Gnd nfet w=4 l=2
++ ad=40 pd=36 as=0 ps=0 
+m1014 a_14_n94 a_n12_n62 gnd Gnd nfet w=4 l=2
++ ad=88 pd=52 as=0 ps=0 
+m1015 a_14_n70 A a_14_n94 Gnd nfet w=4 l=2
++ ad=44 pd=38 as=0 ps=0 
+m1016 a_7_n140 A a_n4_n140 Gnd nfet w=4 l=2
++ ad=100 pd=58 as=36 ps=34 
+m1017 gnd cin a_7_n140 Gnd nfet w=4 l=2
++ ad=0 pd=0 as=0 ps=0 
+m1018 a_n4_n140 A vdd Vdd pfet w=4 l=2
++ ad=100 pd=58 as=0 ps=0 
+m1019 vdd cin a_n4_n140 Vdd pfet w=4 l=2
++ ad=0 pd=0 as=0 ps=0 
+m1020 a_10_n214 B vdd Vdd pfet w=4 l=2
++ ad=120 pd=68 as=0 ps=0 
+m1021 vdd S a_10_n214 Vdd pfet w=4 l=2
++ ad=0 pd=0 as=0 ps=0 
+m1022 a_10_n238 B gnd Gnd nfet w=4 l=2
++ ad=120 pd=68 as=0 ps=0 
+m1023 a_10_n214 S a_10_n238 Gnd nfet w=4 l=2
++ ad=40 pd=36 as=0 ps=0 
+m1024 F a_99_n283 vdd Vdd pfet w=4 l=3
++ ad=216 pd=116 as=0 ps=0 
+m1025 vdd a_10_n214 F Vdd pfet w=4 l=3
++ ad=0 pd=0 as=0 ps=0 
+m1026 a_42_n295 S gnd Gnd nfet w=5 l=2
++ ad=50 pd=40 as=0 ps=0 
+m1027 a_198_n274 a_99_n283 gnd Gnd nfet w=4 l=3
++ ad=216 pd=116 as=0 ps=0 
+m1028 F a_10_n214 a_198_n274 Gnd nfet w=4 l=3
++ ad=44 pd=38 as=0 ps=0 
+m1029 a_99_n283 a_42_n295 vdd Vdd pfet w=4 l=3
++ ad=128 pd=72 as=0 ps=0 
+m1030 vdd A a_99_n283 Vdd pfet w=4 l=3
++ ad=0 pd=0 as=0 ps=0 
+m1031 a_42_n295 S vdd Vdd pfet w=4 l=2
++ ad=40 pd=28 as=0 ps=0 
+m1032 a_99_n305 a_42_n295 gnd Gnd nfet w=4 l=3
++ ad=128 pd=72 as=0 ps=0 
+m1033 a_99_n283 A a_99_n305 Gnd nfet w=4 l=3
++ ad=40 pd=36 as=0 ps=0 
+C0 m2_4_n168 GND 5.8fF **FLOATING
+C1 gnd GND 30.9fF
+C2 vdd GND 46.5fF
+C3 a_42_n295 GND 5.2fF
+C4 A GND 12.5fF
+C5 F GND 3.6fF
+C6 a_99_n283 GND 9.5fF
+C7 a_10_n214 GND 12.7fF
+C8 cout GND 4.9fF
+C9 a_n4_n140 GND 15.1fF
+C10 a_14_n70 GND 11.0fF
+C11 a_2_n7 GND 8.5fF
+C12 cin GND 14.0fF
+C13 a_n12_n62 GND 9.1fF
+C14 B GND 17.8fF
+** hspice subcircuit dictionary
+.include /home/chakkamj/model_t36s.sp
+
+****source description*****
+VDD vdd gnd 5v
+Va A gnd PWL(0 5v 4.9n 5v 5n 0v 9.9n 0v 10n 5v 14.9n 5v 15n 0v 19.9n 0v 20n 5v 24.9n 5v)
+Vb B gnd PWL(0 5v 4.9n 5v 5n 0v 9.9n 0v 10n 5v 19.9n 5v 20n 0v 24.9n 0v)
+Vcin cin gnd PWL(0 0v 4.9n 0v 5n 5v 19.9n 5v 20n 0v 24.9n 0v)
+Vs S gnd PWl(0 0v 4.9n 0v 5n 5v 19.9n 5v 20n 0v 24.9n 0v)
+.option post
+.tran 0.1n 25n
+.end

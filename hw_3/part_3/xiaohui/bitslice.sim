@@ -1,0 +1,73 @@
+| units: 30 tech: scmos format: SU
+p B a_n12_n62# vdd 2 4 14 42 g=S_Vdd! s=A_36,P_26 d=A_808,P_532
+n B a_n12_n62# gnd 2 4 14 22 g=S_Gnd! s=A_36,P_34 d=A_382,P_334
+n a_n12_n62# a_2_n7# a_11_n7# 2 4 9 -7 g=S_Gnd! s=A_28,P_30 d=A_80,P_48
+n cin a_11_n7# gnd 2 4 31 -7 g=S_Gnd! s=A_0,P_0 d=A_0,P_0
+p a_n12_n62# vdd a_2_n7# 2 4 9 -24 g=S_Vdd! s=A_0,P_0 d=A_80,P_48
+p cin a_2_n7# vdd 2 4 31 -24 g=S_Vdd! s=A_0,P_0 d=A_0,P_0
+p a_n4_n140# vdd cout 2 4 112 -51 g=S_Vdd! s=A_0,P_0 d=A_128,P_80
+p a_14_n70# cout vdd 2 4 136 -51 g=S_Vdd! s=A_0,P_0 d=A_0,P_0
+p a_2_n7# vdd cout 2 4 163 -51 g=S_Vdd! s=A_0,P_0 d=A_0,P_0
+p a_n12_n62# vdd a_14_n70# 2 4 12 -70 g=S_Vdd! s=A_0,P_0 d=A_88,P_52
+p A a_14_n70# vdd 2 4 36 -70 g=S_Vdd! s=A_0,P_0 d=A_0,P_0
+n a_n4_n140# gnd a_114_n77# 2 4 112 -77 g=S_Gnd! s=A_0,P_0 d=A_88,P_52
+n a_14_n70# a_114_n77# a_138_n77# 2 4 136 -77 g=S_Gnd! s=A_0,P_0 d=A_100,P_58
+n a_2_n7# a_138_n77# cout 2 4 163 -77 g=S_Gnd! s=A_0,P_0 d=A_40,P_36
+n a_n12_n62# gnd a_14_n94# 2 4 12 -94 g=S_Gnd! s=A_0,P_0 d=A_88,P_52
+n A a_14_n94# a_14_n70# 2 4 36 -94 g=S_Gnd! s=A_0,P_0 d=A_44,P_38
+n A a_n4_n140# a_7_n140# 2 4 5 -140 g=S_Gnd! s=A_36,P_34 d=A_100,P_58
+n cin a_7_n140# gnd 2 4 32 -140 g=S_Gnd! s=A_0,P_0 d=A_0,P_0
+p A vdd a_n4_n140# 2 4 5 -179 g=S_Vdd! s=A_0,P_0 d=A_100,P_58
+p cin a_n4_n140# vdd 2 4 32 -179 g=S_Vdd! s=A_0,P_0 d=A_0,P_0
+p B vdd a_10_n214# 2 4 8 -214 g=S_Vdd! s=A_0,P_0 d=A_120,P_68
+p S a_10_n214# vdd 2 4 40 -214 g=S_Vdd! s=A_0,P_0 d=A_0,P_0
+n B gnd a_10_n238# 2 4 8 -238 g=S_Gnd! s=A_0,P_0 d=A_120,P_68
+n S a_10_n238# a_10_n214# 2 4 40 -238 g=S_Gnd! s=A_0,P_0 d=A_40,P_36
+p a_99_n283# vdd F 3 4 195 -254 g=S_Vdd! s=A_0,P_0 d=A_216,P_116
+p a_10_n214# F vdd 3 4 252 -254 g=S_Vdd! s=A_0,P_0 d=A_0,P_0
+n S gnd a_42_n295# 2 5 40 -272 g=S_Gnd! s=A_0,P_0 d=A_50,P_40
+n a_99_n283# gnd a_198_n274# 3 4 195 -274 g=S_Gnd! s=A_0,P_0 d=A_216,P_116
+n a_10_n214# a_198_n274# F 3 4 252 -274 g=S_Gnd! s=A_0,P_0 d=A_44,P_38
+p a_42_n295# vdd a_99_n283# 3 4 96 -283 g=S_Vdd! s=A_0,P_0 d=A_128,P_72
+p A a_99_n283# vdd 3 4 131 -283 g=S_Vdd! s=A_0,P_0 d=A_0,P_0
+p S vdd a_42_n295# 2 4 40 -295 g=S_Vdd! s=A_0,P_0 d=A_40,P_28
+n a_42_n295# gnd a_99_n305# 3 4 96 -305 g=S_Gnd! s=A_0,P_0 d=A_128,P_72
+n A a_99_n305# a_99_n283# 3 4 131 -305 g=S_Gnd! s=A_0,P_0 d=A_40,P_36
+C m2_4_n168# GND 5.8
+R a_99_n305# 658
+C gnd GND 30.9
+R gnd 5847
+C vdd GND 46.5
+R vdd 9019
+R a_198_n274# 1110
+C a_42_n295# GND 5.2
+R a_42_n295# 1304
+C A GND 12.5
+R A 2513
+C F GND 3.6
+R F 1918
+C a_99_n283# GND 9.5
+R a_99_n283# 1934
+R a_10_n238# 617
+C a_10_n214# GND 12.7
+R a_10_n214# 2285
+R S 1067
+R a_7_n140# 514
+R a_14_n94# 452
+R a_138_n77# 514
+R a_114_n77# 452
+C cout GND 4.9
+R cout 1584
+C a_n4_n140# GND 15.1
+R a_n4_n140# 1792
+C a_14_n70# GND 11.0
+R a_14_n70# 2026
+R a_11_n7# 411
+C a_2_n7# GND 8.5
+R a_2_n7# 2223
+C cin GND 14.0
+R cin 1453
+C a_n12_n62# GND 9.1
+R a_n12_n62# 1744
+C B GND 17.8
+R B 1319
