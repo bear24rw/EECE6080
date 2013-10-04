@@ -1,4 +1,4 @@
-TB = fun_tb
+TB = fun_3_tb
 
 FLAGS = --ieee=synopsys -fexplicit
 FILES = $(wildcard *.vhd)
@@ -17,4 +17,4 @@ view:
 
 clean:
 	ghdl --clean
-	rm -f *.vcd work-obj93.cf
+	rm -f work-obj93.cf
