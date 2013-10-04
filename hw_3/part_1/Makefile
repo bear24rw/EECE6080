@@ -1,4 +1,4 @@
-TB = fun_tb
+TB = fun_3_tb
 
 FLAGS = --ieee=synopsys -fexplicit
 FILES = $(wildcard *.vhd)

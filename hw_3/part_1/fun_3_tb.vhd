@@ -3,12 +3,12 @@ use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 use ieee.std_logic_unsigned.all;
 
-entity fun_tb is
-end fun_tb;
+entity fun_3_tb is
+end fun_3_tb;
 
-architecture tb_rtl of fun_tb is
+architecture tb_rtl of fun_3_tb is
 
-    constant n : integer := 8;
+    constant n : integer := 3;
 
     signal a : std_logic_vector(n-1 downto 0);
     signal b : std_logic_vector(n-1 downto 0);
