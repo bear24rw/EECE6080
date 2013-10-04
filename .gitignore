@@ -14,4 +14,6 @@ qsim/
 *.mt0
 *.st0
 *.tr0
+*.aux
+*.out
 
