@@ -1,0 +1,187 @@
+| units: 30 tech: scmos format: MIT
+p B0 VDD slice_0[0]/a_n58_33# 2 4 8 114
+p GND slice_0[0]/a_n58_33# VDD 2 4 24 114
+p GND VDD slice_0[0]/a_n26_33# 2 4 40 114
+p slice_0[0]/a_n6_41# slice_0[0]/a_n26_33# VDD 2 4 56 114
+p A0 slice_0[0]/a_n6_41# VDD 2 4 72 114
+p slice_0[0]/a_n6_41# VDD slice_0[0]/a_29_49# 2 4 88 114
+p B0 slice_0[0]/a_29_49# VDD 2 4 104 114
+n B0 slice_0[0]/a_n58_33# slice_0[0]/a_n51_33# 2 4 8 98
+n GND slice_0[0]/a_n51_33# GND 2 4 24 98
+n GND slice_0[0]/a_n26_33# slice_0[0]/a_n19_33# 2 4 40 98
+n slice_0[0]/a_n6_41# slice_0[0]/a_n19_33# GND 2 4 56 98
+n A0 slice_0[0]/a_n6_41# GND 2 4 72 98
+n slice_0[0]/a_n6_41# GND slice_0[0]/a_29_33# 2 4 88 98
+n slice_0[0]/a_n58_33# slice_0[1]/C_IN slice_0[0]/a_n43_13# 2 4 16 78
+n slice_0[0]/a_n26_33# slice_0[0]/a_n43_13# slice_0[0]/a_n11_13# 2 4 48 78
+p slice_0[0]/a_n58_33# slice_0[1]/C_IN VDD 2 4 16 62
+p slice_0[0]/a_n26_33# slice_0[1]/C_IN VDD 2 4 48 62
+n B0 slice_0[0]/a_29_33# slice_0[0]/a_29_49# 2 4 104 98
+n slice_0[0]/a_29_49# slice_0[0]/a_n11_13# GND 2 4 96 78
+p slice_0[0]/a_29_49# slice_0[1]/C_IN VDD 2 4 96 62
+p B0 VDD slice_0[0]/a_n58_n45# 2 4 8 36
+p slice_0[0]/a_n38_n37# slice_0[0]/a_n58_n45# VDD 2 4 24 36
+p slice_0[0]/S slice_0[0]/a_n38_n37# VDD 2 4 40 36
+p slice_0[0]/S VDD slice_0[0]/a_n10_n45# 2 4 56 36
+p A0 slice_0[0]/a_n10_n45# VDD 2 4 72 36
+p slice_0[0]/a_n10_n45# VDD F0 2 4 88 36
+p slice_0[0]/a_n58_n45# F0 VDD 2 4 104 36
+n B0 slice_0[0]/a_n58_n45# slice_0[0]/a_n51_n45# 2 4 8 20
+n slice_0[0]/a_n38_n37# slice_0[0]/a_n51_n45# GND 2 4 24 20
+n slice_0[0]/S slice_0[0]/a_n38_n37# GND 2 4 40 20
+n slice_0[0]/S slice_0[0]/a_n10_n45# slice_0[0]/a_n3_n45# 2 4 56 20
+n A0 slice_0[0]/a_n3_n45# GND 2 4 72 20
+n slice_0[0]/a_n10_n45# GND slice_0[0]/a_29_n45# 2 4 88 20
+n slice_0[0]/a_n58_n45# slice_0[0]/a_29_n45# F0 2 4 104 20
+p B1 VDD slice_0[1]/a_n58_33# 2 4 128 114
+p slice_0[1]/C_IN slice_0[1]/a_n58_33# VDD 2 4 144 114
+p slice_0[1]/C_IN VDD slice_0[1]/a_n26_33# 2 4 160 114
+p slice_0[1]/a_n6_41# slice_0[1]/a_n26_33# VDD 2 4 176 114
+p A1 slice_0[1]/a_n6_41# VDD 2 4 192 114
+p slice_0[1]/a_n6_41# VDD slice_0[1]/a_29_49# 2 4 208 114
+p B1 slice_0[1]/a_29_49# VDD 2 4 224 114
+n B1 slice_0[1]/a_n58_33# slice_0[1]/a_n51_33# 2 4 128 98
+n slice_0[1]/C_IN slice_0[1]/a_n51_33# GND 2 4 144 98
+n slice_0[1]/C_IN slice_0[1]/a_n26_33# slice_0[1]/a_n19_33# 2 4 160 98
+n slice_0[1]/a_n6_41# slice_0[1]/a_n19_33# GND 2 4 176 98
+n A1 slice_0[1]/a_n6_41# GND 2 4 192 98
+n slice_0[1]/a_n6_41# GND slice_0[1]/a_29_33# 2 4 208 98
+n slice_0[1]/a_n58_33# slice_0[2]/C_IN slice_0[1]/a_n43_13# 2 4 136 78
+n slice_0[1]/a_n26_33# slice_0[1]/a_n43_13# slice_0[1]/a_n11_13# 2 4 168 78
+p slice_0[1]/a_n58_33# slice_0[2]/C_IN VDD 2 4 136 62
+p slice_0[1]/a_n26_33# slice_0[2]/C_IN VDD 2 4 168 62
+n B1 slice_0[1]/a_29_33# slice_0[1]/a_29_49# 2 4 224 98
+n slice_0[1]/a_29_49# slice_0[1]/a_n11_13# GND 2 4 216 78
+p slice_0[1]/a_29_49# slice_0[2]/C_IN VDD 2 4 216 62
+p B1 VDD slice_0[1]/a_n58_n45# 2 4 128 36
+p slice_0[1]/a_n38_n37# slice_0[1]/a_n58_n45# VDD 2 4 144 36
+p slice_0[0]/S slice_0[1]/a_n38_n37# VDD 2 4 160 36
+p slice_0[0]/S VDD slice_0[1]/a_n10_n45# 2 4 176 36
+p A1 slice_0[1]/a_n10_n45# VDD 2 4 192 36
+p slice_0[1]/a_n10_n45# VDD F1 2 4 208 36
+p slice_0[1]/a_n58_n45# F1 VDD 2 4 224 36
+n B1 slice_0[1]/a_n58_n45# slice_0[1]/a_n51_n45# 2 4 128 20
+n slice_0[1]/a_n38_n37# slice_0[1]/a_n51_n45# GND 2 4 144 20
+n slice_0[0]/S slice_0[1]/a_n38_n37# GND 2 4 160 20
+n slice_0[0]/S slice_0[1]/a_n10_n45# slice_0[1]/a_n3_n45# 2 4 176 20
+n A1 slice_0[1]/a_n3_n45# GND 2 4 192 20
+n slice_0[1]/a_n10_n45# GND slice_0[1]/a_29_n45# 2 4 208 20
+n slice_0[1]/a_n58_n45# slice_0[1]/a_29_n45# F1 2 4 224 20
+p B2 VDD slice_0[2]/a_n58_33# 2 4 248 114
+p slice_0[2]/C_IN slice_0[2]/a_n58_33# VDD 2 4 264 114
+p slice_0[2]/C_IN VDD slice_0[2]/a_n26_33# 2 4 280 114
+p slice_0[2]/a_n6_41# slice_0[2]/a_n26_33# VDD 2 4 296 114
+p A2 slice_0[2]/a_n6_41# VDD 2 4 312 114
+p slice_0[2]/a_n6_41# VDD slice_0[2]/a_29_49# 2 4 328 114
+p B2 slice_0[2]/a_29_49# VDD 2 4 344 114
+n B2 slice_0[2]/a_n58_33# slice_0[2]/a_n51_33# 2 4 248 98
+n slice_0[2]/C_IN slice_0[2]/a_n51_33# GND 2 4 264 98
+n slice_0[2]/C_IN slice_0[2]/a_n26_33# slice_0[2]/a_n19_33# 2 4 280 98
+n slice_0[2]/a_n6_41# slice_0[2]/a_n19_33# GND 2 4 296 98
+n A2 slice_0[2]/a_n6_41# GND 2 4 312 98
+n slice_0[2]/a_n6_41# GND slice_0[2]/a_29_33# 2 4 328 98
+n slice_0[2]/a_n58_33# slice_0[0]/S slice_0[2]/a_n43_13# 2 4 256 78
+n slice_0[2]/a_n26_33# slice_0[2]/a_n43_13# slice_0[2]/a_n11_13# 2 4 288 78
+p slice_0[2]/a_n58_33# slice_0[0]/S VDD 2 4 256 62
+p slice_0[2]/a_n26_33# slice_0[0]/S VDD 2 4 288 62
+n B2 slice_0[2]/a_29_33# slice_0[2]/a_29_49# 2 4 344 98
+n slice_0[2]/a_29_49# slice_0[2]/a_n11_13# GND 2 4 336 78
+p slice_0[2]/a_29_49# slice_0[0]/S VDD 2 4 336 62
+p B2 VDD slice_0[2]/a_n58_n45# 2 4 248 36
+p slice_0[2]/a_n38_n37# slice_0[2]/a_n58_n45# VDD 2 4 264 36
+p slice_0[0]/S slice_0[2]/a_n38_n37# VDD 2 4 280 36
+p slice_0[0]/S VDD slice_0[2]/a_n10_n45# 2 4 296 36
+p A2 slice_0[2]/a_n10_n45# VDD 2 4 312 36
+p slice_0[2]/a_n10_n45# VDD F2 2 4 328 36
+p slice_0[2]/a_n58_n45# F2 VDD 2 4 344 36
+n B2 slice_0[2]/a_n58_n45# slice_0[2]/a_n51_n45# 2 4 248 20
+n slice_0[2]/a_n38_n37# slice_0[2]/a_n51_n45# GND 2 4 264 20
+n slice_0[0]/S slice_0[2]/a_n38_n37# GND 2 4 280 20
+n slice_0[0]/S slice_0[2]/a_n10_n45# slice_0[2]/a_n3_n45# 2 4 296 20
+n A2 slice_0[2]/a_n3_n45# GND 2 4 312 20
+n slice_0[2]/a_n10_n45# GND slice_0[2]/a_29_n45# 2 4 328 20
+n slice_0[2]/a_n58_n45# slice_0[2]/a_29_n45# F2 2 4 344 20
+R slice_0[2]/a_29_n45# 288
+R slice_0[2]/a_n3_n45# 288
+R slice_0[2]/a_n51_n45# 288
+R F2 728
+C VDD GND 62.6
+R VDD 20703
+C slice_0[2]/a_n58_n45# GND 8.7
+R slice_0[2]/a_n58_n45# 1114
+C slice_0[2]/a_n10_n45# GND 3.3
+R slice_0[2]/a_n10_n45# 990
+R slice_0[2]/a_n38_n37# 497
+C slice_0[0]/S GND 30.4
+R slice_0[0]/S 3702
+C slice_0[2]/a_n11_13# GND 2.3
+R slice_0[2]/a_n11_13# 489
+R slice_0[2]/a_n43_13# 488
+R slice_0[2]/a_29_33# 488
+R slice_0[2]/a_n19_33# 488
+R slice_0[2]/a_n51_33# 488
+C slice_0[2]/a_29_49# GND 2.8
+R slice_0[2]/a_29_49# 1277
+C slice_0[2]/a_n26_33# GND 2.6
+R slice_0[2]/a_n26_33# 1277
+C slice_0[2]/a_n58_33# GND 2.8
+R slice_0[2]/a_n58_33# 1277
+R A2 1331
+C slice_0[2]/a_n6_41# GND 3.1
+R slice_0[2]/a_n6_41# 807
+C slice_0[2]/C_IN GND 11.0
+R slice_0[2]/C_IN 1978
+R B2 1762
+R slice_0[1]/a_29_n45# 288
+R slice_0[1]/a_n3_n45# 288
+R slice_0[1]/a_n51_n45# 288
+R F1 728
+C slice_0[1]/a_n58_n45# GND 8.7
+R slice_0[1]/a_n58_n45# 1114
+C slice_0[1]/a_n10_n45# GND 3.3
+R slice_0[1]/a_n10_n45# 990
+R slice_0[1]/a_n38_n37# 497
+C slice_0[1]/a_n11_13# GND 2.3
+R slice_0[1]/a_n11_13# 489
+R slice_0[1]/a_n43_13# 488
+R slice_0[1]/a_29_33# 488
+R slice_0[1]/a_n19_33# 488
+R slice_0[1]/a_n51_33# 488
+C slice_0[1]/a_29_49# GND 2.8
+R slice_0[1]/a_29_49# 1277
+C slice_0[1]/a_n26_33# GND 2.6
+R slice_0[1]/a_n26_33# 1277
+C slice_0[1]/a_n58_33# GND 2.8
+R slice_0[1]/a_n58_33# 1277
+R A1 1331
+C slice_0[1]/a_n6_41# GND 3.1
+R slice_0[1]/a_n6_41# 807
+C slice_0[1]/C_IN GND 11.1
+R slice_0[1]/C_IN 1978
+R B1 1762
+R slice_0[0]/a_29_n45# 288
+R slice_0[0]/a_n3_n45# 288
+R slice_0[0]/a_n51_n45# 288
+R F0 728
+C slice_0[0]/a_n58_n45# GND 8.7
+R slice_0[0]/a_n58_n45# 1114
+C slice_0[0]/a_n10_n45# GND 3.3
+R slice_0[0]/a_n10_n45# 990
+R slice_0[0]/a_n38_n37# 497
+C slice_0[0]/a_n11_13# GND 2.3
+R slice_0[0]/a_n11_13# 489
+R slice_0[0]/a_n43_13# 488
+R slice_0[0]/a_29_33# 488
+R slice_0[0]/a_n19_33# 488
+R slice_0[0]/a_n51_33# 488
+C slice_0[0]/a_29_49# GND 2.8
+R slice_0[0]/a_29_49# 1277
+C slice_0[0]/a_n26_33# GND 2.8
+R slice_0[0]/a_n26_33# 1277
+C slice_0[0]/a_n58_33# GND 3.0
+R slice_0[0]/a_n58_33# 1277
+R A0 1331
+C slice_0[0]/a_n6_41# GND 3.1
+R slice_0[0]/a_n6_41# 807
+R GND 9668
+R B0 1762
