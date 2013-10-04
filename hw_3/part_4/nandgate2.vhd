@@ -11,6 +11,6 @@ end entity;
 architecture arc of nandgate2 is
 begin
     process(a,b) begin
-        c <= not(a and b) after 259.5 ps;
+        c <= not(a and b) after 260.02 ps;
     end process;
 end architecture;
