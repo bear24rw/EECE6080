@@ -10,3 +10,9 @@ incremental_db/
 output_files/
 qsim/
 *.jar
+*.ic0
+*.lis
+*.mt0
+*.st0
+*.tr0
+
