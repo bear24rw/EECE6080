@@ -1,0 +1,139 @@
+\documentclass{article}
+\usepackage[includeheadfoot,left=1in, right=0.5in, top=0.5in, bottom=0.5in]{geometry}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage{extramarks}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{graphicx}
+\usepackage[table]{xcolor}
+\usepackage{listings}
+%\usepackage{courier}
+\usepackage{float}
+\usepackage{url}
+\usepackage{caption}
+\usepackage[pdfborder={0 0 0}]{hyperref}
+\usepackage[compact,small]{titlesec}
+\usepackage{microtype}
+\usepackage{verbatim}
+\usepackage{booktabs}
+\usepackage{indentfirst}
+\usepackage{pdfpages}
+
+\definecolor{lightgray}{gray}{0.9}
+
+\parskip = 0.5\baselineskip
+\setlength{\belowcaptionskip}{-\baselineskip}
+
+\captionsetup{font=scriptsize}
+\captionsetup{labelfont=bf}
+
+\pagestyle{fancy}
+\rhead{Max Thrun \& Xiaohui Qi}
+\lhead{EECE6080 - Intranex}
+\rfoot{Page\ \thepage\ of \protect\pageref{LastPage}}
+\cfoot{}
+\renewcommand\headrulewidth{0.4pt}
+\renewcommand\footrulewidth{0.4pt}
+
+% make verbatim text small
+\makeatletter
+\g@addto@macro\@verbatim\small
+\makeatother
+
+\setlength\parindent{0pt} % Removes all indentation from paragraphs
+
+\definecolor{sh_comment}{rgb}{0.12, 0.38, 0.18 } %adjusted, in Eclipse: {0.25, 0.42, 0.30 } = #3F6A4D
+\definecolor{sh_keyword}{rgb}{0.37, 0.08, 0.25}  % #5F1441
+\definecolor{sh_string}{rgb}{0.06, 0.10, 0.98} % #101AF9
+
+\lstset{
+    language=vhdl,
+    xleftmargin=.25in,
+    xrightmargin=.25in,
+    numbers=left,
+    numberstyle=\tiny,
+    frame=tb,
+    showstringspaces=false,
+    captionpos=b,
+    stringstyle=\color{sh_string},
+    keywordstyle = \color{sh_keyword}\bfseries,
+    commentstyle=\color{sh_comment}\itshape,
+    basicstyle=\small\sffamily,
+    %numbersep=-5pt,
+    belowskip=\baselineskip,
+    aboveskip=\baselineskip
+}
+
+\begin{document}
+
+\includepdf{../cover_page/cover_page.pdf}
+\newpage
+
+\section*{Task Allocation}
+
+\begin{table}[H]
+    \centering
+    \rowcolors{1}{}{lightgray}
+    \begin{tabular}{p{0.45\textwidth}ccc}
+        \toprule
+        \textbf{Task} & \textbf{Person} & \textbf{Milestone} & \textbf{Date}\\
+        \midrule
+        Pinout Diagram                                                                                        & Thrun &                               & 10-15-2013 \\
+        Functional description                                                                                & Thrun &                               & 10-15-2013 \\
+        Explanation of test mode                                                                              & Qi    &                               & 10-15-2013 \\
+        Description of design decisions                                                                       & Thrun &                               & 10-16-2013 \\
+        Top-level block diagram                                                                               & Qi    &                               & 10-16-2013 \\
+        Hierarchical logic level design                                                                       & Thrun & Initial Design Done           & 10-16-2013 \\
+        Behavioral model of each gate                                                                         & Qi    &                               & 10-17-2013 \\
+        Behavioral model of slice                                                                             & Qi    &                               & 10-17-2013 \\
+        Behavioral model of entire chip                                                                       & Qi    & VHDL Models Done              & 10-18-2013 \\
+        Testbench for each                                                                                    & Thrun &                               & 10-19-2013 \\
+        Simulation results                                                                                    & Thrun & VHDL Slice/Chip Tested        & 10-19-2013 \\
+        Slice interconnect description                                                                        & Qi    & 1st Progress Report           & 10-21-2013 \\
+        \hline
+        Slice circuit diagram                                                                                 & Thrun &                               & 10-22-2013 \\
+        Slice layout                                                                                          & Thrun & Slice Implemented             & 10-22-2013 \\
+        Slice IRSIM CMD file                                                                                  & Thrun &                               & 10-23-2013 \\
+        Slice IRSIM result                                                                                    & Qi    &                               & 10-23-2013 \\
+        Slice Spice simulation file                                                                           & Qi    &                               & 10-24-2013 \\
+        Slice Spice result                                                                                    & Qi    &                               & 10-24-2013 \\
+        Slice Layout Timings                                                                                  & Qi    & Slice Layout Tested           & 10-24-2013 \\
+        Add gate leaf timings to models                                                                       & Thrun &                               & 10-25-2013 \\
+        Simulate full chip with new models                                                                    & Thrun & VHDL Chip With Timings Tested & 10-25-2013 \\
+        Predict overall timing, clock speed, and throughput                                                   & Thrun &                               & 10-26-2013 \\
+        Compare simulation results to 1st progress report                                                     & Thrun &                               & 10-27-2013 \\
+        Floor plan showing placement of major modules including interslice routing and control and test logic & Qi    &                               & 10-28-2013 \\
+        Updated 1st progress report                                                                           & Thrun &                               & 10-29-2013 \\
+        Description of major design decisions and design revisions                                            & Qi    & 2nd Progress Report           & 10-30-2013 \\
+        \hline
+        Chip level layout in form of color plot                                                               & Thrun & Chip Implemented              & 11-1-2013 \\
+        Chip Spice simulation file                                                                            & Qi    &                               & 11-2-2013 \\
+        Chip Spice result                                                                                     & Qi    &                               & 11-3-2013 \\
+        Chip IRSIM CMD file                                                                                   & Qi    &                               & 11-3-2013 \\
+        Chip IRSIM results                                                                                    & Qi    &                               & 11-3-2013 \\
+        Chip Layout Timings for normal and test mode                                                          & Qi    & Chip Layout Tested            & 11-4-2013 \\
+        Detailed users guide                                                                                  & Thrun &                               & 11-5-2013 \\
+        Test strategy for test engineer                                                                       & Qi    &                               & 11-5-2013 \\
+        Description of chip architecture, design decisions and the rationale for them. Address revisions.     & Thrun &                               & 11-6-2013 \\
+        Updated 1st and 2nd progress reports                                                                  & Qi    &                               & 11-7-2013 \\
+        Final VHDL simulation results and explanation                                                         & Thrun & Final Report                  & 11-8-2013 \\
+        \bottomrule
+    \end{tabular}
+    \caption{Task Breakdown and Allocation}
+    \rowcolors{1}{}{}
+\end{table}
+
+\newpage
+\section*{Task Dependencies}
+The diagram below illustrates the dependencies between the major tasks of our
+project. Nodes colored in blue are assigned to Thrun and nodes colored red are
+assigned to Qi. Note that this diagram does not cover every task so work load
+distribution should not be based soley off this diagram.
+\vspace{1cm}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\linewidth]{tasks.png}
+    \caption{Task Dependencies}
+\end{figure}
+
+\end{document}

@@ -1,0 +1,210 @@
+digraph G {
+    //labelloc="t";
+    //label="SGGoC Internal Block Diagram\n\n";
+
+    graph [ordering="in", splines=ortho, rankdir=TB, nodesep=0.2, colorscheme=rdbu9];
+    //graph [rankdir=TB, nodesep=0.2, colorscheme=rdbu9];
+    node [nodesep=0.2, label="\N", shape=record, style="filled", colorscheme=rdbu9, color=9, fillcolor=6, fontname="Arial narrow", fontsize=12];
+    edge [colorscheme=rdbu9, color=9, fontsize=11, fontname="Arial narrow"];
+
+            // Pinout Diagram
+            // Functional description
+        // Explanation of test mode
+        // Description of design decisions
+        // Hierarchical logic level design
+            // Behavioral model of each gate
+            // Behavioral model of slice
+            // Behavioral model of entire chip
+            // Testbench for each
+            // Simulation results
+        // Top-level block diagram
+            // Slice interconnect description
+        // Updated 1st progress report
+            // Slice circuit diagram
+            // Slice layout
+            // Slice IRSIM result
+            // Slice Spice result
+            // Add gate leaf timings to models
+            // Simulate full chip with new models
+            // Predict overall timing, clock speed, and throughput
+            // Compare simulation results to 1st progress report
+            // Floor plan showing placement of major modules including interslice routing and control and test logic
+        // description of major design decisions and design revisions
+        // Updated 1st and 2nd progress reports
+            // Chip level layout in form of color plot
+        // Detailed users guide
+        // Test strategy for test engineer
+        // Description of chip architecture, design decisions and the rationale for them. Address revisions.
+            // IRSIM/Spice simulation results for normal and test mode operation
+        // Final VHDL simulation results and explanation
+
+        block_diag[label="Top Level Block Diagram"];
+        slice_inter[label="Slice Interconnect Description"];
+
+        //
+        // VHDL
+        //
+
+        subgraph clusterVHDL{
+            label = "VHDL";
+
+            behav_gate[label="Gate Behav Model"];
+            behav_slice[label="Slice Behav Model"];
+            behav_chip[label="Chip Behav Model"];
+
+            behav_gate -> behav_slice -> behav_chip;
+
+            gate_tb[label="Gate TB"];
+            slice_tb[label="Slice TB"];
+            chip_tb[label="Chip TB"];
+            {rank=same; gate_tb slice_tb chip_tb};
+
+            behav_gate -> gate_tb;
+            behav_slice -> slice_tb;
+            behav_chip -> chip_tb;
+
+            sim_results[label="Simulation Results"];
+
+            gate_tb -> sim_results;
+            slice_tb-> sim_results;
+            chip_tb -> sim_results;
+        };
+
+        slice_inter -> behav_slice;
+        block_diag -> behav_chip;
+
+        //
+        // SLICE MAGIC
+        //
+
+        slice_circ_diagram[label="Slice Transistor Circuit Diagram"];
+        slice_inter -> slice_circ_diagram;
+
+        subgraph clusterSliceMagic{
+            label = "Slice Magic";
+            slice_layout[label="Slice Layout"];
+            slice_irsim[label="Slice IRSIM result"];
+            slice_spice[label="Slice Spice Result"];
+            slice_irsim_cmd[label="Slice IRSIM CMD File"];
+            slice_spice_file[label="Slice Spice File"];
+            slice_layout_timings[label="Slice Layout Timings"];
+            //{rank=same; slice_irsim slice_irsim_cmd};
+            //{rank=same; slice_spice slice_spice_file};
+            {rank=same; slice_spice slice_irsim};
+            {rank=same; slice_spice_file slice_irsim_cmd};
+        };
+
+        slice_circ_diagram -> slice_layout;
+        slice_layout -> slice_irsim;
+        slice_layout -> slice_spice;
+        slice_irsim_cmd -> slice_irsim;
+        slice_spice_file -> slice_spice;
+        slice_spice -> slice_layout_timings;
+        slice_irsim -> slice_layout_timings;
+
+        //
+        // SLICE MAGIC + VHDL
+        //
+        subgraph clusterVHDLTiming{
+            label = "VHDL With Timing";
+
+            behav_gate_timing[label="Gate Behav Model W. Timing"];
+            behav_slice_timing[label="Slice Behav Model W. Timing"];
+            behav_chip_timing[label="Chip Behav Model W. Timing"];
+
+            behav_gate -> behav_gate_timing;
+            behav_slice -> behav_slice_timing;
+            behav_chip -> behav_chip_timing;
+
+            behav_gate_timing -> behav_slice_timing -> behav_chip_timing;
+
+            timing_gate_tb[label="Gate TB"];
+            timing_slice_tb[label="Slice TB"];
+            timing_chip_tb[label="Chip TB"];
+
+            behav_gate_timing -> timing_gate_tb;
+            behav_slice_timing -> timing_slice_tb;
+            behav_chip_timing -> timing_chip_tb;
+
+            timing_sim_results[label="Simulation Results W. Timing"];
+
+            timing_chip_tb -> timing_sim_results;
+            timing_slice_tb-> timing_sim_results;
+            timing_gate_tb -> timing_sim_results;
+        };
+        slice_layout_timings -> behav_gate_timing;
+
+
+        {rank=same; behav_gate behav_gate_timing};
+        {rank=same; behav_slice behav_slice_timing};
+        {rank=same; behav_chip behav_chip_timing};
+
+        {rank=same; gate_tb slice_tb chip_tb};
+        {rank=same; timing_gate_tb timing_slice_tb timing_chip_tb};
+        {rank=same; timing_sim_results sim_results};
+
+        comp_sim_results[label="Compare VHDL Simulation Results"];
+        timing_sim_results -> comp_sim_results;
+        sim_results -> comp_sim_results;
+
+        overall_timing[label="Predict overall timing"];
+        timing_sim_results -> overall_timing;
+
+        // chip placement
+
+        //func_desc[label="Functional Description"];
+        floor_plan[label="Floor Plan"];
+        //slice_inter -> floor_plan;
+        slice_inter -> block_diag;
+        //func_desc -> floor_plan;
+
+        pinout[label="Pinout Diagram"];
+
+        subgraph clusterChip{
+            label="Chip Magic";
+            chip_level_layout[label="Chip Layout"];
+            chip_irsim[label="Chip IRSIM Result"];
+            chip_spice[label="Chip Spice Result"];
+            chip_irsim_cmd[label="Chip IRSIM CMD File"];
+            chip_spice_file[label="Chip Spice File"];
+            chip_layout_timings[label="Chip Layout Timings"];
+        };
+
+        block_diag -> floor_plan;
+        floor_plan -> chip_level_layout;
+        slice_layout -> chip_level_layout [weight=0];
+        pinout -> chip_level_layout;
+
+        chip_level_layout -> chip_irsim;
+        chip_level_layout -> chip_spice;
+        chip_irsim_cmd -> chip_irsim;
+        chip_spice_file -> chip_spice;
+        chip_spice -> chip_layout_timings;
+        chip_irsim -> chip_layout_timings;
+
+        final_timings[label="Final Timing Comparison"];
+        timing_sim_results -> final_timings;
+        sim_results -> final_timings;
+        chip_layout_timings -> final_timings;
+
+        {rank=same; slice_layout chip_level_layout};
+        //{rank=same; slice_spice chip_spice slice_irsim chip_irsim slice_spice_file slice_irsim_cmd chip_spice_file chip_irsim_cmd};
+        {rank=same; chip_layout_timings slice_layout_timings};
+
+        // color assignments based on person
+        behav_gate[color=2,fillcolor=4];
+        behav_slice[color=2,fillcolor=4];
+        behav_chip[color=2,fillcolor=4];
+        block_diag[color=2,fillcolor=4];
+        slice_inter[color=2,fillcolor=4];
+        slice_irsim[color=2,fillcolor=4];
+        slice_spice_file[color=2,fillcolor=4];
+        slice_spice[color=2,fillcolor=4];
+        slice_layout_timings[color=2,fillcolor=4];
+        floor_plan[color=2,fillcolor=4];
+        chip_spice_file[color=2,fillcolor=4];
+        chip_spice[color=2,fillcolor=4];
+        chip_irsim_cmd[color=2,fillcolor=4];
+        chip_irsim[color=2,fillcolor=4];
+        chip_layout_timings[color=2,fillcolor=4];
+}
