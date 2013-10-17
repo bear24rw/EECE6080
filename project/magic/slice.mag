@@ -1,0 +1,16 @@
+magic
+tech scmos
+timestamp 1381981457
+use DFFPOSX1  DFFPOSX1_1
+timestamp 1048618183
+transform 1 0 -92 0 1 -110
+box -8 -3 104 105
+use AOI21X1  AOI21X1_0
+timestamp 1053722243
+transform 1 0 4 0 1 -110
+box -7 -3 39 105
+use INVX1  INVX1_0
+timestamp 1053022145
+transform 1 0 36 0 1 -110
+box -9 -3 26 105
+<< end >>
