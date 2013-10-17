@@ -3,7 +3,7 @@
   {name: 'SCLK', wave: 'l.p..l|.pppl'},
   {name: 'SI', wave: 'x555x.|xxxxx', data: ['W2', 'W1', 'W0']},
   {name: 'SO', wave: 'x.....|x333x', data: ['Z2', 'Z1', 'Z0']},
-  {name: 'LD', wave: 'x1...x|0..xx'},
+  {name: 'LD', wave: 'x1...x|01..x'},
   {},
 
 ],
