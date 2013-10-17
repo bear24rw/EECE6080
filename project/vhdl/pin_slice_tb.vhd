@@ -70,6 +70,7 @@ begin
             zi <= patterns(i).zi;
             qi <= patterns(i).qi;
             wi <= patterns(i).wi;
+            wait for 10 ns;
 
             -- pulse the clock and check clock passthrough
             ci <= '1';

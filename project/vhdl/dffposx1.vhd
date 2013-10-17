@@ -6,7 +6,7 @@ entity dffposx1 is
     port(
         c : in std_logic;
         d : in std_logic;
-        q : out std_logic
+        q : out std_logic := '0'
     );
 end dffposx1;
 

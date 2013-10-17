@@ -16,8 +16,8 @@ end pin_slice;
 
 architecture rtl of pin_slice is
 
-    signal g1_o : std_logic;
-    signal g2_o : std_logic;
+    signal g1_o : std_logic := '0';
+    signal g2_o : std_logic := '0';
 
 begin
 
