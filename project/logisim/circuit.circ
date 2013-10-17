@@ -380,7 +380,7 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <text font-family="SansSerif" font-size="6" text-anchor="middle" x="82" y="72">CO</text>
       <text font-family="SansSerif" font-size="6" text-anchor="middle" x="59" y="62">SI</text>
       <text font-family="SansSerif" font-size="6" text-anchor="middle" x="60" y="82">LDI</text>
-      <text font-family="SansSerif" font-size="6" text-anchor="middle" x="70" y="87">D</text>
+      <text font-family="SansSerif" font-size="6" text-anchor="middle" x="70" y="87">Z</text>
       <text font-family="SansSerif" font-size="6" text-anchor="middle" x="80" y="82">LDO</text>
       <circ-port height="8" pin="110,50" width="8" x="46" y="66"/>
       <circ-port height="8" pin="110,90" width="8" x="66" y="86"/>
@@ -451,7 +451,7 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     </comp>
     <comp lib="0" loc="(110,90)" name="Pin">
       <a name="tristate" val="false"/>
-      <a name="label" val="D"/>
+      <a name="label" val="Z"/>
     </comp>
     <comp lib="0" loc="(400,50)" name="Pin">
       <a name="facing" val="west"/>
@@ -491,20 +491,20 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <comp lib="0" loc="(140,240)" name="Pin">
       <a name="facing" val="north"/>
       <a name="tristate" val="false"/>
-      <a name="label" val="D0"/>
+      <a name="label" val="Z0"/>
       <a name="labelloc" val="south"/>
     </comp>
     <comp loc="(210,200)" name="shift_slice"/>
     <comp lib="0" loc="(280,240)" name="Pin">
       <a name="facing" val="north"/>
       <a name="tristate" val="false"/>
-      <a name="label" val="D2"/>
+      <a name="label" val="Z2"/>
       <a name="labelloc" val="south"/>
     </comp>
     <comp lib="0" loc="(210,240)" name="Pin">
       <a name="facing" val="north"/>
       <a name="tristate" val="false"/>
-      <a name="label" val="D1"/>
+      <a name="label" val="Z1"/>
       <a name="labelloc" val="south"/>
     </comp>
     <comp lib="0" loc="(90,220)" name="Pin">
