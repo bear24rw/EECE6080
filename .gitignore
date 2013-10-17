@@ -16,4 +16,5 @@ qsim/
 *.tr0
 *.aux
 *.out
+*.cf
 
