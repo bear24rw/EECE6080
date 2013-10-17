@@ -655,4 +655,64 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <comp loc="(370,260)" name="shift_slice"/>
     <comp loc="(230,260)" name="shift_slice"/>
   </circuit>
+  <circuit name="shift_slice_mux">
+    <a name="circuit" val="shift_slice_mux"/>
+    <a name="clabel" val=""/>
+    <a name="clabelup" val="east"/>
+    <a name="clabelfont" val="SansSerif plain 12"/>
+    <wire from="(370,120)" to="(400,120)"/>
+    <wire from="(230,90)" to="(280,90)"/>
+    <wire from="(230,130)" to="(270,130)"/>
+    <wire from="(280,90)" to="(400,90)"/>
+    <wire from="(320,70)" to="(400,70)"/>
+    <wire from="(230,150)" to="(270,150)"/>
+    <wire from="(300,140)" to="(330,140)"/>
+    <wire from="(280,90)" to="(280,120)"/>
+    <wire from="(230,70)" to="(320,70)"/>
+    <wire from="(320,120)" to="(330,120)"/>
+    <wire from="(320,70)" to="(320,120)"/>
+    <comp lib="0" loc="(230,150)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="SI"/>
+    </comp>
+    <comp lib="0" loc="(400,90)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="LDO"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="0" loc="(400,120)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="SO"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="0" loc="(400,70)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="SCLKO"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="0" loc="(230,70)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="SCLKI"/>
+    </comp>
+    <comp lib="4" loc="(370,120)" name="D Flip-Flop"/>
+    <comp lib="0" loc="(230,130)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="Z"/>
+    </comp>
+    <comp lib="0" loc="(230,90)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="LDI"/>
+    </comp>
+    <comp lib="2" loc="(300,140)" name="Multiplexer">
+      <a name="selloc" val="tr"/>
+      <a name="disabled" val="0"/>
+      <a name="enable" val="false"/>
+    </comp>
+  </circuit>
 </project>
