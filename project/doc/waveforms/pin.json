@@ -1,0 +1,8 @@
+{signal: [
+    {},
+    {name: 'PCLK', wave: 'l.p........l'},
+    {name: 'PSI', wave: 'x444444444x.', data: ['Z0W2', 'Z0W1', 'Z0W0', 'Z1W2', 'Z1W1', 'Z1W0','Z2W2', 'Z2W1', 'Z2W0',]},
+    {},
+    ],
+    "config": {"hscale":2}
+}
