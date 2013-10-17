@@ -1,7 +1,7 @@
 library ieee;
 use ieee.std_logic_1164.all;
 
-entity slice is
+entity pin_slice is
     port(
         zi : in std_logic;
         qi : in std_logic;
@@ -12,9 +12,9 @@ entity slice is
         wo : out std_logic;
         co : out std_logic
     );
-end slice;
+end pin_slice;
 
-architecture rtl of slice is
+architecture rtl of pin_slice is
 
     signal g1_o : std_logic;
     signal g2_o : std_logic;

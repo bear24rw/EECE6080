@@ -1,10 +1,10 @@
 library ieee;
 use ieee.std_logic_1164.all;
 
-entity slice_tb is
-end slice_tb;
+entity pin_slice_tb is
+end pin_slice_tb;
 
-architecture tb_rtl of slice_tb is
+architecture tb_rtl of pin_slice_tb is
 
     signal zi : std_logic := '0';
     signal qi : std_logic := '0';
@@ -15,7 +15,7 @@ architecture tb_rtl of slice_tb is
     signal wo : std_logic;
     signal co : std_logic;
 
-    component slice
+    component pin_slice
         port(
             zi : in std_logic;
             qi : in std_logic;
@@ -30,7 +30,7 @@ architecture tb_rtl of slice_tb is
 
 begin
 
-    uut : slice
+    uut : pin_slice
     port map(
         zi => zi,
         qi => qi,
