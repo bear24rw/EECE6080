@@ -1,5 +1,3 @@
-TB = slice_tb
-
 FLAGS = --ieee=synopsys -fexplicit
 FILES = $(wildcard *.vhd)
 
@@ -7,13 +5,13 @@ all: compile
 
 compile: $(FILES)
 	ghdl -a $(FLAGS) *.vhd
-	ghdl -e $(FLAGS) $(TB)
+	ghdl -e $(FLAGS) $(tb)
 
 run:
-	ghdl -r $(FLAGS) $(TB) --vcd=$(TB).vcd
+	ghdl -r $(FLAGS) $(tb) --vcd=$(tb).vcd
 
 view:
-	gtkwave $(TB).vcd
+	gtkwave $(tb).vcd
 
 clean:
 	ghdl --clean
