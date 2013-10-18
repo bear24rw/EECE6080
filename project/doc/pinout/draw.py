@@ -2,19 +2,24 @@ import svgwrite
 
 pins_per_side = 10
 
-pin_width = 25
 pin_length = 50
-pin_spacing = 10
-edge_to_pin = 25
+pin_width = pin_length / 2
+pin_spacing = pin_length / 5
+edge_to_pin = pin_length / 2
+pin_1_indicator_size = pin_length / 2
 
-pin_1_size = 20
-
-canvas_size = 800
-center_x = canvas_size / 2
-center_y = canvas_size / 2
-
-dwg = svgwrite.Drawing("test.svg")
+dwg = svgwrite.Drawing("pinout.svg")
 dwg.viewbox(-400, -400, 800, 800)
+
+# load pinnames
+names = ["--"]*pins_per_side*4
+f = open("pinlist.txt")
+for i,line in enumerate(f):
+    if i == len(names):
+        print "Extra names in file"
+        break
+    name = line.split(",")[0].strip()
+    names[i] = name
 
 def rect(x, y, w, h):
     return dwg.rect(
@@ -47,23 +52,24 @@ for side in range(4):
         if side == 0 or side == 1:
             x = -pin_length
             y = i*(pin_width + pin_spacing) + edge_to_pin
-            txt_x = "-0.25em"
+            txt_x = -5 - pin_length
             txt_y = y + (pin_width/2.0)
+            num_x = -5
             anchor = "end"
         if side == 2 or side == 3:
             x = 0
             y = -1*i*(pin_width + pin_spacing) - edge_to_pin - pin_width
-            txt_x = "0.25em"
+            txt_x = 5 + pin_length
             txt_y = y + (pin_width/2.0)
+            num_x = 5
             anchor = "start"
 
         pin_rect.add(rect(x, y, pin_length, pin_width))
-        pin_rect.add(txt(txt_x, txt_y, "%d%d"%(side,i), anchor=anchor, center_vert=True))
 
-        y = i*(pin_width + pin_spacing) + edge_to_pin
-        if side == 2:
-            y *= -1
-            y -= edge_to_pin
+        pin_number = side*pins_per_side+i
+        pin_rect.add(txt(txt_x, txt_y, names[pin_number], anchor=anchor, center_vert=True))
+
+        pin_rect.add(txt(num_x, txt_y, str(pin_number+1), anchor=anchor, center_vert=True))
 
     u = dwg.use(pin_rect)
 
@@ -85,8 +91,8 @@ for side in range(4):
 #dwg.add(dwg.line(start=(0,-100), end=(0,100), stroke="green"))
 
 # pin 1 indicator
-dwg.add(dwg.circle((-chip_edge+pin_1_size*1.5,-chip_edge+pin_1_size*1.5),
-    r=pin_1_size,
+dwg.add(dwg.circle((-chip_edge+pin_1_indicator_size*1.5,-chip_edge+pin_1_indicator_size*1.5),
+    r=pin_1_indicator_size,
     stroke_width = "2",
     stroke = "black",
     fill = "rgb(255,255,255)"))
