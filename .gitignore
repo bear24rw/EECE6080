@@ -17,4 +17,9 @@ qsim/
 *.aux
 *.out
 *.cf
+*.lof
+*.lol
+*.lot
+*.toc
+
 
