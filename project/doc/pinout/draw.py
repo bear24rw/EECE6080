@@ -14,12 +14,13 @@ dwg.viewbox(-400, -400, 800, 800)
 # load pinnames
 names = ["--"]*pins_per_side*4
 f = open("pinlist.txt")
-for i,line in enumerate(f):
-    if i == len(names):
-        print "Extra names in file"
-        break
-    name = line.split("&")[0].strip()
-    names[i] = name
+for line in f:
+    number = int(line.split("&")[0].strip())-1
+    if (number >= len(names)):
+        print "Pin number out of range: "+line
+        continue
+    name = line.split("&")[1].strip()
+    names[number] = name
 
 def rect(x, y, w, h):
     return dwg.rect(

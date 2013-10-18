@@ -1,23 +1,40 @@
-PSI   & i & PIN serial input \\
-PSO   & o & PIN serial output \\
-PCLKI & i & PIN clock input \\
-PCLKO & o & PIN clock output \\
-SI    & i & Serial input \\
-SO    & o & Serial output \\
-SCLKI & i & Serial clock input \\
-SCLKO & o & Serial clock output \\
-LDI   & i & Parallel load input (active low) \\
-LDO   & i & Parallel load output (active low) \\
-TII   & i & Test inverter input \\
-TIO   & o & Test interter output \\
-TFD   & i & Test flip-flop D input \\
-TFC   & i & Test flip-flop clock input \\
-TFQ   & o & Test flop-flop Q output \\
-TSI   & i & Test shift slice serial input \\
-TSO   & o & Test shift slice serial output \\
-TSCI  & i & Test shift slice clock input \\
-TSCO  & o & Test shift slice clock output \\
-TSLI  & i & Test shift slice load input \\
-TSLO  & o & Test shift slice load output \\
-VDD   & p & -- \\
-GND   & p & -- \\
+1  & PSI   & I & PIN serial input \\ \hline
+2  & PSO   & O & PIN serial output \\ \hline
+3  & PCLKI & I & PIN clock input \\ \hline
+4  & PCLKO & O & PIN clock output \\ \hline
+5  & SI    & I & Serial input \\ \hline
+6  & SO    & O & Serial output \\ \hline
+7  & SCLKI & I & Serial clock input \\ \hline
+8  & SCLKO & O & Serial clock output \\ \hline
+9  & LDI   & I & Parallel load input (active low) \\ \hline
+10 & LDO   & I & Parallel load output (active low) \\ \hline
+11 & TII   & I & Test inverter input \\ \hline
+12 & TIO   & O & Test interter output \\ \hline
+13 & TFD   & I & Test flip-flop D input \\ \hline
+14 & TFC   & I & Test flip-flop clock input \\ \hline
+15 & TFQ   & O & Test flop-flop Q output \\ \hline
+16 & TSI   & I & Test shift slice serial input \\ \hline
+17 & TSO   & O & Test shift slice serial output \\ \hline
+18 & TSCI  & I & Test shift slice clock input \\ \hline
+19 & TSCO  & O & Test shift slice clock output \\ \hline
+20 & TSLI  & I & Test shift slice load input \\ \hline
+21 & TSLO  & O & Test shift slice load output \\ \hline
+22 & VDD   & P & -- \\ \hline
+23 & GND   & P & -- \\ \hline
+24 & --    & - & -- \\ \hline
+25 & --    & - & -- \\ \hline
+26 & --    & - & -- \\ \hline
+27 & --    & - & -- \\ \hline
+28 & --    & - & -- \\ \hline
+29 & --    & - & -- \\ \hline
+30 & --    & - & -- \\ \hline
+31 & --    & - & -- \\ \hline
+32 & --    & - & -- \\ \hline
+33 & --    & - & -- \\ \hline
+34 & --    & - & -- \\ \hline
+35 & --    & - & -- \\ \hline
+36 & --    & - & -- \\ \hline
+37 & --    & - & -- \\ \hline
+38 & --    & - & -- \\ \hline
+39 & --    & - & -- \\ \hline
+40 & --    & - & -- \\ \hline
