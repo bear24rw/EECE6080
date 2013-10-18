@@ -18,7 +18,7 @@ for i,line in enumerate(f):
     if i == len(names):
         print "Extra names in file"
         break
-    name = line.split(",")[0].strip()
+    name = line.split("&")[0].strip()
     names[i] = name
 
 def rect(x, y, w, h):

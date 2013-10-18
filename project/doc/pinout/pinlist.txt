@@ -1,23 +1,23 @@
-PSI   , i , PIN serial input
-PSO   , o , PIN serial output
-PCLKI , i , PIN clock input
-PCLKO , o , PIN clock output
-SI    , i , Serial input
-SO    , o , Serial output
-SCLKI , i , Serial clock input
-SCLKO , o , Serial clock output
-LDI   , i , Parallel load input (active low)
-LDO   , i , Parallel load output (active low)
-TII   , i , Test inverter input
-TIO   , o , Test interter output
-TFD   , i , Test flip-flop D input
-TFC   , i , Test flip-flop clock input
-TFQ   , o , Test flop-flop Q output
-TSI   , i , Test shift slice serial input
-TSO   , o , Test shift slice serial output
-TSCI  , i , Test shift slice clock input
-TSCO  , o , Test shift slice clock output
-TSLI  , i , Test shift slice load input
-TSLO  , o , Test shift slice load output
-VDD   , p , --
-GND   , p , --
+PSI   & i & PIN serial input \\
+PSO   & o & PIN serial output \\
+PCLKI & i & PIN clock input \\
+PCLKO & o & PIN clock output \\
+SI    & i & Serial input \\
+SO    & o & Serial output \\
+SCLKI & i & Serial clock input \\
+SCLKO & o & Serial clock output \\
+LDI   & i & Parallel load input (active low) \\
+LDO   & i & Parallel load output (active low) \\
+TII   & i & Test inverter input \\
+TIO   & o & Test interter output \\
+TFD   & i & Test flip-flop D input \\
+TFC   & i & Test flip-flop clock input \\
+TFQ   & o & Test flop-flop Q output \\
+TSI   & i & Test shift slice serial input \\
+TSO   & o & Test shift slice serial output \\
+TSCI  & i & Test shift slice clock input \\
+TSCO  & o & Test shift slice clock output \\
+TSLI  & i & Test shift slice load input \\
+TSLO  & o & Test shift slice load output \\
+VDD   & p & -- \\
+GND   & p & -- \\
