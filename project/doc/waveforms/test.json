@@ -1,0 +1,14 @@
+{signal: [
+    {},
+    {name: 'SCLK', wave: 'l.p...........l'},
+    {name: 'SI', wave: 'x444444444555x.', data: ['Z0W2', 'Z0W1', 'Z0W0', 'Z1W2', 'Z1W1', 'Z1W0','Z2W2', 'Z2W1', 'Z2W0','W2','W1','W0']},
+    {name: "LD", wave: 'x1............x'},
+    {name: "TEST", wave: '01............0'},
+    {name: "PCLK", wave: 'xxxxxxxxxxxxxxx'},
+      {name: "PSI", wave: 'xxxxxxxxxxxxxxx'},
+
+
+    {},
+    ],
+    "config": {"hscale":2}
+}
