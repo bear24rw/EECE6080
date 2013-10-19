@@ -4,6 +4,7 @@ FILES = $(wildcard *.vhd)
 all: compile
 
 compile: $(FILES)
+	ghdl -a $(FLAGS) *.vhdl
 	ghdl -a $(FLAGS) *.vhd
 	ghdl -e $(FLAGS) $(tb)
 
