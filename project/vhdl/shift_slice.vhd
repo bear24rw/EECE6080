@@ -3,8 +3,8 @@ use ieee.std_logic_1164.all;
 
 entity shift_slice is
     port(
-        sclki : in  std_logic;
-        sclko : out std_logic;
+        clki : in  std_logic;
+        clko : out std_logic;
         ldi   : in  std_logic;
         ldo   : out std_logic;
         si    : in  std_logic;
@@ -20,10 +20,10 @@ architecture rtl of shift_slice is
 begin
 
     g1 : entity work.mux2x1   port map(z, si, ldi, g1_o);
-    g2 : entity work.dffposx1 port map(sclki, g1_o, so);
+    g2 : entity work.dffposx1 port map(clki, g1_o, so);
 
     -- pass through
-    sclko <= sclki;
+    clko <= clki;
     ldo <= ldi;
 
 end rtl;

@@ -9,6 +9,7 @@ entity shift is
         clk : in  std_logic;
         ld  : in  std_logic;
         si  : in  std_logic;
+        so  : out std_logic;
         z   : in  std_logic_vector((n-1) downto 0);
         w   : out std_logic_vector((n-1) downto 0)
     );
@@ -18,8 +19,8 @@ architecture rtl of shift is
 
     component shift_slice
         port(
-            sclki : in  std_logic;
-            sclko : out std_logic;
+            clki  : in  std_logic;
+            clko  : out std_logic;
             ldi   : in  std_logic;
             ldo   : out std_logic;
             si    : in  std_logic;
@@ -29,33 +30,36 @@ architecture rtl of shift is
     end component;
 
     -- vector to hold  values between slices
-    signal so : std_logic_vector(n downto 0) := (others => '0');
-    signal clko : std_logic_vector(n downto 0) := (others => '0');
-    signal ldo : std_logic_vector(n downto 0) := (others => '0');
+    signal c_so : std_logic_vector(n downto 0) := (others => '0');
+    signal c_clk : std_logic_vector(n downto 0) := (others => '0');
+    signal c_ld : std_logic_vector(n downto 0) := (others => '0');
 
     begin
 
     -- input of slice 0 comes from module input
-    so(0) <= si;
-    ldo(0) <= ld;
-    clko(0) <= clk;
+    c_so(0) <= si;
+    c_ld(0) <= ld;
+    c_clk(0) <= clk;
+
+    -- final shift output comes from output of last slice
+    so <= c_so(n);
 
     -- generate N slices
     shift_gen : for i in 0 to n-1 generate
         shift_i: shift_slice port map(
-            sclki => clko(i),
-            sclko => clko(i+1),
-            ldi => ldo(i),
-            ldo => ldo(i+1),
-            si => so(i),
-            so => so(i+1),
+            clki => c_clk(i),
+            clko => c_clk(i+1),
+            ldi => c_ld(i),
+            ldo => c_ld(i+1),
+            si => c_so(i),
+            so => c_so(i+1),
             z => z(i)
         );
     end generate;
 
-    -- connect the output of each slice to final output vector
+    -- connect the output of each slice to parallel output vector
     connect : for i in 0 to n-1 generate
-        w(i) <= so(i+1);
+        w(i) <= c_so(i+1);
     end generate;
 
 end rtl;

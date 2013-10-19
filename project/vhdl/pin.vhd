@@ -7,9 +7,9 @@ entity pin is
     );
     port(
         clk : in std_logic;
-        psi  : in std_logic;
-        z : out  std_logic_vector((n-1) downto 0);
-        w : in  std_logic_vector((n-1) downto 0)
+        psi : in std_logic;
+        z   : out  std_logic_vector((n-1) downto 0);
+        w   : in  std_logic_vector((n-1) downto 0)
     );
 end pin;
 
