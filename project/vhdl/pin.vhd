@@ -6,9 +6,10 @@ entity pin is
         n : integer := 3
     );
     port(
-        clk : in std_logic;
-        psi : in std_logic;
-        z   : out  std_logic_vector((n-1) downto 0);
+        clk : in  std_logic;
+        psi : in  std_logic;
+        pso : out std_logic;
+        z   : out std_logic_vector((n-1) downto 0);
         w   : in  std_logic_vector((n-1) downto 0)
     );
 end pin;
@@ -28,7 +29,7 @@ architecture rtl of pin is
         );
     end component;
 
-    --type carry_array is array (0 to n) of std_logic_vector(n downto 0);
+    -- carray_array(row, col)
     type carry_array is array (0 to n, 0 to n) of std_logic;
     signal zo : carry_array;
     signal co : carry_array;
@@ -58,6 +59,7 @@ architecture rtl of pin is
     -- connect external inputs
     qo(n-1, 0) <= psi;
     co(n-1, 0) <= clk;
+    pso <= qo(0, n);
 
     -- generate the grid of slices
     pin_z_gen : for zz in 0 to n-1 generate
