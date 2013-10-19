@@ -6,13 +6,13 @@ entity top is
         n : integer := 3
     );
     port(
-        psi   : in  std_logic;
+        psi  : in  std_logic;
         pclk : in  std_logic;
-        si    : in  std_logic;
-        so    : out std_logic;
+        si   : in  std_logic;
+        so   : out std_logic;
         sclk : in  std_logic;
         ld   : in  std_logic;
-        test  : in  std_logic
+        test : in  std_logic
     );
 end top;
 
