@@ -19,7 +19,7 @@ architecture rtl of shift_slice is
 
 begin
 
-    g1 : entity work.mux2x1   port map(z, si, ldi, g1_o);
+    g1 : entity work.mux2x1   port map(si, z, ldi, g1_o);
     g2 : entity work.dffposx1 port map(clki, g1_o, so);
 
     -- pass through
