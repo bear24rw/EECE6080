@@ -31,48 +31,48 @@ architecture rtl of pin is
 
     -- carray_array(row, col)
     type carry_array is array (0 to n, 0 to n) of std_logic;
-    signal zo : carry_array;
-    signal co : carry_array;
-    signal wo : carry_array;
-    signal qo : carry_array;
+    signal zc : carry_array;
+    signal cc : carry_array;
+    signal wc : carry_array;
+    signal qc : carry_array;
 
     begin
 
     -- setup first and last inputs for each row
     z_connect : for i in 0 to n-1 generate
-        zo(i, 0) <= '0';
-        z(i) <= zo(i, n);
+        zc(i, 0) <= '0';
+        z(i) <= zc(i, n);
     end generate;
 
     -- setup first inputs for each column
     w_connect : for i in 0 to n-1 generate
-        wo(0, i) <= w(i);
+        wc(0, i) <= w(i);
     end generate;
 
     -- setup row transfer
     -- (last output of row to first input of next row)
     r_connect : for i in 0 to n-2 generate
-        qo(i, 0) <= qo(i+1, n);
-        co(i, 0) <= co(i+1, n);
+        qc(i, 0) <= qc(i+1, n);
+        cc(i, 0) <= cc(i+1, n);
     end generate;
 
     -- connect external inputs
-    qo(n-1, 0) <= psi;
-    co(n-1, 0) <= clk;
-    pso <= qo(0, n);
+    qc(n-1, 0) <= psi;
+    cc(n-1, 0) <= clk;
+    pso <= qc(0, n);
 
     -- generate the grid of slices
     pin_z_gen : for zz in 0 to n-1 generate
         pin_w_gen : for ww in 0 to n-1 generate
             pin_i: pin_slice port map(
-                zi => zo(zz, ww),
-                qi => qo(zz, ww),
-                wi => wo(zz, ww),
-                ci => co(zz, ww),
-                zo => zo(zz, ww+1),
-                qo => qo(zz, ww+1),
-                wo => wo(zz+1, ww),
-                co => co(zz, ww+1)
+                zi => zc(zz, ww),
+                qi => qc(zz, ww),
+                wi => wc(zz, ww),
+                ci => cc(zz, ww),
+                zo => zc(zz, ww+1),
+                qo => qc(zz, ww+1),
+                wo => wc(zz+1, ww),
+                co => cc(zz, ww+1)
             );
         end generate;
     end generate;
