@@ -13,19 +13,19 @@
 13 & TIO   & O & Test interter output \\ \hline
 14 & TFD   & I & Test flip-flop D input \\ \hline
 15 & TFC   & I & Test flip-flop clock input \\ \hline
-16 & TFQ   & O & Test flop-flop Q output \\ \hline
-17 & TSI   & I & Test shift slice serial input \\ \hline
-18 & TSO   & O & Test shift slice serial output \\ \hline
-19 & TSCI  & I & Test shift slice clock input \\ \hline
-20 & TSCO  & O & Test shift slice clock output \\ \hline
-21 & TSLI  & I & Test shift slice load input \\ \hline
-22 & TSLO  & O & Test shift slice load output \\ \hline
-23 & TPI   & I & Test pin slice serial input \\ \hline
-24 & TPO   & O & Test pin slice serial output \\ \hline
-25 & TPCI  & I & Test pin slice clock input \\ \hline
-26 & TPCO  & O & Test pin slice clock output \\ \hline
-27 & VDD   & P & -- \\ \hline
-28 & GND   & P & -- \\ \hline
+16 & GND   & P & -- \\ \hline
+17 & TFQ   & O & Test flop-flop Q output \\ \hline
+18 & TSI   & I & Test shift slice serial input \\ \hline
+19 & TSO   & O & Test shift slice serial output \\ \hline
+20 & TSCI  & I & Test shift slice clock input \\ \hline
+21 & TSCO  & O & Test shift slice clock output \\ \hline
+22 & TSLI  & I & Test shift slice load input \\ \hline
+23 & TSLO  & O & Test shift slice load output \\ \hline
+24 & TPI   & I & Test pin slice serial input \\ \hline
+25 & TPO   & O & Test pin slice serial output \\ \hline
+26 & TPCI  & I & Test pin slice clock input \\ \hline
+27 & TPCO  & O & Test pin slice clock output \\ \hline
+28 & --    & - & -- \\ \hline
 29 & --    & - & -- \\ \hline
 30 & --    & - & -- \\ \hline
 31 & --    & - & -- \\ \hline
@@ -33,7 +33,7 @@
 33 & --    & - & -- \\ \hline
 34 & --    & - & -- \\ \hline
 35 & --    & - & -- \\ \hline
-36 & --    & - & -- \\ \hline
+36 & VDD   & P & -- \\ \hline
 37 & --    & - & -- \\ \hline
 38 & --    & - & -- \\ \hline
 39 & --    & - & -- \\ \hline
