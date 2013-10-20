@@ -26,13 +26,15 @@ architecture rtl of top is
 
     signal pin_clk : std_logic;
     signal pin_psi : std_logic;
+    signal pin_pso : std_logic;
     signal shift_out : std_logic;
 
 begin
 
     -- test mode mux connects shifter and pin together
-    test_mux_1 : entity work.mux2x1 port map(pclk, sclk,      test, pin_clk);
-    test_mux_2 : entity work.mux2x1 port map(psi , shift_out, test, pin_psi);
+    test_mux_1 : entity work.mux2x1 port map(pclk,      sclk,      test, pin_clk);
+    test_mux_2 : entity work.mux2x1 port map(psi ,      shift_out, test, pin_psi);
+    test_mux_3 : entity work.mux2x1 port map(shift_out, pin_pso,   test, so);
 
     pin : entity work.pin
     generic map(
@@ -41,10 +43,12 @@ begin
     port map(
         clk => pin_clk,
         psi => pin_psi,
-        pso => pso,
+        pso => pin_pso,
         z => z,
         w => w
     );
+
+    pso <= pin_pso;
 
     shifter : entity work.shift
     generic map(
@@ -58,7 +62,5 @@ begin
         z => z,
         w => w
     );
-
-    so <= shift_out;
 
 end rtl;
