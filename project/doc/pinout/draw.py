@@ -15,6 +15,8 @@ dwg.viewbox(-400, -400, 800, 800)
 names = ["--"]*pins_per_side*4
 f = open("pinlist.txt")
 for line in f:
+    if line[0] == "%": continue
+    if line[0] == "\n": continue
     number = int(line.split("&")[0].strip())-1
     if (number >= len(names)):
         print "Pin number out of range: "+line
