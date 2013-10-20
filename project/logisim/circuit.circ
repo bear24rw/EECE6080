@@ -861,6 +861,7 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(260,320)" to="(350,320)"/>
     <wire from="(150,190)" to="(150,200)"/>
     <wire from="(300,220)" to="(300,380)"/>
+    <wire from="(410,280)" to="(460,280)"/>
     <wire from="(320,220)" to="(320,390)"/>
     <wire from="(120,270)" to="(350,270)"/>
     <wire from="(380,320)" to="(400,320)"/>
@@ -926,7 +927,7 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <comp loc="(230,330)" name="shift"/>
     <comp lib="0" loc="(80,280)" name="Pin">
       <a name="tristate" val="false"/>
-      <a name="label" val="TEST"/>
+      <a name="label" val="TESTI"/>
     </comp>
     <comp lib="0" loc="(460,350)" name="Pin">
       <a name="facing" val="west"/>
@@ -947,6 +948,13 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="output" val="true"/>
       <a name="tristate" val="false"/>
       <a name="label" val="SCLKO"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="0" loc="(460,280)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="TESTO"/>
       <a name="labelloc" val="east"/>
     </comp>
     <comp lib="0" loc="(80,180)" name="Pin">
