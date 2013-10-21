@@ -130,7 +130,7 @@ first and the output value is clocked out MSB first as well.
 A timing diagram illustrating the PIN configuration process for a 3-Bit
 INTRANEX is shown below. For a 3-Bit input value a 3x3 grid is required
 resulting in a PIN configuration vector of 9 Bits. The mapping for each of
-these bits is also labels and will be explained further in later sections.
+these bits is also labeled and will be explained further in later sections.
 
 \begin{figure}[H]
     \centering
@@ -151,10 +151,10 @@ definitions of the value being clocked in.
     \caption{Loading a value}
 \end{figure}
 
-After the value has been loaded in the result is clocked on in a similar
+After the value has been loaded in the result is clocked out in a similar
 fashion. To first latch the result the \texttt{LDI} pin needs to be held high
 and the \texttt{SCLKI} pin pulsed. The MSB of the result is now available on
-the \texttt{SO}. The \texttt{LDI} pin should now be held low while clocking out
+the \texttt{SO} pin. The \texttt{LDI} pin should now be held low while clocking out
 the remaining result bits.
 
 \begin{figure}[H]
@@ -166,17 +166,17 @@ the remaining result bits.
 \subsection{Test Mode}
 
 Test Mode is enabled by pulling the \texttt{TESTI} pin high. When this occurs
-the output of the internal shift register is rerouted to connect to the input
-of the PIN network bypassing its normal \texttt{PSI} input.  Additionally the
-\texttt{SCLKO} signal is also routed to the PIN bypassing its normal
-\texttt{PCLKI} signal. Finally the \texttt{PSO} signal is routed to the
+the output of the internal input value shift register is rerouted to connect to
+the input of the PIN network bypassing its normal \texttt{PSI} input.
+Additionally the \texttt{SCLKO} signal is also routed to the PIN bypassing its
+normal \texttt{PCLKI} signal. Finally the \texttt{PSO} signal is routed to the
 \texttt{SO} pin. This allows values that are clocked in via the \texttt{SI} pin
 to propagate through the shifter and then through the PIN and then out the
 \texttt{SO} pin. The fact that the values come out the \texttt{SO} pin allows
-multiple INTRANEX chips to be directly chained and tested in circuit using only the
-\texttt{SI} and \texttt{SCLKI} pins of the first chip in the chain. Note that
-the \texttt{LDI} pin must be held low during this entire operation in order to
-ensure proper shifting through the shift register.
+multiple INTRANEX chips to be directly chained and tested in circuit using only
+the \texttt{SI} and \texttt{SCLKI} pins of the first chip in the chain. Note
+that the \texttt{LDI} pin must be held low during this entire operation in
+order to ensure proper shifting through the input value shift register.
 
 \begin{figure}[H]
     \centering
@@ -196,20 +196,20 @@ bit-sliced design with zero logic overhead.
 
 In order to achieve totally minimized wiring overhead it would be necessary to
 design two different slice layouts, one of which is mirrored and flipped. This
-would allow each row in the PIN to share a power rail with the adjacent row and
-also minimize the length of the row-to-row wiring. This design however greatly
-increases the complexity of the VHDL design as wiring the rows together becomes
-trickier. Additionally we would have to maintain two different versions of the
-PIN slices. We decided to instead go with a design where all slices are exactly
-identical and the interconnect between them is linear. This allows for easier
-calculation of PIN configuration values as every row has the same index order.
-The only real disadvantage to this design is that we will require long
-interconnects between slices. We are assuming for now that even with the added
-capacitance of these long interconnects we will still be able to achieve max
-clock speeds of greater than 50Mhz. By progress report 2 we will have layout
-simulation results to confirm this.
+would allow each slice row in the PIN to share a power rail with the rows above
+and below it and also minimize the length of the row-to-row wiring. This design
+however greatly increases the complexity of the VHDL design as wiring the rows
+together becomes trickier. Additionally we would have to maintain two different
+versions of the PIN slices. We decided to instead go with a design where all
+slices are exactly identical and the interconnect between them is linear. This
+allows for easier calculation of PIN configuration values as every row has the
+same index order.  The only real disadvantage to this design is that we will
+require long interconnects between slices. We are assuming for now that even
+with the added capacitance of these long interconnects we will still be able to
+achieve max clock speeds of greater than 50Mhz. By progress report 2 we will
+have layout simulation results to confirm this.
 
-As stated earlier an important goal for use was to be able to directly chain
+As stated earlier an important goal for us was to be able to directly chain
 multiple INTRANEX chips together. Our current design achieves this and an
 example chain showing 3 INTRANEXs chained together is shown below. Note that
 the pin layout in this diagram matches that of the actual layout we plan on
@@ -225,8 +225,9 @@ implementing.
 
     \subsection{Top Level}
     A top level block diagram for a 3-bit INTRANEX is shown below. The top
-    module is the PIN and the bottom module is the parallel load. Test mode
-    logic has been excluded to illustrate only core functionality.
+    module is the PIN and the bottom module is the parallel load shift
+    register. Test mode logic has been excluded to more clearly illustrate the
+    core functionality.
     \begin{figure}[H]
         \centering
         \includegraphics[width=0.75\linewidth]{../../logisim/top.png}
@@ -235,7 +236,7 @@ implementing.
     \end{figure}
 
     \subsection{Top Level With Test Mode }
-    The same top level diagram is shown below except this time with the test
+    The same top level diagram is shown with the addition of the test
     mode logic. The test mode logic simply consists of 3 2:1 multiplexers that
     redirect the output of the shift register to the input of the PIN and the
     output of the PIN to what is normally the output of the shift register. In
@@ -248,10 +249,10 @@ implementing.
     \end{figure}
 
     \subsection{Top Level Bit Sliced}
-    The diagram below shows a bit sliced version of Figure~\ref{fig:block}. We
-    can see how each slice is directly connected together with zero interfacing
-    logic.  We can also see the long row-to-row connections as discussed
-    earlier.
+    The diagram below shows a bit sliced version of the top level diagram shown
+    in Figure~\ref{fig:block}. We can see how each slice is directly connected
+    together with zero interfacing logic as well as the long row-to-row
+    connections as discussed earlier.
     \vspace{2\baselineskip}
     \begin{figure}[H]
         \centering
@@ -296,7 +297,7 @@ implementing.
         pin at a higher level. We wanted to avoid as much manual layout as
         possible so it determined to be easier and cleaner to route the clock
         in such as way that it would be automatically connected when we layout
-        the array.
+        the slice array.
         \begin{figure}[H]
             \centering
             \includegraphics[width=0.5\linewidth]{../../logisim/pin.png}
@@ -306,14 +307,14 @@ implementing.
         \subsubsection{Bit-Slice}
         The PIN bit-slices, one of which is shown below, is what drive the
         whole functionality of our chip. \texttt{WI} is the input values bit
-        for the current row. If that bit is set and this slice is configured as
-        `connected' we want to output a logic high on the \texttt{Z} bus. We
-        cannot, however, just simply \texttt{AND} these two values together and
-        attach it to the bus as this would allow for multiple slices to drive
-        or sink the bus. To avoid this we use an \texttt{OR} gate to determine
-        if the slice behind us is outputting a 1. If so we just pass it along.
-        If we want to output a 1 it is also no problem as the \texttt{OR} will
-        accommodate us as well.
+        for the current column. If that bit is set and this slice is configured
+        as `connected' we want to output a logic high on the \texttt{Z} bus
+        simultaneously. We cannot, however, just simply \texttt{AND} these two
+        values together and attach it to the bus as this would allow for
+        multiple slices to drive or sink the bus. To avoid this we use an
+        \texttt{OR} gate to determine if the slice behind us is outputting a 1.
+        If so we just pass it along.  If we want to output a 1 it is also no
+        problem as the \texttt{OR} will accommodate us as well.
         \begin{figure}[H]
             \centering
             \includegraphics[width=0.75\linewidth]{../../logisim/pin_slice.png}
@@ -372,8 +373,7 @@ implementing.
         We decided to write a small Python script to generate the expected
         output vector for all possible PIN configurations and input values. Our
         test bench then runs through all of these vectors and checks if the
-        output vector from our design matches the known output. If then
-        indicates if they pass or fail.
+        output vector from our VHDL design matches the known output.
         \lstinputlisting[caption=Python Vector Generator, language=Python]{../../vhdl/gen_sim.py}
     \newpage
     \subsection{Top Level Test Mode}
@@ -427,8 +427,8 @@ implementing.
         Shifter Block Diagrams & Qi \\
         PIN Block Diagrams & Thrun \\
         VHDL Shifter+TB & Qi \\
-        VHDL PIN+TB & Thrun \\
-        VHDL Top+TB & Both \\
+        VHDL PIN+TB & Qi \\
+        VHDL Top+TB & Thrun \\
         VHDL Top Test Mode TB & Thrun \\
         \bottomrule
     \end{tabular}

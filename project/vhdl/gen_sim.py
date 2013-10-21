@@ -11,7 +11,7 @@ for pin in range(2**(N*N)):
         shift_bits = bin(shift).replace("0b", "").zfill(N)
         result_bits = ["0"]*N
 
-        # loop through all rows and columns
+        # calculate the expected result
         for z in range(N):
             for w in range(N):
                 if pin_bits[(N-1-z)*N+w] == "1" and shift_bits[w] == "1":
