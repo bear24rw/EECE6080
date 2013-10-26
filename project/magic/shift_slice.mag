@@ -1,6 +1,31 @@
 magic
 tech scmos
-timestamp 1381994511
+timestamp 1382760109
+<< metal1 >>
+rect 0 100 3 106
+rect 145 100 151 106
+rect 1 50 4 87
+rect 1 46 11 50
+rect 46 46 60 49
+rect 46 40 49 46
+rect 43 36 49 40
+rect 0 0 3 6
+rect 145 0 151 6
+<< m2contact >>
+rect 141 93 145 97
+rect 0 87 4 91
+rect 137 53 141 57
+rect 15 46 19 50
+rect 39 46 43 50
+<< metal2 >>
+rect 141 97 145 106
+rect 4 87 151 90
+rect 0 81 151 84
+rect 49 57 53 81
+rect 0 53 43 56
+rect 141 53 151 56
+rect 39 50 43 53
+rect 15 0 19 46
 use MUX2X1  MUX2X1_0
 timestamp 1053021328
 transform 1 0 5 0 1 3
@@ -9,4 +34,13 @@ use DFFPOSX1  DFFPOSX1_0
 timestamp 1048618183
 transform 1 0 47 0 1 3
 box -8 -3 104 105
+<< labels >>
+rlabel metal2 141 53 151 56 0 SO
+rlabel metal2 0 53 5 56 0 SI
+rlabel metal2 0 81 5 84 0 SCLKI
+rlabel metal2 0 87 5 90 0 LDI
+rlabel metal2 15 0 19 6 0 Z
+rlabel metal2 141 81 151 84 0 SCLKO
+rlabel metal2 141 87 151 90 0 LDO
+rlabel metal2 141 100 145 106 0 W
 << end >>
