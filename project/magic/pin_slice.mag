@@ -1,16 +1,54 @@
 magic
 tech scmos
-timestamp 1381981457
+timestamp 1382766671
+<< metal1 >>
+rect 6 -13 8 -7
+rect 60 -13 62 -7
+rect 5 -63 9 -20
+rect -97 -67 -78 -64
+rect 5 -67 16 -63
+rect 36 -67 48 -63
+rect -97 -76 -78 -73
+rect -31 -76 -11 -73
+rect 5 -100 9 -67
+rect 44 -87 48 -67
+rect 6 -113 8 -107
+rect 60 -113 62 -107
+<< m2contact >>
+rect 5 -20 9 -16
+rect -2 -67 2 -63
+rect 59 -64 63 -60
+rect -11 -76 -7 -72
+rect 20 -77 24 -73
+rect 36 -87 40 -83
+rect 52 -77 56 -73
+rect 59 -77 63 -73
+rect 5 -104 9 -100
+<< metal2 >>
+rect 20 -63 59 -61
+rect 2 -64 59 -63
+rect 2 -67 24 -64
+rect 20 -73 24 -67
+rect -7 -76 17 -73
+rect 14 -80 17 -76
+rect 27 -70 63 -67
+rect 27 -80 30 -70
+rect 59 -73 63 -70
+rect 14 -83 30 -80
+rect 36 -93 40 -87
+rect -94 -97 40 -93
+rect 52 -93 56 -77
+rect 52 -97 63 -93
 use DFFPOSX1  DFFPOSX1_1
 timestamp 1048618183
 transform 1 0 -92 0 1 -110
 box -8 -3 104 105
 use AOI21X1  AOI21X1_0
 timestamp 1053722243
-transform 1 0 4 0 1 -110
+transform 1 0 10 0 1 -110
 box -7 -3 39 105
 use INVX1  INVX1_0
 timestamp 1053022145
-transform 1 0 36 0 1 -110
+transform 1 0 42 0 1 -110
 box -9 -3 26 105
 << end >>
