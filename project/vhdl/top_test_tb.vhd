@@ -89,7 +89,7 @@ begin
         assert so = '1' report "Pulse is not zero";
         clock;
         -- check to make sure the bit behind pulse is 0
-        assert so = '0' report "Pulse trailing pulse not zero";
+        assert so = '0' report "Bit trailing pulse not zero";
         clock;
 
         report "Test Complete" severity note;
