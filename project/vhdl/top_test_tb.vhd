@@ -83,13 +83,13 @@ begin
         end loop;
 
         -- check to make sure the bit in front of the pulse is 0
-        assert so = '0' report "Bit leading pulse not zero";
+        assert so = '0' report "Bit leading pulse not 0";
         clock;
         -- check to make sure the pulse is 1
-        assert so = '1' report "Pulse is not zero";
+        assert so = '1' report "Pulse is not 1";
         clock;
         -- check to make sure the bit behind pulse is 0
-        assert so = '0' report "Bit trailing pulse not zero";
+        assert so = '0' report "Bit trailing pulse not 0";
         clock;
 
         report "Test Complete" severity note;
