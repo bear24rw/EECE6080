@@ -1,6 +1,6 @@
 magic
 tech scmos
-timestamp 1382928590
+timestamp 1382935091
 << metal1 >>
 rect -94 -13 62 -7
 rect -97 -67 -78 -64
@@ -30,10 +30,13 @@ rect 45 -70 63 -67
 rect 45 -72 49 -70
 rect -7 -76 49 -72
 rect 59 -73 63 -70
-rect 36 -93 40 -87
-rect -94 -97 40 -93
+rect -2 -97 16 -93
+rect 36 -97 40 -87
 rect 52 -93 56 -77
 rect 52 -97 63 -93
+rect -94 -101 2 -97
+rect 12 -101 40 -97
+rect 59 -101 63 -97
 use DFFPOSX1  DFFPOSX1_1
 timestamp 1048618183
 transform 1 0 -92 0 1 -110
@@ -49,10 +52,10 @@ box -9 -3 26 105
 << labels >>
 rlabel metal1 -93 -67 -90 -64 0 QI
 rlabel metal1 -93 -76 -90 -73 0 CI
-rlabel metal2 -94 -97 -90 -93 0 ZI
-rlabel metal2 59 -97 63 -93 0 ZO
 rlabel m2contact 59 -64 63 -60 0 QO
-rlabel m2contact 5 -104 9 -100 0 WI
 rlabel metal1 56 -113 62 -107 0 GND
 rlabel metal1 56 -13 62 -7 0 VDD
+rlabel m2contact 5 -104 9 -100 0 WI
+rlabel metal2 -94 -101 -90 -97 0 ZI
+rlabel metal2 59 -101 63 -97 0 ZO
 << end >>
