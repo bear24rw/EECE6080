@@ -1,6 +1,6 @@
 magic
 tech scmos
-timestamp 1382935091
+timestamp 1383010634
 << metal1 >>
 rect -94 -13 62 -7
 rect -97 -67 -78 -64
@@ -32,11 +32,10 @@ rect -7 -76 49 -72
 rect 59 -73 63 -70
 rect -2 -97 16 -93
 rect 36 -97 40 -87
-rect 52 -93 56 -77
-rect 52 -97 63 -93
 rect -94 -101 2 -97
 rect 12 -101 40 -97
-rect 59 -101 63 -97
+rect 52 -97 56 -77
+rect 52 -101 63 -97
 use DFFPOSX1  DFFPOSX1_1
 timestamp 1048618183
 transform 1 0 -92 0 1 -110
