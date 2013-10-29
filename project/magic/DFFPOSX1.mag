@@ -290,8 +290,8 @@ rect 90 43 94 47
 rect 10 33 14 37
 << labels >>
 rlabel metal1 4 100 4 100 6 vdd
-rlabel m1p 36 45 36 45 6 D
+rlabel metal1 36 45 36 45 6 D
 rlabel metal1 4 0 4 0 8 gnd
-rlabel m1p 92 45 92 45 6 Q
-rlabel m1p 12 35 12 35 1 CLK
+rlabel metal1 92 45 92 45 6 Q
+rlabel metal1 12 35 12 35 1 CLK
 << end >>
