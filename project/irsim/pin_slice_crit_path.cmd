@@ -8,20 +8,14 @@ ana CI ZO ZI QI WI QO
 w   CI ZO ZI QI WI QO
 
 l ZI
+h WI
 l QI
-h WI
 c CLK
 
-l ZI
 h QI
-h WI
 c CLK
-
 path ZO
 
-l ZI
 l QI
-h WI
 c CLK
-
 path ZO
