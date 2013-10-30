@@ -269,6 +269,6 @@ draw_rect_txt(0*(pin_width+pin_spacing)+(pin_spacing/2.0),
                -chip_edge +  slice_space,
                5*pin_width+4*pin_spacing,
                slice_height*2,
-               "Test PIN Slice")
+               "Test Shift Slice")
 
 dwg.save()
