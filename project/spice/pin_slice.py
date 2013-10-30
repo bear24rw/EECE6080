@@ -12,7 +12,7 @@ patterns = (
 
 with open("pin_slice_all.sp", "w") as f:
 
-    f.write("* Shift Slice Test All\n")
+    f.write("* Pin Slice Test All\n")
 
     f.write(".include ../../models/model_t36s.sp\n")
     f.write(".include ../magic/pin_slice.spice\n")
