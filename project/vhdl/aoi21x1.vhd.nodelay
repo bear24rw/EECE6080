@@ -2,7 +2,7 @@ library ieee;
 use ieee.std_logic_1164.all;
 
 entity aoi21x1 is
-    generic(delay : time := 0.1577 ns);
+    generic(delay : time := 0 ps);
     port(
         a : in std_logic;
         b : in std_logic;
