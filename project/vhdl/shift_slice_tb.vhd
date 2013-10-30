@@ -6,8 +6,8 @@ end shift_slice_tb;
 
 architecture tb_rtl of shift_slice_tb is
 
-    signal sclki : std_logic := '0';
-    signal sclko : std_logic;
+    signal clki  : std_logic := '0';
+    signal clko  : std_logic;
     signal ldi   : std_logic := '0';
     signal ldo   : std_logic;
     signal si    : std_logic := '0';
@@ -16,8 +16,8 @@ architecture tb_rtl of shift_slice_tb is
 
     component shift_slice is
         port(
-            sclki : in  std_logic;
-            sclko : out std_logic;
+            clki  : in  std_logic;
+            clko  : out std_logic;
             ldi   : in  std_logic;
             ldo   : out std_logic;
             si    : in  std_logic;
@@ -30,8 +30,8 @@ begin
 
     uut : shift_slice
     port map(
-        sclki => sclki,
-        sclko => sclko,
+        clki  => clki,
+        clko  => clko,
         ldi   => ldi  ,
         ldo   => ldo  ,
         si    => si   ,
@@ -70,13 +70,13 @@ begin
             wait for 10 ns;
 
             -- pulse the clock and check clock passthrough
-            sclki <= '1';
+            clki <= '1';
             wait for 10 ns;
-            assert sclko = '1' report "SCLKO does not equal 1" severity error;
+            assert clko = '1' report "SCLKO does not equal 1" severity error;
             assert ldo = patterns(i).ldi report "SCLKO does not equal 1" severity error;
-            sclki <= '0';
+            clki <= '0';
             wait for 10 ns;
-            assert sclko = '0' report "SCLKO does not equal 0" severity error;
+            assert clko = '0' report "SCLKO does not equal 0" severity error;
             assert ldo = patterns(i).ldi report "SCLKO does not equal 1" severity error;
 
             -- check the output
