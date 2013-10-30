@@ -266,6 +266,51 @@
     \lstinputlisting[caption=DFFPOSX1 VHDL Module With Delay]{../../vhdl/dffposx1.vhd}
     \lstinputlisting[caption=INVX1 VHDL Module With Delay]{../../vhdl/invx1.vhd}
     \lstinputlisting[caption=MUX2X1 VHDL Module With Delay]{../../vhdl/mux2x1.vhd}
+\section{VHDL Testbench Results With Timing}
+
+    \subsection{VHDL Slice Testbench With Delays Waveform}
+
+        \begin{figure}[H]
+            \centering
+            \includegraphics[width=\linewidth]{../../doc/vhdl_sim_pics/pin_slice_with_delays.png}
+            \caption{VHDL PIN Slice With Delays Waveform}
+        \end{figure}
+
+        \begin{figure}[H]
+            \centering
+            \includegraphics[width=\linewidth]{../../doc/vhdl_sim_pics/shift_slice_with_delays.png}
+            \caption{VHDL Shift Slice With Delays Waveform}
+        \end{figure}
+
+    \subsection{VHDL Top Level Testbench With Delays Waveform}
+        \begin{figure}[H]
+            \centering
+            \includegraphics[width=\linewidth]{../../doc/vhdl_sim_pics/top.png}
+            \caption{VHDL Top Level Functional Test Bench With Delays Waveform}
+        \end{figure}
+
+        \begin{figure}[H]
+            \centering
+            \includegraphics[width=\linewidth]{../../doc/vhdl_sim_pics/top_test.png}
+            \caption{VHDL Top Level Test Mode Test Bench With Delays Waveform}
+        \end{figure}
+
+\section{Final Simulation Comparision}
+
+        \begin{table}[H]
+            \centering
+            \begin{tabular}{ccc}
+                \toprule
+                \textbf{Simulation} & \textbf{PIN} & \textbf{Shift} \\
+                \midrule
+                IRSIM & 0.348n & 0.242n \\
+                SPICE & 0.792n & 0.455n \\
+                VHDL  & 0.638n & 0.682n \\
+                \bottomrule
+            \end{tabular}
+            \caption{Critical Path Delay Comparison}
+        \end{table}
+
 \section{Floor Plan}
 \section{Major Design Decisions}
 \section{Work Division}
