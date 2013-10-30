@@ -1,10 +1,10 @@
 \section{Slice Layouts}
     \subsection{PIN Slice Layout}
         The PIN slice layout consists of 3 cells from the provided library.
-        They were arranged as to provided maximum density and uniformity among
-        the power rails.  The connections in and out of the slice are arranged
-        such that slices can be directly patterned together with little to
-        additional connections at a higher level.
+        They were arranged as to provided maximum material density and
+        uniformity among the power rails.  The connections in and out of the
+        slice are arranged such that slices can be directly patterned together
+        with little to no additional connections at a higher level.
         \begin{figure}[H]
             \centering
             \includegraphics[width=0.75\linewidth]{../../magic/images/pin_slice.png}
@@ -17,7 +17,7 @@
         \end{figure}
     \subsection{Shift Slice Layout}
         Like the PIN slice, the Shift slice layout consists of 3 cells from the provided library.
-        Again we chose to keep a linear layout to maintain a uniform power connections between slices.
+        Again, we chose to keep a linear layout to maintain a uniform power rail between slices.
         Also, like the PIN slice, the connections in and out of this slice are laid out in such a manner
         that allows for direct patterning of slices with no additional work required.
         \begin{figure}[H]
@@ -36,16 +36,16 @@
 
     \subsection{PIN Slice IRSIM Results}
 
-        In order to test the PIN slice functionally a python script was
+        In order to test the PIN slice functionally a Python script was
         developed that translates our VHDL testbench patterns into a IRSIM
         command file. The output CMD file is not included here because of its
-        length and the fact that I can be inferred from the Python script shown
+        length and the fact that it can be inferred from the Python script shown
         below.
 
         \lstinputlisting[caption=Python PIN Slice IRSIM CMD File Generator, language=Python]{../../irsim/pin_slice.py}
 
-        The resulting IRSIM waveform below shows that we achieve correct
-        functional behavior.
+        The resulting IRSIM waveform, shown below, illustrates that we achieve
+        correct functional behavior for our slice layout.
 
         \begin{figure}[H]
             \centering
@@ -78,7 +78,7 @@
         \vspace{\baselineskip}
 
         Looking at the output we can see the two delays of the critical path.
-        The first of the delays is the output value going from a \texttt{0} to
+        The first of the two delays is the output value going from a \texttt{0} to
         a \texttt{1} and the second is the output going from a \texttt{1} to a
         \texttt{0}.  The table below tabulates the two delays and indicates
         that the falling edge delay was the worse of the two.
@@ -100,9 +100,9 @@
     \newpage
     \subsection{Shift Slice IRSIM Results}
 
-        Similarly to the PIN slice, for the Shift Slice we used a Python script
-        to generate a CMD file that matched our VHDL testbench patterns. The
-        script is shown below:
+        Similarly to the PIN slice, for the Shift Slice we used the same Python
+        script to generate a CMD file that matched our VHDL testbench patterns.
+        The script is shown below:
 
         \lstinputlisting[caption=Python Shift Slice IRSIM CMD File Generator, language=Python]{../../irsim/shift_slice.py}
 
@@ -169,9 +169,9 @@
 
         \lstinputlisting[caption=Python PIN Slice Spice File Generator, language=Python]{../../spice/pin_slice.py}
 
-        In the figure below we can see the result of our function Spice test.
-        As you can see it again matches our expected functionality once again
-        proving the slice is logically operating correctly.
+        In the figure below we can see the result of our functional Spice test.
+        As you can see, it again matches our expected functionality once again
+        proving the slice is operating correctly.
 
         \begin{figure}[H]
             \centering
@@ -215,8 +215,8 @@
 
         Similarly to the PIN slice spice tests we again wanted to be able to
         test the logical functionality of our slice in HSpice. The same Python
-        script was utilized with a few tweaks in variable names and pattern
-        definitions to match this slice.
+        script was utilized with a few tweaks to the variable names and pattern
+        definitions in order to match this slice.
 
         \lstinputlisting[caption=Python Shift Slice Spice File Generator, language=Python]{../../spice/shift_slice.py}
 
@@ -265,7 +265,7 @@
     exhaustive list of input patterns that toggle the gate inputs in every such
     state that results in the outputs changing. With this we are trying to find
     the input state change that causes the worst case delay. We then measure
-    each delay using the \texttt{.measure} directive and then look for worst
+    each delay using the \texttt{.measure} directive and look for worst
     delay time.
 
     \subsection{DFFPOSX1 Spice Results}
@@ -444,7 +444,7 @@
         perform as expected and match not only the original test benches but
         the IRSIM and HSpice functional test waveforms.  Since we know the
         delays of each gate and which gates are in each cell there is no need
-        to show a zoomed in waveform illustrated the delay in VHDL, we can
+        to show a zoomed in waveform illustrating the delay in VHDL, we can
         simply add up the delays manually as there is no other delay introduced
         in the simulation.
 
@@ -464,9 +464,9 @@
 
         Looking at the results of the top level testbenches for both normal and
         test mode we can see that they are again identical to the waveforms
-        captured without delays.  Additionally since our testbench is
+        captured without delays.  Additionally, since our testbench is
         exhaustive and self-checking we can be certain that the delays did not
-        introduce any core cases that one might miss if they are spot checking
+        introduce any corner cases that one might miss if they are spot checking
         manually.
         \begin{figure}[H]
             \centering
@@ -518,9 +518,11 @@
     placement testing we believe we will be able to achieve a \textbf{15x15}
     grid of slices. The majority of the core functionality is contained in a
     nice, symmetrically sliced, square. The only additional components that
-    fall out of this model are the 3 MUXs that are required for test mode. The
-    floor plan shown below indicates the planned location of all test slices
-    and the major components of our design, namely the Shifter and the PIN.
+    fall outside of this model are the 3 MUXs that are required for test mode.
+    The floor plan shown below indicates the planned location of all test
+    slices and the major components of our design, namely the Shifter and the
+    PIN.
+    \vspace{\baselineskip}
 
     \begin{figure}[H]
         \centering
@@ -530,5 +532,57 @@
     \end{figure}
 
 \section{Major Design Decisions}
+
+The major design decisions revolved mainly around the layout of each slice. We
+knew we wanted to come up with a design that would allow us to tile with
+minimal effort.  Achieving this goal was not necessarily difficult but it
+required an iterative design process to break out each signal in such as way
+that would allow them to directly connect together.
+
+Another decision that was made early on was simply `which cells should we use?'.
+While some parts of our slice, such as the D Flip Flop, were obvious choices
+others were more flexible. In the schematic representation of our PIN slice we
+show a 2 input AND gate feeding into a 2 input OR gate. As it turns out, the
+provided library has a cell which performs that function but with an inverted
+output which is easily mitigated by adding. After comparing two layouts, one
+using an AND and an OR cell and one using the AOI cell plus an INV cell it
+turned out that using the AOI and INV saved us some horizontal space which
+allowed use to fit an extra column of slices in bumping our PIN size to 15x15.
+
+Design decisions revolving around the floor plan are derived from not only from
+our initial pin layout, which strives to provide chip-to-chip slicing, but also
+organically as we continue to place components in the frame and see how they
+fit together. As such, we have not completely finalized the pinout and many
+pins are still left unassigned. As stated in the first progress report, once we
+move further into finalizing placement of our Shifter and PIN in the frame we
+will start tapping off various interesting signals and routing them to close by
+unassigned pins.
+
+
 \section{Work Division}
+\vspace{2\baselineskip}
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{ll}
+        \toprule
+        \textbf{Task} & \textbf{Person}\\
+        \midrule
+        PIN Slice Layout      & Thrun \\
+        Shift Slice Layout    & Qi \\
+        PIN Slice IRSIM       & Qi \\
+        Shift Slice IRSIM     & Thrun \\
+        PIN Slice Spice       & Thrun \\
+        Shift Slice Spice     & Qi \\
+        Gate Spice            & Both \\
+        VHDL Models           & Both \\
+        VHDL Slice Tests      & Thrun \\
+        VHDL Top Tests        & QI \\
+        Simulation Comparison & Both \\
+        Floor Plan            & Both \\
+        Design Decisions      & Both \\
+        \bottomrule
+    \end{tabular}
+    \caption{Task Assignment}
+\end{table}
 
