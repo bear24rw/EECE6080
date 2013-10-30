@@ -94,8 +94,25 @@
         \begin{figure}[H]
             \centering
             \includegraphics[width=0.75\linewidth]{../../spice/pin_slice_all.png}
-            \caption{PIN Slice Spice Results}
+            \caption{PIN Slice Spice Functional Results}
         \end{figure}
+        \begin{figure}[H]
+            \centering
+            \includegraphics[width=0.75\linewidth]{../../spice/pin_slice_crit_path.png}
+            \caption{PIN Slice Spice Critical Path Delay}
+        \end{figure}
+        \begin{table}[H]
+            \centering
+            \begin{tabular}{crc}
+                \toprule
+                \textbf{State Change} & \textbf{Delay} & \\
+                \midrule
+                0 & 0.638n & \\
+                1 & 0.792n & WORST \\
+                \bottomrule
+            \end{tabular}
+            \caption{PIN Slice Spice Critical Path Delays}
+        \end{table}
 
     \newpage
     \subsection{Shift Slice Spice Results}
@@ -103,8 +120,25 @@
         \begin{figure}[H]
             \centering
             \includegraphics[width=0.75\linewidth]{../../spice/shift_slice_all.png}
-            \caption{Shift Slice Spice Results}
+            \caption{Shift Slice Spice Functional Results}
         \end{figure}
+        \begin{figure}[H]
+            \centering
+            \includegraphics[width=0.75\linewidth]{../../spice/shift_slice_crit_path.png}
+            \caption{Shift Slice Spice Critical Path Delay}
+        \end{figure}
+        \begin{table}[H]
+            \centering
+            \begin{tabular}{crc}
+                \toprule
+                \textbf{State Change} & \textbf{Delay} & \\
+                \midrule
+                0 & 0.316n & \\
+                1 & 0.455n & WORST \\
+                \bottomrule
+            \end{tabular}
+            \caption{Shift Slice Spice Critical Path Delays}
+        \end{table}
 
 
     \newpage
