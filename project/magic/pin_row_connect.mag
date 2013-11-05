@@ -1,16 +1,15 @@
 magic
 tech scmos
-timestamp 1383629942
+timestamp 1383649547
 << metal1 >>
 rect -1 162 3 165
 rect -8 153 -1 156
 rect -1 109 2343 113
-rect 2 0 6 12
 << m2contact >>
 rect -5 161 -1 165
 rect -5 109 -1 113
 rect 2343 109 2347 113
-rect 2 12 6 16
+rect 10 1 14 5
 << metal2 >>
 rect -5 113 -1 161
 rect 101 93 105 129
@@ -29,4 +28,5 @@ rect 1973 93 1977 129
 rect 2129 93 2133 129
 rect 2285 93 2289 129
 rect 2343 46 2347 109
+rect 10 5 14 16
 << end >>

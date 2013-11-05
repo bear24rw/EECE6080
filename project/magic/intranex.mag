@@ -1,6 +1,6 @@
 magic
 tech scmos
-timestamp 1383647686
+timestamp 1383649547
 << error_s >>
 rect 1195 1895 1199 1899
 rect 1199 1869 1200 1887
@@ -32,7 +32,7 @@ timestamp 1383629942
 transform 1 0 1213 0 1 1797
 box -9 -3 26 105
 use top  top_0
-timestamp 1383647686
+timestamp 1383649547
 transform 1 0 1364 0 1 1679
 box -198 -129 2445 1869
 use IIT_Frame_PR  IIT_Frame_PR_0
