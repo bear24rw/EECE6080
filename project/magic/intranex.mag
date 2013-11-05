@@ -1,14 +1,10 @@
 magic
 tech scmos
-timestamp 1383010634
-use pin  pin_0
-timestamp 1383010634
-transform 1 0 1295 0 1 1761
-box -8 0 2435 1732
-use shift  shift_0
-timestamp 1383010634
-transform 1 0 1263 0 1 1617
-box -17 -86 2405 112
+timestamp 1383634647
+use top  top_0
+timestamp 1383634647
+transform 1 0 1364 0 1 1679
+box -171 -129 2445 1869
 use IIT_Frame_PR  IIT_Frame_PR_0
 timestamp 1072203966
 transform 1 0 -4 0 1 0

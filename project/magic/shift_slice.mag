@@ -1,6 +1,18 @@
 magic
 tech scmos
-timestamp 1382932048
+timestamp 1383629942
+<< nwell >>
+rect -13 94 135 95
+rect -13 87 -9 91
+rect 135 90 138 91
+rect -6 87 127 88
+rect -17 86 -9 87
+rect 134 86 151 87
+rect 127 83 130 84
+rect -17 82 -13 83
+rect -9 82 -2 83
+rect 131 79 151 80
+rect -17 56 2 57
 << metal1 >>
 rect -17 100 151 106
 rect -16 50 -13 86
@@ -20,33 +32,40 @@ rect 137 46 141 50
 rect 57 36 61 40
 << metal2 >>
 rect 141 97 145 106
-rect -13 87 151 90
-rect -17 80 151 83
-rect -17 53 2 56
+rect -13 91 138 95
+rect -13 86 -9 91
+rect 134 90 138 91
+rect -6 84 131 88
+rect 134 86 151 90
+rect -6 83 -2 84
+rect -17 79 -2 83
+rect -17 53 2 57
 rect -2 50 2 53
 rect 22 0 26 46
-rect 57 40 61 80
-rect 137 53 151 56
+rect 57 40 61 84
+rect 127 83 131 84
+rect 127 79 151 83
+rect 137 53 151 57
 rect 137 50 141 53
 use MUX2X1  MUX2X1_0
-timestamp 1053021328
+timestamp 1383629942
 transform 1 0 -12 0 1 3
 box -5 -3 53 105
 use INVX1  INVX1_0
-timestamp 1053022145
+timestamp 1383629942
 transform 1 0 30 0 1 3
 box -9 -3 26 105
 use DFFPOSX1  DFFPOSX1_0
-timestamp 1048618183
+timestamp 1383629942
 transform 1 0 47 0 1 3
 box -8 -3 104 105
 << labels >>
 rlabel metal1 145 100 151 106 0 VDD
 rlabel metal1 145 0 151 6 0 GND
-rlabel metal2 141 53 151 56 0 SO
 rlabel metal1 44 36 47 40 0 M
-rlabel metal2 -17 87 -12 90 0 LDI
-rlabel metal2 -17 53 -12 56 0 SI
 rlabel metal2 22 0 26 6 0 Z
-rlabel metal2 -17 80 -12 83 0 SCLKI
+rlabel metal2 -17 79 -13 83 0 SCLKI
+rlabel m2contact -17 86 -13 90 0 LDI
+rlabel metal2 -17 53 -12 57 0 SI
+rlabel metal2 141 53 151 57 0 SO
 << end >>

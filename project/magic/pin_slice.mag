@@ -1,13 +1,14 @@
 magic
 tech scmos
-timestamp 1383010634
+timestamp 1383629942
 << metal1 >>
 rect -94 -13 62 -7
 rect -97 -67 -78 -64
+rect -97 -73 -34 -72
 rect -97 -76 -78 -73
-rect -31 -76 -11 -73
+rect -31 -76 -11 -72
 rect 5 -73 9 -20
-rect 36 -67 48 -63
+rect 36 -67 48 -64
 rect 5 -77 20 -73
 rect 5 -100 9 -77
 rect 44 -87 48 -67
@@ -17,44 +18,40 @@ rect 5 -20 9 -16
 rect -2 -67 2 -63
 rect -11 -76 -7 -72
 rect 12 -67 16 -63
-rect 59 -64 63 -60
+rect 59 -67 63 -63
 rect 36 -87 40 -83
-rect 52 -77 56 -73
-rect 59 -77 63 -73
+rect 59 -76 63 -72
+rect 52 -83 56 -79
 rect 5 -104 9 -100
 << metal2 >>
-rect 12 -63 59 -60
 rect 2 -67 12 -63
-rect 16 -64 59 -63
-rect 45 -70 63 -67
-rect 45 -72 49 -70
-rect -7 -76 49 -72
-rect 59 -73 63 -70
+rect 16 -67 59 -63
+rect -7 -76 59 -72
 rect -2 -97 16 -93
 rect 36 -97 40 -87
 rect -94 -101 2 -97
 rect 12 -101 40 -97
-rect 52 -97 56 -77
+rect 52 -97 56 -83
 rect 52 -101 63 -97
 use DFFPOSX1  DFFPOSX1_1
-timestamp 1048618183
+timestamp 1383629942
 transform 1 0 -92 0 1 -110
 box -8 -3 104 105
 use AOI21X1  AOI21X1_0
-timestamp 1053722243
+timestamp 1383629942
 transform 1 0 10 0 1 -110
 box -7 -3 39 105
 use INVX1  INVX1_0
-timestamp 1053022145
+timestamp 1383629942
 transform 1 0 42 0 1 -110
 box -9 -3 26 105
 << labels >>
 rlabel metal1 -93 -67 -90 -64 0 QI
 rlabel metal1 -93 -76 -90 -73 0 CI
-rlabel m2contact 59 -64 63 -60 0 QO
 rlabel metal1 56 -113 62 -107 0 GND
 rlabel metal1 56 -13 62 -7 0 VDD
 rlabel m2contact 5 -104 9 -100 0 WI
 rlabel metal2 -94 -101 -90 -97 0 ZI
 rlabel metal2 59 -101 63 -97 0 ZO
+rlabel m2contact 59 -67 63 -63 0 QO
 << end >>
