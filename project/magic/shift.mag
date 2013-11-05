@@ -1,19 +1,30 @@
 magic
 tech scmos
-timestamp 1383634647
+timestamp 1383647326
+<< metal1 >>
+rect 2440 104 2450 110
+rect 2440 4 2450 10
 << m2contact >>
 rect 2402 50 2406 54
 rect 2410 50 2414 54
 << metal2 >>
-rect 2402 94 2406 110
-rect 2409 87 2413 110
-rect 2405 83 2413 87
-rect 2416 61 2420 110
-rect 2405 57 2420 61
+rect 2430 94 2434 110
+rect -17 90 -13 94
+rect 2405 90 2434 94
+rect 2437 87 2441 110
+rect -17 83 -13 87
+rect 2405 83 2441 87
+rect 2444 69 2448 110
+rect 2410 65 2448 69
+rect 2410 61 2414 65
+rect 2451 62 2455 110
+rect -17 57 -12 61
+rect 2405 57 2414 61
 rect 2410 54 2414 57
+rect 2427 58 2455 62
 rect 2402 47 2406 50
-rect 2423 47 2427 110
-rect 2402 43 2427 47
+rect 2427 47 2431 58
+rect 2402 43 2431 47
 rect 22 -83 26 4
 rect 183 -77 187 4
 rect 344 -71 348 4
@@ -29,28 +40,36 @@ rect 1793 -17 1797 4
 rect 1954 -11 1958 4
 rect 2115 -5 2119 4
 rect 2276 1 2280 4
-rect 2276 -2 2440 1
-rect 2115 -8 2440 -5
-rect 1954 -14 2440 -11
-rect 1793 -20 2440 -17
-rect 1631 -26 2440 -23
-rect 1471 -32 2440 -29
-rect 1310 -38 2440 -35
-rect 1149 -44 2440 -41
-rect 988 -50 2440 -47
-rect 827 -56 2440 -53
-rect 666 -62 2440 -59
-rect 505 -68 2440 -65
-rect 344 -74 2440 -71
-rect 183 -80 2440 -77
-rect 22 -86 2440 -83
+rect 2276 -2 2468 1
+rect 2115 -8 2468 -5
+rect 1954 -14 2468 -11
+rect 1793 -20 2468 -17
+rect 1631 -26 2468 -23
+rect 1471 -32 2468 -29
+rect 1310 -38 2468 -35
+rect 1149 -44 2468 -41
+rect 988 -50 2468 -47
+rect 827 -56 2468 -53
+rect 666 -62 2468 -59
+rect 505 -68 2468 -65
+rect 344 -74 2468 -71
+rect 183 -80 2468 -77
+rect 22 -86 2468 -83
 use shift_slice  shift_slice_0
 array 0 14 161 0 0 107
 timestamp 1383629942
 transform 1 0 0 0 1 4
 box -17 0 151 108
-use MUX2X1  MUX2X1_0
-timestamp 1383629942
-transform 1 0 2400 0 1 7
-box -5 -3 53 105
+use mux  mux_0
+timestamp 1383644076
+transform 1 0 2395 0 1 4
+box 0 0 73 108
+<< labels >>
+rlabel metal1 2440 104 2450 110 0 VDD
+rlabel metal1 2440 4 2450 10 0 GND
+rlabel metal2 -17 57 -12 61 0 SI
+rlabel metal2 -17 83 -13 87 0 SCLKI
+rlabel metal2 -17 90 -13 94 0 LDI
+rlabel metal2 2451 104 2455 110 0 TESTI
+rlabel metal2 2444 104 2448 110 0 SO
 << end >>
