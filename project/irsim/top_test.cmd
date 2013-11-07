@@ -11,6 +11,7 @@ l PCLKI
 l PSI
 
 | enable test mode
+h TESTI
 h TESTO
 
 | clock in a pulse (010)

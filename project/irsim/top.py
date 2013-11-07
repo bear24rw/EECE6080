@@ -62,6 +62,7 @@ def write_cmd_file(pin_bits, shift_bits, result_bits, analyzer=False):
         f.write("vector PCLK PCLKI\n")
         if analyzer: f.write("ana PCLKI PSI PSO SCLKO SI LDO SO\n")
         f.write("w   PCLKI PSI PSO SCLKO SI LDO SO\n")
+        f.write("l TESTI\n")
         f.write("l TESTO\n")
 
         # load the PIN
