@@ -1,10 +1,12 @@
 magic
 tech scmos
-timestamp 1383629942
-<< metal1 >>
-rect 31 37 39 40
+timestamp 1383808422
 << m2contact >>
 rect 11 46 15 50
+rect 27 36 31 40
+<< metal2 >>
+rect 27 60 46 64
+rect 27 40 31 60
 use BUFX4  BUFX4_0
 timestamp 1383629942
 transform 1 0 9 0 1 3
