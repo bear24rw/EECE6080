@@ -1,6 +1,6 @@
 magic
 tech scmos
-timestamp 1383821139
+timestamp 1383822934
 << nwell >>
 rect 2366 2472 2378 2476
 rect 2428 2464 2431 2468
@@ -320,7 +320,7 @@ timestamp 1383821139
 transform 1 0 413 0 1 2522
 box -460 -103 2121 1847
 use shift  shift_0
-timestamp 1383810178
+timestamp 1383822934
 transform 1 0 154 0 1 2185
 box -197 40 2282 342
 << labels >>
