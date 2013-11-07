@@ -1,6 +1,6 @@
 magic
 tech scmos
-timestamp 1383649547
+timestamp 1383792416
 << metal1 >>
 rect -4 40 3 41
 << m2contact >>
@@ -76,7 +76,7 @@ transform 1 0 -90 0 1 0
 box 0 0 73 108
 use pin_row_connect  pin_row_connect_0
 array 0 0 98 0 13 116
-timestamp 1383649547
+timestamp 1383792416
 transform 1 0 4 0 1 0
 box -8 1 2347 165
 use pin_buffer  pin_buffer_0

@@ -1,6 +1,6 @@
 magic
 tech scmos
-timestamp 1383649547
+timestamp 1383792416
 << nwell >>
 rect -60 1839 -53 1845
 rect -60 1723 -53 1729
@@ -110,7 +110,6 @@ rect 2322 347 2433 353
 rect -169 331 -53 337
 rect 2425 237 2433 347
 rect 2322 231 2433 237
-rect -24 152 -20 156
 rect 2425 121 2433 231
 rect 2320 115 2433 121
 rect -71 108 2292 112
@@ -298,7 +297,7 @@ rect 2421 80 2445 84
 rect 2421 73 2445 77
 rect 2316 -105 2414 -102
 use pin  pin_0
-timestamp 1383649547
+timestamp 1383792416
 transform 1 0 -24 0 1 115
 box -148 0 2445 1732
 use shift  shift_0
@@ -321,5 +320,4 @@ rlabel metal2 -198 71 -190 75 0 LDI
 rlabel metal2 -198 175 -190 179 0 PSI
 rlabel metal2 -198 168 -190 172 0 PCLKI
 rlabel metal2 2243 38 2253 42 0 SSO
-rlabel metal1 -24 152 -20 156 0 PCLK
 << end >>
