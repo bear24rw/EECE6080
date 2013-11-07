@@ -11,7 +11,7 @@ l PCLKI
 l PSI
 
 | enable test mode
-h TESTO
+h TESTI
 
 | clock in a pulse (010)
 l SI
@@ -22,12 +22,12 @@ l SI
 c
 
 | clock it until the pulse is just about to come out
-| 15*15+15-3-1 == 236
+| 16*16+16-3-1 == 268
 |
-| 15*15+15 == number of flip flops
+| 16*16+16 == number of flip flops
 | 3 == we already clocked three times
 | 1 == stop right before the pulse comes out
-c 236
+c 268
 
 | make sure we see the pulse
 assert SO 0

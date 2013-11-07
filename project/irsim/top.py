@@ -4,7 +4,7 @@ import random
 import subprocess
 from termcolor import colored
 
-N = 15
+N = 16
 
 class Pin:
 
@@ -62,7 +62,7 @@ def write_cmd_file(pin_bits, shift_bits, result_bits, analyzer=False):
         f.write("vector PCLK PCLKI\n")
         if analyzer: f.write("ana PCLKI PSI PSO SCLKO SI LDO SO\n")
         f.write("w   PCLKI PSI PSO SCLKO SI LDO SO\n")
-        f.write("l TESTO\n")
+        f.write("l TESTI\n")
 
         # load the PIN
         f.write("clock PCLK 0 1\n")
