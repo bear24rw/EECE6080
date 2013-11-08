@@ -8,6 +8,8 @@
 
 
 
+
+
 %
 %
 %
@@ -23,10 +25,10 @@
 % TEST INVERTER
 % TEST PIN SLICE
 % TEST SHIFT SLICE
-1  & TPZO   & O & Test pin slice row output \\ \hline
-2  & TPZI   & I & Test pin slice row input \\ \hline
-3 & TII   & I & Test inverter input \\ \hline
-4 & TIO   & O & Test interter output \\ \hline
+1  & TPCI & I & Test pin slice clock input \\ \hline
+2  & TPQI & I & Test pin slice serial input \\ \hline
+3 & TII & I & Test inverter input \\ \hline
+4 & TIO & O & Test interter output \\ \hline
 5  & PCLKI & I & PIN clock input \\ \hline
 6  & PSI   & I & PIN serial input \\ \hline
 7  & TESTI & I & Test Mode enable input\\ \hline
@@ -49,16 +51,16 @@
 24 & TESTO & O & Test Mode enable output\\ \hline
 25 & PSO   & O & PIN serial output \\ \hline
 26 & PCLKO & O & PIN clock output \\ \hline
-28 & TFQ   & O & Test flop-flop Q output \\ \hline
-29 & TFC   & I & Test flip-flop clock input \\ \hline
-30 & TFD   & I & Test flip-flop D input \\ \hline
+28 & TFC & I & Test flip-flop clock input \\ \hline
+29 & TFD & I & Test flip-flop D input \\ \hline
+30 & TFQ & O & Test flop-flop Q output \\ \hline
 31 & TSSO  & O & Test shift slice serial output \\ \hline
 32 & TSZ   & I & Test shift slice parallel input \\ \hline
-33 & TSSI  & I & Test shift slice serial input \\ \hline
-34 & TSLI  & I & Test shift slice load input \\ \hline
-35 & TSCI  & I & Test shift slice clock input \\ \hline
+33 & TSCI  & I & Test shift slice clock input \\ \hline
+34 & TSLDI & I & Test shift slice load input \\ \hline
+35 & TSSI  & I & Test shift slice serial input \\ \hline
 36 & VDD   & P & -- \\ \hline
-37 & TPWI   & I & Test pin slice coloumn \\ \hline
-38 & TPQO   & O & Test pin slice serial output \\ \hline
-39 & TPQI   & I & Test pin slice serial input \\ \hline
-40 & TPCI   & I & Test pin slice clock input \\ \hline
+37 & TPQO & O & Test pin slice serial output \\ \hline
+38 & TPZO & O & Test pin slice row output \\ \hline
+39 & TPWI & I & Test pin slice coloumn \\ \hline
+40 & TPZI & I & Test pin slice row input \\ \hline

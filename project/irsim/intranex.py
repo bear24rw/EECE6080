@@ -36,8 +36,8 @@ def get_bits(shift):
 
     # generate a random ordering permutation
     order = range(N)
-    random.shuffle(order)
-    #order = order[::-1]
+    #random.shuffle(order)
+    order = order[::-1]
 
     # reorder the result bits
     for i in range(N):
@@ -97,8 +97,7 @@ def write_cmd_file(pin_bits, shift_bits, result_bits, analyzer=False):
         for i in range(1, N):
             f.write("c\n")
             f.write("assert SO %s\n" % result_bits[i])
-
-        f.write("c\n")
+            f.write("path SO\n")
 
         if not analyzer: f.write("exit\n")
 

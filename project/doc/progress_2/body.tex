@@ -515,7 +515,7 @@
 \section{Floor Plan}
 
     The current floorplan that we plan on pursuing is shown below. From initial
-    placement testing we believe we will be able to achieve a \textbf{15x15}
+    placement testing we believe we will be able to achieve a \textbf{16x16}
     grid of slices. The majority of the core functionality is contained in a
     nice, symmetrically sliced, square. The only additional components that
     fall outside of this model are the 3 MUXs that are required for test mode.
@@ -547,7 +547,7 @@ provided library has a cell which performs that function but with an inverted
 output which is easily mitigated by adding. After comparing two layouts, one
 using an AND and an OR cell and one using the AOI cell plus an INV cell it
 turned out that using the AOI and INV saved us some horizontal space which
-allowed use to fit an extra column of slices in bumping our PIN size to 15x15.
+allowed use to fit an extra column of slices in bumping our PIN size to 16x16.
 
 Design decisions revolving around the floor plan are derived from not only from
 our initial pin layout, which strives to provide chip-to-chip slicing, but also
