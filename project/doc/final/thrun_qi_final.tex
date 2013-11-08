@@ -1,0 +1,96 @@
+\documentclass{report}
+\usepackage[includeheadfoot,left=1in, right=0.5in, top=0.5in, bottom=0.5in]{geometry}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage{extramarks}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{graphicx}
+\usepackage[table]{xcolor}
+\usepackage{listings}
+%\usepackage{courier}
+\usepackage{float}
+\usepackage{url}
+\usepackage{caption}
+\usepackage[pdfborder={0 0 0}]{hyperref}
+%\usepackage[compact,small]{titlesec}
+\usepackage{microtype}
+\usepackage{verbatim}
+\usepackage{booktabs}
+\usepackage{indentfirst}
+\usepackage{pdfpages}
+\usepackage{tabularx}
+
+\definecolor{lightgray}{gray}{0.9}
+
+\parskip = 0.5\baselineskip
+\setlength{\belowcaptionskip}{-\baselineskip}
+
+\captionsetup{font=scriptsize}
+\captionsetup{labelfont=bf}
+
+\pagestyle{fancy}
+\rhead{Max Thrun \& Xiaohui Qi}
+\lhead{EECE6080 - Intranex}
+\lfoot{Final Report}
+\rfoot{Page\ \thepage\ of \protect\pageref{LastPage}}
+\cfoot{}
+\renewcommand\headrulewidth{0.4pt}
+\renewcommand\footrulewidth{0.4pt}
+
+% make verbatim text small
+\makeatletter
+\g@addto@macro\@verbatim\small
+\makeatother
+
+\setlength\parindent{0pt} % Removes all indentation from paragraphs
+
+\definecolor{sh_comment}{rgb}{0.12, 0.38, 0.18 } %adjusted, in Eclipse: {0.25, 0.42, 0.30 } = #3F6A4D
+\definecolor{sh_keyword}{rgb}{0.37, 0.08, 0.25}  % #5F1441
+\definecolor{sh_string}{rgb}{0.06, 0.10, 0.98} % #101AF9
+
+\lstset{
+    language=vhdl,
+    xleftmargin=.25in,
+    xrightmargin=.25in,
+    numbers=left,
+    numberstyle=\tiny,
+    frame=tb,
+    showstringspaces=false,
+    captionpos=b,
+    stringstyle=\color{sh_string},
+    keywordstyle = \color{sh_keyword}\bfseries,
+    commentstyle=\color{sh_comment}\itshape,
+    basicstyle=\tiny\sffamily,
+    %numbersep=-5pt,
+    belowskip=\baselineskip,
+    aboveskip=\baselineskip
+}
+
+\begin{document}
+
+\includepdf{../cover_page/cover_page.pdf}
+\parskip = 0.4\baselineskip
+\newpage
+\tableofcontents
+\newpage
+\listoffigures
+\listoftables
+\lstlistoflistings
+\parskip = 0.5\baselineskip
+
+\newpage
+\chapter{Part 1}
+\newpage
+\input{../progress_1/body.tex}
+
+\newpage
+\chapter{Part 2}
+\newpage
+\input{../progress_2/body.tex}
+
+\newpage
+\chapter{Part 3}
+\newpage
+\input{body.tex}
+
+\end{document}
