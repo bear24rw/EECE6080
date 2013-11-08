@@ -1,6 +1,6 @@
 from PIL import Image
 
-scale = 3
+scale = 4
 
 with open("logo.mag", "w") as f:
     f.write("magic\n")
