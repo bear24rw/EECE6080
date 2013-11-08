@@ -1,0 +1,46 @@
+magic
+tech scmos
+timestamp 1383816218
+<< m2contact >>
+rect 7 46 11 50
+rect 15 46 19 50
+rect 39 46 43 50
+rect 65 46 69 50
+rect 73 46 77 50
+rect 97 46 101 50
+rect 115 36 119 40
+rect 57 22 61 26
+<< metal2 >>
+rect 7 62 77 66
+rect 7 54 19 58
+rect 15 50 19 54
+rect 23 54 69 58
+rect 7 42 11 46
+rect 23 42 27 54
+rect 65 50 69 54
+rect 7 38 27 42
+rect 39 34 43 46
+rect 73 50 77 62
+rect 81 59 119 63
+rect 65 42 69 46
+rect 81 42 85 59
+rect 97 51 119 55
+rect 97 50 101 51
+rect 65 38 85 42
+rect 105 43 119 47
+rect 105 34 109 43
+rect 39 30 109 34
+rect 7 18 61 22
+rect 7 0 11 18
+rect 115 13 119 36
+rect 16 9 119 13
+rect 16 0 20 9
+use mux  mux_0
+timestamp 1383808422
+transform 1 0 0 0 1 0
+box 0 0 73 108
+use mux  mux_1
+timestamp 1383808422
+transform 1 0 58 0 1 0
+box 0 0 73 108
+<< end >>
