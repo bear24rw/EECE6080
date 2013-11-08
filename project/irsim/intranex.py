@@ -129,7 +129,7 @@ if __name__ == "__main__":
 
         write_cmd_file(pin_bits, shift_bits, result_bits)
 
-        irsim_cmd = "irsim -s../../models/scmos30.prm ../magic/intranex.sim -intranex.cmd"
+        irsim_cmd = "irsim -s../../models/scmos30.prm ../magic/intranex_2.sim -intranex.cmd"
         subprocess.call(shlex.split(irsim_cmd))
 
         grep_cmd = "grep assertion intranex.log"
