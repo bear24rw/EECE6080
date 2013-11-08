@@ -1,6 +1,8 @@
 magic
 tech scmos
-timestamp 1383887119
+timestamp 1383903783
+<< nwell >>
+rect -12 4369 -11 4416
 << metal1 >>
 rect -185 4481 2574 4491
 rect -185 4367 -175 4481
@@ -402,7 +404,6 @@ rlabel metal2 2564 2351 2574 2355 0 SCLKO
 rlabel metal2 2564 2359 2574 2363 0 LDO
 rlabel metal2 2564 2451 2574 2455 0 SO
 rlabel metal2 2564 2464 2574 2468 0 TESTO
-rlabel metal1 2564 2477 2574 2481 0 PSO
 rlabel metal2 2564 2581 2574 2585 0 PCLKO
 rlabel metal1 -165 2204 -155 2214 0 GND
 rlabel metal1 -185 2184 -175 2194 0 VDD
@@ -431,4 +432,5 @@ rlabel metal2 2335 4481 2339 4491 0 TFQ
 rlabel metal2 2391 4481 2395 4491 0 TFD
 rlabel metal2 2415 4481 2419 4491 0 TFC
 rlabel metal2 94 4481 98 4491 0 TPWI
+rlabel metal2 2564 2477 2574 2481 0 PSO
 << end >>
