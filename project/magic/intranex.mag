@@ -1,6 +1,6 @@
 magic
 tech scmos
-timestamp 1383904141
+timestamp 1383909341
 << metal1 >>
 rect 1020 3982 1044 3991
 rect 1053 3982 1311 3991
@@ -419,6 +419,8 @@ rect 3991 1580 4000 1589
 rect 3880 1546 3973 1550
 rect 3982 1547 4000 1556
 rect 1040 1469 1121 1473
+rect 1416 1462 1420 1466
+rect 3730 1462 3734 1466
 rect 3982 1458 3991 1547
 rect 1027 1454 1121 1458
 rect 3880 1454 3991 1458
@@ -427,7 +429,7 @@ rect 3880 1446 3973 1450
 rect 1000 1344 1018 1353
 rect 1009 1320 1018 1344
 rect 1000 1311 1009 1320
-rect 0 1020 254 1274
+rect 3 1023 257 1277
 rect 1027 1266 1036 1446
 rect 3860 1334 3890 1343
 rect 1111 1311 1141 1320
@@ -601,53 +603,54 @@ use top  top_0
 timestamp 1383903783
 transform 1 0 1306 0 1 -905
 box -185 2184 2574 4491
-use pad_labels  pad_labels_0
-timestamp 1383894587
-transform 1 0 0 0 1 0
-box 3 3 4997 4997
 use IIT_Frame_PR  IIT_Frame_PR_0
 timestamp 1383894587
 transform 1 0 -4 0 1 0
 box 4 0 5004 5000
 << labels >>
-rlabel metal2 1020 0 1274 254 0 W0
-rlabel metal2 1320 0 1574 254 0 W1
-rlabel metal2 1620 0 1874 254 0 W2
-rlabel metal2 1920 0 2174 254 0 W3
-rlabel metal2 2220 0 2474 254 0 W4
-rlabel metal2 2520 0 2774 254 0 GND
-rlabel metal2 2820 0 3074 254 0 W12
-rlabel metal2 3120 0 3374 254 0 W13
-rlabel metal2 3420 0 3674 254 0 W14
+rlabel metal2 1023 1257 1032 1266 0 D2
 rlabel metal2 3720 0 3974 254 0 W15
-rlabel metal2 4740 1020 4994 1274 0 SCLKO
-rlabel metal2 4740 1320 4994 1574 0 LDO
-rlabel metal2 4740 1620 4994 1874 0 SO
-rlabel metal2 4740 1920 4994 2174 0 TESTO
-rlabel metal2 4740 2220 4994 2474 0 PSO
-rlabel metal2 4740 2520 4994 2774 0 PCLKO
-rlabel metal2 4740 2820 4994 3074 0 NC
-rlabel metal2 4740 3120 4994 3374 0 TFC
-rlabel metal2 4740 3420 4994 3674 0 TFD
+rlabel metal2 3420 0 3674 254 0 W14
+rlabel metal2 3120 0 3374 254 0 W13
+rlabel metal2 2820 0 3074 254 0 W12
+rlabel metal2 2520 0 2774 254 0 GND
+rlabel metal2 2220 0 2474 254 0 W4
+rlabel metal2 1920 0 2174 254 0 W3
+rlabel metal2 1620 0 1874 254 0 W2
+rlabel metal2 1320 0 1574 254 0 W1
+rlabel metal2 1020 0 1274 254 0 W0
 rlabel metal2 4740 3720 4994 3974 0 TFQ
-rlabel metal2 3720 4740 3974 4994 0 TSSO
-rlabel metal2 3420 4740 3674 4994 0 TSZ
-rlabel metal2 3120 4740 3374 4994 0 TSCI
-rlabel metal2 2820 4740 3074 4994 0 TSLDI
-rlabel metal2 2520 4740 2774 4994 0 TSSI
-rlabel metal2 2220 4740 2474 4994 0 VDD
-rlabel metal2 1920 4740 2174 4994 0 TPQO
-rlabel metal2 1620 4740 1874 4994 0 TPZO
-rlabel metal2 1320 4740 1574 4994 0 TPWI
+rlabel metal2 4740 3420 4994 3674 0 TFD
+rlabel metal2 4740 3120 4994 3374 0 TFC
+rlabel metal2 4740 2820 4994 3074 0 NC
+rlabel metal2 4740 2520 4994 2774 0 PCLKO
+rlabel metal2 4740 2220 4994 2474 0 PSO
+rlabel metal2 4740 1920 4994 2174 0 TESTO
+rlabel metal2 4740 1620 4994 1874 0 SO
+rlabel metal2 4740 1320 4994 1574 0 LDO
+rlabel metal2 4740 1020 4994 1274 0 SCLKO
 rlabel metal2 1020 4740 1274 4994 0 TPZI
-rlabel metal2 0 3720 254 3974 0 TPCI
-rlabel metal2 0 3420 254 3674 0 TPQI
-rlabel metal2 0 3120 254 3374 0 TII
-rlabel metal2 0 2820 254 3074 0 TIO
-rlabel metal2 0 2520 254 2774 0 PCLKI
-rlabel metal2 0 2220 254 2474 0 PSI
-rlabel metal2 0 1920 254 2174 0 TESTI
-rlabel metal2 0 1620 254 1874 0 SI
+rlabel metal2 1320 4740 1574 4994 0 TPWI
+rlabel metal2 1620 4740 1874 4994 0 TPZO
+rlabel metal2 1920 4740 2174 4994 0 TPQO
+rlabel metal2 2220 4740 2474 4994 0 VDD
+rlabel metal2 2520 4740 2774 4994 0 TSSI
+rlabel metal2 2820 4740 3074 4994 0 TSLDI
+rlabel metal2 3120 4740 3374 4994 0 TSCI
+rlabel metal2 3420 4740 3674 4994 0 TSZ
+rlabel metal2 3720 4740 3974 4994 0 TSSO
 rlabel metal2 0 1320 254 1574 0 LDI
-rlabel metal2 0 1020 254 1274 0 SCLKI
+rlabel metal2 0 1620 254 1874 0 SI
+rlabel metal2 0 1920 254 2174 0 TESTI
+rlabel metal2 0 2220 254 2474 0 PSI
+rlabel metal2 0 2520 254 2774 0 PCLKI
+rlabel metal2 0 2820 254 3074 0 TIO
+rlabel metal2 0 3120 254 3374 0 TII
+rlabel metal2 0 3420 254 3674 0 TPQI
+rlabel metal2 0 3720 254 3974 0 TPCI
+rlabel metal2 3 1023 257 1277 0 SCLKI
+rlabel metal2 3730 1462 3734 1466 0 D_SSO
+rlabel metal2 3882 1446 3892 1450 0 D_SCLKO
+rlabel metal2 1104 1469 1111 1473 0 D_SI
+rlabel metal2 1416 1462 1420 1466 0 D_SQ0
 << end >>
