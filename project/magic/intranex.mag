@@ -1,6 +1,12 @@
 magic
 tech scmos
-timestamp 1383914834
+timestamp 1384390491
+<< error_s >>
+rect 1200 1201 3800 1203
+<< polysilicon >>
+rect 1200 3490 1463 3671
+rect 3463 3488 3801 3667
+rect 1200 1201 3800 1315
 << metal1 >>
 rect 1020 3982 1044 3991
 rect 1053 3982 1311 3991
@@ -560,15 +566,15 @@ rect 2820 0 3074 254
 rect 3120 0 3374 254
 rect 3420 0 3674 254
 rect 3720 0 3974 254
-use logo  logo_0
+use logo logo_0
 timestamp 1383914834
 transform 1 0 1490 0 1 3485
 box 0 4 1940 292
-use top  top_0
+use top top_0
 timestamp 1383913817
 transform 1 0 1306 0 1 -905
 box -185 2026 2574 4784
-use IIT_Frame_PR  IIT_Frame_PR_0
+use IIT_Frame_PR IIT_Frame_PR_0
 timestamp 1383894587
 transform 1 0 -4 0 1 0
 box 4 0 5004 5000
