@@ -5,7 +5,15 @@
 \usepackage{amsmath}
 \usepackage[compact]{titlesec}
 
-\setlength{\columnseprule}{0.4pt}
+\setlength{\columnseprule}{0pt}
+\setlength{\parskip}{0pt}
+\setlength{\parindent}{0pt} 
+\setlength\abovedisplayskip{0pt}
+\setlength\belowdisplayskip{0pt}
+\setlength{\jot}{0pt}
+\linespread{0.9}
+
+\allowdisplaybreaks
 
 \begin{document}
 \begin{multicols}{3}
@@ -25,6 +33,13 @@
     asdfasdfasdf
     \subsection*{asdfasd}
     asdfasdfasdf
+
+    \section*{General}
+    \subsection*{Demorgans Law}
+    \begin{align}
+        \neg[p\wedge q]\equiv\neg p\vee\neg q,\\
+        \neg[p\vee q]\equiv\neg p\wedge\neg q.
+    \end{align}
 
 \end{multicols}
 \end{document}
