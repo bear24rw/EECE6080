@@ -20,7 +20,6 @@
 \begin{document}
 \begin{multicols}{3}
 
-    \section*{General}
     \textbf{Demorgans Law}
     \begin{flalign*}
         \neg[p\wedge q]\equiv\neg p\vee\neg q,\\
@@ -59,7 +58,6 @@
         t_{p} = N*t_{po}*(1 + f)
     \end{flalign*}
 
-    \subsection*{Gates}
     \includegraphics[width=\linewidth]{not.png}
     \includegraphics[width=\linewidth]{and.png}
     \includegraphics[width=\linewidth]{or.png}
@@ -67,18 +65,17 @@
     \includegraphics[width=\linewidth]{xor.png}
     \includegraphics[width=\linewidth]{dynamic_gates.png}
 
-    \subsection*{Definitions}
-    \textbf{Inertial Delay -} time it takes for signal to change value \\
-    \textbf{Transport Delay -} time it takes for signal to travel down wire \\
-    \textbf{Delta Cycle -} is used to order events in VHDL simulation and
+    \textbf{Inertial Delay -} Time it takes for signal to change value \\
+    \textbf{Transport Delay -} Time it takes for signal to travel down wire \\
+    \textbf{Delta Cycle -} Is used to order events in VHDL simulation and
     refers to a zero-physical time. The kernel takes an additional cycle (of
     delta advancement) to update the evaluated 'future value' into the 'current
     value' registers, during which the clock doesn't advance. \\
-    \textbf{Channel Length Modulation -} shorting of the length of the inverted
+    \textbf{Channel Length Modulation -} Shorting of the length of the inverted
     channel region with increase in drain bias for large drain biases \\
-    \textbf{Velocity Saturation -} carrier velocity reaches maximum value in
+    \textbf{Velocity Saturation -} Carrier velocity reaches maximum value in
     presence of electric field. \\
-    \textbf{Latch up -} a short circuit in which a low impedance path is
+    \textbf{Latch up -} A short circuit in which a low impedance path is
     created resulting in a parasitic subcircuit that disrupts proper function.\\
     \textbf{Velocity Saturation -} when a strong enough electric field is
     applied, the carrier velocity in the semiconductor reaches a maximum value.
@@ -91,15 +88,12 @@
     areas of high field intensities within a semiconductor .  Because of high
     kinetic energy they can get injected and trapped in areas of the device
     where they shouldn't be.\\
-    \textbf{Scan Chain -} is a technique used for testing digital circuits. The
+    \textbf{Scan Chain -} Is a technique used for testing digital circuits. The
     flip flops are all connected together as a shift register into a single (or
     multiple) scan chains. It increases observability and controllability in
     the design and also helps to reduce the size of the test-set vector. \\
-    \textbf{Process gain factor -}
-        \begin{flalign*}
-            K = \mu \epsilon_{iO_{2}} \over t_{ox}
-        \end{flalign*}
-    \textbf{Intrinsic Capacitance - } refers to the internal capacitance of a
+    \textbf{Process gain factor -} $$ K = {\mu \epsilon_{iO_{2}} \over t_{ox}} $$
+    \textbf{Intrinsic Capacitance -} refers to the internal capacitance of a
     static gate generated dude to diffusion layers, metal contacts, poly-wires.
     The parasitic capacitance is proportional to the dimensions of the gate
     (i.e. W and L of transistor).  As we increase the size of the gate, the
@@ -115,7 +109,10 @@
     \textbf{Inverter Threshold -} When the inverter switches value. NMOS pulls
     the output low, PMOS pulls output high. To increase the threshold,
     increase the strength of NMOS and/or reduce strength of PMOS. Strengh of
-    MOSFET is W/L (width/length) ratio. Bigger radio = stronger MOSFET.
+    MOSFET is W/L (width/length) ratio. Bigger radio = stronger MOSFET.\\
+    \textbf{Method to overcome leakage -} Install keepers at the output of
+    circuit. This uses pos feedback to reduce leakage. Keeper = inverter in
+    series with output with output of inverter connected to input of inverter.
 
 \end{multicols}
 \end{document}
