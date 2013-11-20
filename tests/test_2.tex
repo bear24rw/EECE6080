@@ -42,11 +42,10 @@
     \textbf{Power Probability}
     \begin{flalign*}
         P_{n} &= probability\ of\ n = 1\\
-        n\_nand &= P_{A}*P_{B} \\
-        p\_nand &= 1-P_{A}*P_{B} \\
-        n\_nor  &= 1-(1-P_{A})(1-P_{B}) \\
-                &= P_{A}+P_{B}-P_{A}P_{B} \\
-        p\_nor  &= (1-P_{A})(1-P_{B}) \\
+  P_{n\_nand}(0) &= P_{A}(1)P_{B}(1) \\
+  P_{p\_nand}(1) &= 1-P_{A}(1)P_{B}(1) \\
+  P_{n\_nor}(0)  &= 1-P_{A}(0)P_{B}(0) \\
+  P_{p\_nor}(1)  &= P_{A}(0)P_{B}(0)
     \end{flalign*}
 
     \subsection*{Gates}
