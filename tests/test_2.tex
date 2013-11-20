@@ -1,4 +1,4 @@
-\documentclass[10pt]{article}
+\documentclass[10pt,fleqn]{article}
 \usepackage[margin=0.5in]{geometry}
 \usepackage{multicol}
 \usepackage{lipsum}% dummy text
@@ -6,6 +6,7 @@
 \usepackage[compact]{titlesec}
 \usepackage{graphicx}
 
+\setlength{\mathindent}{0pt}
 \setlength{\columnseprule}{0pt}
 \setlength{\parskip}{0pt}
 \setlength{\parindent}{0pt}
@@ -33,17 +34,17 @@
 
     \section*{General}
     \subsection*{Demorgans Law}
-    \begin{align}
+    \begin{flalign*}
         \neg[p\wedge q]\equiv\neg p\vee\neg q,\\
         \neg[p\vee q]\equiv\neg p\wedge\neg q.
-    \end{align}
+    \end{flalign*}
     \subsection*{Rise/Fall time}
-    \begin{align}
+    \begin{flalign*}
         t_{r} = R_{p}C \\
         t_{f} = R_{n}C \\
-        R_{n} \propto {L_{n} \over W_{n}M_{0_{n}}} \\
-        R_{p} \propto {L_{p} \over W_{p}M_{0_{p}}}
-    \end{align}
+        R_{n} \propto {L_{n} \over W_{n}\mu_{0_{n}}},
+        R_{p} \propto {L_{p} \over W_{p}\mu_{0_{p}}}
+    \end{flalign*}
 
     \subsection*{Elmore's delay}
     \begin{flalign*}
@@ -65,8 +66,10 @@
     \subsection*{Definitions}
     \textbf{Inertial Delay -} time it takes for signal to change value \\
     \textbf{Transport Delay -} time it takes for signal to travel down wire \\
-    \textbf{Delta Cycle -} concept used to order vents that happen
-    simultaneously \\
+    \textbf{Delta Cycle -} is used to order events in VHDL simulation and
+    refers to a zero-physical time. The kernel takes an additional cycle (of
+    delta advancement) to update the evaluated 'future value' into the 'current
+    value' registers, during which the clock doesn't advance. \\
     \textbf{Channel Length Modulation -} shorting of the length of the inverted
     channel region with increase in drain bias for large drain biases \\
     \textbf{Velocity Saturation -} carrier velocity reaches maximum value in
@@ -79,7 +82,20 @@
     velocity no longer increases because the carriers lose energy through
     increased levels of interaction with the lattice, by emitting phonons and
     even photons as soon as the carrier energy is large enough to do so.\\
-
+    \textbf{Scan Chain -} is a technique used for testing digital circuits. The
+    flip flops are all connected together as a shift register into a single (or multiple)
+    scan chains. It increases observability and controllability in the design
+    and also helps to reduce the size of the test-set vector. \\
+    \textbf{Process gain factor -}
+        \begin{flalign*}
+            K = \mu \epsilon_{iO_{2}} \over t_{ox}
+        \end{flalign*}
+    \textbf{Intrinsic Capacitance - } refers to the internal capacitance of a static
+    gate generated dude to diffusion layers, metal contacts, poly-wires. The parasitic
+    capacitance is proportional to the dimensions of the gate (i.e. W and L of transistor).
+    As we increase the size of the gate, the intrinsic capacitance increases, in turn
+    increasing the delay of the gate. We aim to reduce intrinsic capacitances, but it can
+    never be made '0'.
 
 \end{multicols}
 \end{document}
