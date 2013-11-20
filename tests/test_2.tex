@@ -39,6 +39,15 @@
         &Estimated Delay = \tau_{p} = 0.69*\tau_{Di} \\
         &Total Expected Energy = C_{L}*f*{{V_{dd}}^2}
     \end{flalign*}
+    \textbf{Power Probability}
+    \begin{flalign*}
+        P_{n} &= probability\ of\ n = 1\\
+        n\_nand &= P_{A}*P_{B} \\
+        p\_nand &= 1-P_{A}*P_{B} \\
+        n\_nor  &= 1-(1-P_{A})(1-P_{B}) \\
+                &= P_{A}+P_{B}-P_{A}P_{B} \\
+        p\_nor  &= (1-P_{A})(1-P_{B}) \\
+    \end{flalign*}
 
     \subsection*{Gates}
     \includegraphics[width=\linewidth]{not.png}
@@ -46,6 +55,7 @@
     \includegraphics[width=\linewidth]{or.png}
     \includegraphics[width=\linewidth]{nor.png}
     \includegraphics[width=\linewidth]{xor.png}
+    \includegraphics[width=\linewidth]{dynamic_gates.png}
 
     \subsection*{Definitions}
     \textbf{Inertial Delay -} time it takes for signal to change value \\
