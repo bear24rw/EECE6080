@@ -41,11 +41,10 @@
     \end{flalign*}
     \textbf{Power Probability}
     \begin{flalign*}
-        P_{n} &= probability\ of\ n = 1\\
-  P_{n\_nand}(0) &= P_{A}(1)P_{B}(1) \\
-  P_{p\_nand}(1) &= 1-P_{A}(1)P_{B}(1) \\
-  P_{n\_nor}(0)  &= 1-P_{A}(0)P_{B}(0) \\
-  P_{p\_nor}(1)  &= P_{A}(0)P_{B}(0)
+        P_{n\_nand}(0) &= P_{A}(1)P_{B}(1) \\
+        P_{p\_nand}(1) &= 1-P_{A}(1)P_{B}(1) \\
+        P_{n\_nor}(0)  &= 1-P_{A}(0)P_{B}(0) \\
+        P_{p\_nor}(1)  &= P_{A}(0)P_{B}(0)
     \end{flalign*}
     \textbf{Fan out}
     \begin{flalign*}
@@ -106,7 +105,9 @@
     operation with little power and at high speeds. Stores output using
     capacitance. Will typically not work at static or low clock speeds: given
     enough time, leakage paths may discharge the parasitic capacitance enough
-    to cause the flip-flop to enter invalid states.
+    to cause the flip-flop to enter invalid states.\\
+    \textbf{Master Slave FF -} Is edge trigged. Two gated D latches in series
+    and and inverting the enable input to one of them.
 
 \end{multicols}
 \end{document}
