@@ -35,7 +35,8 @@
     \end{flalign*}
     \textbf{Elmore's delay}
     \begin{flalign*}
-        &\tau_{Di} = \sum_{k=1}^{N} C_{k}*R_{ik} \\
+        &\tau_{Di} = \sum_{k=1}^{N}{ R_{k} \sum_{j=k}^{N} {C_{j} }} \\
+        %&\tau_{Di} = \sum_{k=1}^{N} C_{k}*R_{ik} \\
         &Estimated Delay = \tau_{p} = 0.69*\tau_{Di} \\
         &Total Expected Energy = C_{L}*f*{{V_{dd}}^2}
     \end{flalign*}
