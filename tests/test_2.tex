@@ -47,9 +47,12 @@
         P_{n\_nor}(0)  &= 1-P_{A}(0)P_{B}(0) \\
         P_{p\_nor}(1)  &= P_{A}(0)P_{B}(0)
     \end{flalign*}
-    \textbf{Fan out}
+    \textbf{Buffer Chain} \\
+    First buffer is of size 1
     \begin{flalign*}
-        f = \sqrt[N]{{C_{L} \over C_{1}}}
+        N &= Total\ numbers\ of\ buffers\ \\
+          &Size\ of\ buffer\ i = {C_{L} \over C_{1}}^{i \over N} \\
+        f &= \sqrt[N]{{C_{L} \over C_{1}}}
     \end{flalign*}
     \textbf{Min Path Delay}
     \begin{flalign*}
