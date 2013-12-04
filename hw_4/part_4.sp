@@ -9,11 +9,11 @@ Xcarry1 p_1 g_1 co_0 co_1 nclk pclk vdd gnd carry
 Xcarry2 p_2 g_2 co_1 co_2 nclk pclk vdd gnd carry
 Xcarry3 p_3 g_3 co_2 co_3 nclk pclk vdd gnd carry
 
-.param s = 10000000
+.param f = 1.75K
 
-vpclk   nclk    gnd PULSE(0V 5V 5n 0 0 '10n*s' '20n*s')
-vnclk   pclk    gnd PULSE(5V 0V 5n 0 0 '10n*s' '20n*s')
-vci     ci      gnd PWL(0n 0V 9.9n 0V 10n 5V 19.9n 5V 20n 0V)
+vpclk   pclk    gnd PULSE(5V 0V '(1/f)/2' 0 0 '(1/f)/2' '1/f')
+vnclk   nclk    gnd PULSE(0V 5V '(1/f)/2' 0 0 '(1/f)/2' '1/f')
+vci     ci      gnd PWL(0n 0V)
 
 vp_0    p_0     gnd PWL(0n 5V)
 vp_1    p_1     gnd PWL(0n 5V)
@@ -26,6 +26,6 @@ vg_2    g_2     gnd PWL(0n 0V)
 vg_3    g_3     gnd PWL(0n 0V)
 
 .option post
-.tran 0.01n '10n*s'
+.tran 0.01n 1ms
 
 .end
