@@ -10,6 +10,7 @@ Xcarry2 p_2 g_2 co_1 co_2 nclk pclk vdd gnd carry
 Xcarry3 p_3 g_3 co_2 co_3 nclk pclk vdd gnd carry
 
 .param f = 1.75K
+*.param f = 500
 
 vpclk   pclk    gnd PULSE(5V 0V '(1/f)/2' 0 0 '(1/f)/2' '1/f')
 vnclk   nclk    gnd PULSE(0V 5V '(1/f)/2' 0 0 '(1/f)/2' '1/f')
@@ -26,6 +27,6 @@ vg_2    g_2     gnd PWL(0n 0V)
 vg_3    g_3     gnd PWL(0n 0V)
 
 .option post
-.tran 0.01n 1ms
+.tran 0.01n '1.5*(1/f)'
 
 .end
