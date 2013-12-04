@@ -9,7 +9,7 @@ Xcarry1 p_1 g_1 co_0 co_1 nclk pclk vdd gnd carry
 Xcarry2 p_2 g_2 co_1 co_2 nclk pclk vdd gnd carry
 Xcarry3 p_3 g_3 co_2 co_3 nclk pclk vdd gnd carry
 
-.param s = 1000000
+.param s = 10000000
 
 vpclk   nclk    gnd PULSE(0V 5V 5n 0 0 '10n*s' '20n*s')
 vnclk   pclk    gnd PULSE(5V 0V 5n 0 0 '10n*s' '20n*s')
