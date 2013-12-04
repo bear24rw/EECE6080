@@ -6,15 +6,16 @@ VDD vdd gnd 5V
 
 Xcarry p g ci co nclk pclk vdd gnd carry
 
-.param s = 0.075
+*.param f = 125meg
+.param f = 380meg
 
-vpclk   nclk    gnd PULSE(0V 5V '15n*s' 0 0 '15n*s' '30n*s')
-vnclk   pclk    gnd PULSE(5V 0V '15n*s' 0 0 '15n*s' '30n*s')
+vpclk   pclk    gnd PULSE(5V 0V '(1/f)/2' 0 0 '(1/f)/2' '1/f')
+vnclk   nclk    gnd PULSE(0V 5V '(1/f)/2' 0 0 '(1/f)/2' '1/f')
+vci     ci      gnd PULSE(0V 5V 10n 0 0 10n 20n)
 vp      p       gnd PWL(0n 5V)
-vg      g       gnd PWL(0n 5V)
-vci     ci      gnd PWL(0n 0V '9.9n*s' 0V '10n*s' 5V '34.9n*s' 5V '35n*s' 0V '49.9n*s' 0V '50n*s' 5V '54.9n*s' 5V '55n*s' 0v)
+vg      g       gnd PWL(0n 0V)
 
 .option post
-.tran 0.01n '75n*s'
+.tran 0.01n 30n
 
 .end

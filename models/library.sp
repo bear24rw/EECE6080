@@ -8,9 +8,9 @@
 
 * P-NAND
 .subckt pnand a b f clk vdd gnd
-    mp1     vdd     clk     t789    vdd pfet w=pw l=l ad=(ld*pw) as=(ld*pw) pd=(2*ld+2*pw) ps=(2*ld+2*pw)
-    mp2     t789    a       f       vdd pfet w=pw l=l ad=(ld*pw) as=(ld*pw) pd=(2*ld+2*pw) ps=(2*ld+2*pw)
-    mp3     t789    b       f       vdd pfet w=pw l=l ad=(ld*pw) as=(ld*pw) pd=(2*ld+2*pw) ps=(2*ld+2*pw)
+    mp1     vdd     clk     t12     vdd pfet w=pw l=l ad=(ld*pw) as=(ld*pw) pd=(2*ld+2*pw) ps=(2*ld+2*pw)
+    mp2     t12     a       f       vdd pfet w=pw l=l ad=(ld*pw) as=(ld*pw) pd=(2*ld+2*pw) ps=(2*ld+2*pw)
+    mp3     t12     b       f       vdd pfet w=pw l=l ad=(ld*pw) as=(ld*pw) pd=(2*ld+2*pw) ps=(2*ld+2*pw)
     mn4     f       clk     gnd     gnd nfet w=nw l=l ad=(ld*nw) as=(ld*nw) pd=(2*ld+2*nw) ps=(2*ld+2*nw)
 .ends
 
@@ -30,9 +30,9 @@
 
 * Carry Slice
 .subckt carry p g ci co nclk pclk vdd gnd
-    Xinv   g  f2          vdd gnd inv
-    Xnnand p  ci f1  nclk vdd gnd nnand
-    Xpnand f1 f2 co  pclk vdd gnd pnand
+    Xnnand p  ci f1 nclk vdd gnd nnand
+    Xinv   g  f2         vdd gnd inv
+    Xpnand f1 f2 co pclk vdd gnd pnand
 .ends
 
 .end

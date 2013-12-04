@@ -6,13 +6,14 @@ vdd vdd gnd 5V
 
 xnnand a b f clk vdd gnd nnand
 
-.param s = 1
+*.param f = 200meg
+.param f = 940meg
 
-vclk    clk     gnd PULSE(0V 5V '15n*s' 0 0 '15n*s' '30n*s')
-va      a       gnd PWL('0n*s' 0V '9.9n*s' 0V '10n*s' 5V '34.9n*s' 5V '35n*s' 0V '49.9n*s' 0V '50n*s' 5V '54.9n*s' 5V '55n*s' 0v)
-vb      b       gnd PWL('0n*s' 0V '9.9n*s' 0V '10n*s' 5V '34.9n*s' 5V '35n*s' 0V '49.9n*s' 0V '50n*s' 5V '54.9n*s' 5V '55n*s' 0v)
+vclk    clk     gnd PULSE(0V 5V '(1/f)/2' 0 0 '(1/f)/2' '1/f')
+va      a       gnd PULSE(0V 5V 10n 0 0 10n 20n)
+vb      b       gnd PULSE(0V 5V 10n 0 0 10n 20n)
 
 .option post
-.tran 0.01n '75n*s'
+.tran 0.01n 30n
 
 .end
