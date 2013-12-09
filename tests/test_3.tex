@@ -59,10 +59,10 @@
     \end{flalign*}
 
     \textbf{Mux-Based Latch}
-    \includegraphics[width=\linewidth]{not.png}
     \begin{flalign*}
         Q = Clk Q + ~Clk D
     \end{flalign*}
+    \includegraphics[width=\linewidth]{mux_latch.png}
     \textbf{Inversion Property}
     Inverting all the inputs and ouputs
     \begin{flalign*}
@@ -96,15 +96,19 @@
     an output carry.
     \includegraphics[width=\linewidth]{carry_bypass.png}
     \begin{flalign*}
-        t_{adder} = t_{setup}+M_{carry}+(N/M-1)t_{bypass}+(M-1)t_{carry}+t_{sum}
+        t_{adder} = t_{setup}+M_{carry} \\
+        +(N/M-1)t_{bypass}+ \\
+        (M-1)t_{carry}+t_{sum}
     \end{flalign*}
-    \textbf{Carry-Bypass Adder}
+    \textbf{Sqrt Adder}
     \begin{flalign*}
-        t_{adder} = t_{setup}+M*t_{carry}+\sqrt{2N}*t_{max}+t_{sum}
+        t_{adder} = t_{setup}+M*t_{carry}+ \\
+        \sqrt{2N}*t_{max}+t_{sum}
     \end{flalign*}
     \textbf{Linear Carry Select}
     \begin{flalign*}
-        t_{adder} = t_{setup}+M*t_{carry}+(N/M)*t_{mux}+t_{sum}
+        t_{adder} = t_{setup}+M*t_{carry}+ \\
+        (N/M)*t_{mux}+t_{sum}
     \end{flalign*}
     \textbf{Log Look Ahead Adder}
     \begin{flalign*}
@@ -134,6 +138,7 @@
     \includegraphics[width=\linewidth]{xor.png}
     \includegraphics[width=\linewidth]{dynamic_gates.png}
 
+    \newpage
     \textbf{Inertial Delay -} Time it takes for signal to change value \\
     \textbf{Transport Delay -} Time it takes for signal to travel down wire \\
     \textbf{Delta Cycle -} Is used to order events in VHDL simulation and
