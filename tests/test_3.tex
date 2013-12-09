@@ -58,6 +58,74 @@
         t_{p} = N*t_{po}*(1 + f)
     \end{flalign*}
 
+    \textbf{Mux-Based Latch}
+    \includegraphics[width=\linewidth]{not.png}
+    \begin{flalign*}
+        Q = Clk Q + ~Clk D
+    \end{flalign*}
+    \textbf{Inversion Property}
+    Inverting all the inputs and ouputs
+    \begin{flalign*}
+        ~S(A,B,C) = S(~A,~B,~C)
+    \end{flalign*}
+    Minimize critical path by reducing inverting stages
+    \textbf{Binary Adder}
+    \begin{flalign*}
+        S &= (A ~B ~C_{i})+(~A B ~C_{i})+(~A ~B C_{i})+(ABC) \\
+    C_{o} &= AB + BC_{i} + AC_{i} \\
+        P &= A ^ B \\
+        G &= AB \\
+        C_{o}(G,P) &= G+PC_{i} \\
+            S(G,P) &= P ^ C_{i}
+    \end{flalign*}
+    \textbf{Ripple-Carry Adder}
+    Worst case delay linear with number of bits
+    \begin{flalign*}
+        t_{d} = O(N)
+        t_{adder} = (N-1)t_{carry}+t_{sum}
+    \end{flalign*}
+    \textbf{Mirror Adder}
+    Maximum of 2 transistions in carry gen circuit\\
+    Node Co has a lot of capacitance\\
+    Only transistors in carry chain have to be optimized for size. \\
+    Transistors in sum stage can be minimal size. \\
+    \includegraphics[width=\linewidth]{mirror_adder.png}
+    \textbf{Carry-Bypass Adder}
+    In worst case carry generatored at the first bitpositon skips around the
+    bypass stages and is consumed in the last bit position without generating
+    an output carry.
+    \includegraphics[width=\linewidth]{carry_bypass.png}
+    \begin{flalign*}
+        t_{adder} = t_{setup}+M_{carry}+(N/M-1)t_{bypass}+(M-1)t_{carry}+t_{sum}
+    \end{flalign*}
+    \textbf{Carry-Bypass Adder}
+    \begin{flalign*}
+        t_{adder} = t_{setup}+M*t_{carry}+\sqrt{2N}*t_{max}+t_{sum}
+    \end{flalign*}
+    \textbf{Linear Carry Select}
+    \begin{flalign*}
+        t_{adder} = t_{setup}+M*t_{carry}+(N/M)*t_{mux}+t_{sum}
+    \end{flalign*}
+    \textbf{Log Look Ahead Adder}
+    \begin{flalign*}
+        t_{p} ~ log_{2}(N)
+    \end{flalign*}
+    \textbf{Fast Complex Gate Design Techniques -} - Progressive sizing.
+    -Distributed RC line. Can Reduce Delay by more than 20 percent. decreasing
+    gains as technology stinks.\\
+    \includegraphics[width=\linewidth]{ordering.png}
+    -Alternative logic structures -Isolating fan-in from fan-out using buffer insertion\\
+    \textbf{Ratioed Logic -} Reduce the number of devices over complementary CMOS
+    \begin{flalign*}
+        V_{OH} &= V_{DD}\\
+        V_{OL} &= R_{PN}/(P_{PN}+R_{L})
+    \end{flalign*}
+    \textbf{Pass Transistor Logic} \\
+    \includegraphics[width=\linewidth]{pass.png}
+    \textbf{Clock Feed Through} \\
+    \includegraphics[width=\linewidth]{clock_feed.png}
+    \textbf{Solution to charge redistribution} \\
+    \includegraphics[width=\linewidth]{charge.png}
 
     \includegraphics[width=\linewidth]{not.png}
     \includegraphics[width=\linewidth]{and.png}
@@ -120,7 +188,10 @@
     clock signal; modulation + random noise. Cycle to Cycle (short-term) t\_js.\\
     \textbf{Dealing with Capacitive Cross Talk -} Avoid floating node. Protect
     sensitive nodes. Make rise fall times large. Do not run wires together for
-    long dist. Use shielding for wires and layers.
+    long dist. Use shielding for wires and layers. \\
+    \textbf{C2MOS Pipeline -} Racefree as long as even number of inverters. \\
+    \textbf{TSPCL -} True Single Phase Clock Logic, simplification of NORA so
+    single clock phase is sufficient.\\
 
 
 
