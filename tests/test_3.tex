@@ -122,6 +122,43 @@
     sensitive nodes. Make rise fall times large. Do not run wires together for
     long dist. Use shielding for wires and layers.
 
+    4)
+    \includegraphics[width=\linewidth]{question4.png}
+
+    5)
+        A) What is velocity saturation and what is the effect on the CMOS transistor
+           IV characteristics? \\
+
+           "Carrier velocity is proportional to the electric field" does not hold
+           at high electric fields above a critical value and the velocity saturates
+           and remains constant due to scattering effects.
+            \includegraphics[width=\linewidth]{ques5a.png}
+
+        B) Explain a method to overcome the charge leakage issue with dynamic CMOS.
+
+           One method is to add keepers at the output of the circuit. This uses positive
+           feedback to reduce leakage.
+            \includegraphics[width=\linewidth]{ques5b.png}
+
+        C) What is the inverter threshold and how does sizing effect the inverter
+           threshold? \\
+           Signal bigger than V\_IH will be considered high while signal is lower
+           than V\_IL will be considered low. V\_IH/V\_IL are inverter thresholds.
+           Increasing size will decrease V\_IH, increase V\_IL.
+
+        D) Explain the terms sheet resistance and fringe capacitance.
+
+        Sheet Resistance is the resistance of a wire modeled as a sheet.
+        \textbf{Sheet Resistance}
+        \begin{flalign*}
+            R = {\rho*L \over W*H}
+        \end{flalign*}
+
+        Fringe capacitance is the capacitance of a wire due to the
+        fringing electric fields.
+        \begin{flalign*}
+            C_{fringe} = {{2\pi*\epsilon_{di}} \over {log{\epsilon_{di} \over 4}}}
+        \end{flalign*}
 
 
 \end{multicols}
